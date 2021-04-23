@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.abstracPass
+  commentId: T:alps_.net_api.abstracPass
+  id: abstracPass
+  parent: alps_.net_api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: abstracPass
+  nameWithType: abstracPass
+  fullName: alps_.net_api.abstracPass
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: abstracPass
+    path: OwlGraph.cs
+    startLine: 4331
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nhier sollte die Beschreibung der AbstractPass kommen, mal schauen was ich davon\nbrauche, vermutlich alles\n"
+  example: []
+  syntax:
+    content: public interface abstracPass
+    content.vb: Public Interface abstracPass
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api

@@ -1,0 +1,1616 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.OwlGraph
+  commentId: T:alps_.net_api.OwlGraph
+  id: OwlGraph
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.OwlGraph.#ctor
+  - alps_.net_api.OwlGraph.#ctor(System.String,System.Boolean)
+  - alps_.net_api.OwlGraph.#ctor(System.String,System.String)
+  - alps_.net_api.OwlGraph.createTree
+  - alps_.net_api.OwlGraph.creatingTree
+  - alps_.net_api.OwlGraph.files
+  - alps_.net_api.OwlGraph.findAllParentClasses(System.String,VDS.RDF.Graph)
+  - alps_.net_api.OwlGraph.findAllSubclasses(System.String,alps_.net_api.TreeNode,VDS.RDF.Graph)
+  - alps_.net_api.OwlGraph.findAllURI
+  - alps_.net_api.OwlGraph.findTopLayer
+  - alps_.net_api.OwlGraph.getAbstractPass
+  - alps_.net_api.OwlGraph.getFiles
+  - alps_.net_api.OwlGraph.getStandartPass
+  - alps_.net_api.OwlGraph.getTopLayer
+  - alps_.net_api.OwlGraph.hasParentNode(System.String,VDS.RDF.Graph)
+  - alps_.net_api.OwlGraph.hasSubNodes(System.String,VDS.RDF.Graph)
+  - alps_.net_api.OwlGraph.load(System.Collections.Generic.List{System.String})
+  - alps_.net_api.OwlGraph.readingAbstractPass(System.String)
+  - alps_.net_api.OwlGraph.readingFile(System.String)
+  - alps_.net_api.OwlGraph.readingFiles(System.Collections.Generic.List{System.String})
+  - alps_.net_api.OwlGraph.readingFiles(System.String,System.String)
+  - alps_.net_api.OwlGraph.readingStandartPass(System.String)
+  - alps_.net_api.OwlGraph.setAbstractPass(VDS.RDF.Graph)
+  - alps_.net_api.OwlGraph.setStandartPass(VDS.RDF.Graph)
+  langs:
+  - csharp
+  - vb
+  name: OwlGraph
+  nameWithType: OwlGraph
+  fullName: alps_.net_api.OwlGraph
+  type: Class
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: OwlGraph
+    path: OwlGraph.cs
+    startLine: 14
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nThe main Class of the alps_.net_api. Controlles all the \n"
+  example: []
+  syntax:
+    content: public class OwlGraph
+    content.vb: Public Class OwlGraph
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: alps_.net_api.OwlGraph.files
+  commentId: F:alps_.net_api.OwlGraph.files
+  id: files
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: files
+  nameWithType: OwlGraph.files
+  fullName: alps_.net_api.OwlGraph.files
+  type: Field
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: files
+    path: OwlGraph.cs
+    startLine: 25
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nList of the graphs containing the Information required for the OwlGraph class\n"
+  example: []
+  syntax:
+    content: public List<Graph> files
+    return:
+      type: System.Collections.Generic.List{VDS.RDF.Graph}
+    content.vb: Public files As List(Of Graph)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.#ctor
+  commentId: M:alps_.net_api.OwlGraph.#ctor
+  id: '#ctor'
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: OwlGraph()
+  nameWithType: OwlGraph.OwlGraph()
+  fullName: alps_.net_api.OwlGraph.OwlGraph()
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: OwlGraph.cs
+    startLine: 51
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nCreates an empty Instance of the OwlGraph Class\n"
+  example: []
+  syntax:
+    content: public OwlGraph()
+    content.vb: Public Sub New
+  overload: alps_.net_api.OwlGraph.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.#ctor(System.String,System.Boolean)
+  commentId: M:alps_.net_api.OwlGraph.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: OwlGraph(String, Boolean)
+  nameWithType: OwlGraph.OwlGraph(String, Boolean)
+  fullName: alps_.net_api.OwlGraph.OwlGraph(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: OwlGraph.cs
+    startLine: 73
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public OwlGraph(string newPass, bool standartWanted)
+    parameters:
+    - id: newPass
+      type: System.String
+      description: ''
+    - id: standartWanted
+      type: System.Boolean
+      description: ''
+    content.vb: Public Sub New(newPass As String, standartWanted As Boolean)
+  overload: alps_.net_api.OwlGraph.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.#ctor(System.String,System.String)
+  commentId: M:alps_.net_api.OwlGraph.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: OwlGraph(String, String)
+  nameWithType: OwlGraph.OwlGraph(String, String)
+  fullName: alps_.net_api.OwlGraph.OwlGraph(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: OwlGraph.cs
+    startLine: 101
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public OwlGraph(string standartPass, string abstactPass)
+    parameters:
+    - id: standartPass
+      type: System.String
+      description: ''
+    - id: abstactPass
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(standartPass As String, abstactPass As String)
+  overload: alps_.net_api.OwlGraph.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.setStandartPass(VDS.RDF.Graph)
+  commentId: M:alps_.net_api.OwlGraph.setStandartPass(VDS.RDF.Graph)
+  id: setStandartPass(VDS.RDF.Graph)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: setStandartPass(Graph)
+  nameWithType: OwlGraph.setStandartPass(Graph)
+  fullName: alps_.net_api.OwlGraph.setStandartPass(VDS.RDF.Graph)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setStandartPass
+    path: OwlGraph.cs
+    startLine: 122
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void setStandartPass(Graph standartPass)
+    parameters:
+    - id: standartPass
+      type: VDS.RDF.Graph
+      description: ''
+    content.vb: Public Sub setStandartPass(standartPass As Graph)
+  overload: alps_.net_api.OwlGraph.setStandartPass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.getStandartPass
+  commentId: M:alps_.net_api.OwlGraph.getStandartPass
+  id: getStandartPass
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: getStandartPass()
+  nameWithType: OwlGraph.getStandartPass()
+  fullName: alps_.net_api.OwlGraph.getStandartPass()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getStandartPass
+    path: OwlGraph.cs
+    startLine: 131
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Graph getStandartPass()
+    return:
+      type: VDS.RDF.Graph
+      description: ''
+    content.vb: Public Function getStandartPass As Graph
+  overload: alps_.net_api.OwlGraph.getStandartPass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.setAbstractPass(VDS.RDF.Graph)
+  commentId: M:alps_.net_api.OwlGraph.setAbstractPass(VDS.RDF.Graph)
+  id: setAbstractPass(VDS.RDF.Graph)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: setAbstractPass(Graph)
+  nameWithType: OwlGraph.setAbstractPass(Graph)
+  fullName: alps_.net_api.OwlGraph.setAbstractPass(VDS.RDF.Graph)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setAbstractPass
+    path: OwlGraph.cs
+    startLine: 141
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void setAbstractPass(Graph abstractPass)
+    parameters:
+    - id: abstractPass
+      type: VDS.RDF.Graph
+      description: ''
+    content.vb: Public Sub setAbstractPass(abstractPass As Graph)
+  overload: alps_.net_api.OwlGraph.setAbstractPass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.getAbstractPass
+  commentId: M:alps_.net_api.OwlGraph.getAbstractPass
+  id: getAbstractPass
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: getAbstractPass()
+  nameWithType: OwlGraph.getAbstractPass()
+  fullName: alps_.net_api.OwlGraph.getAbstractPass()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getAbstractPass
+    path: OwlGraph.cs
+    startLine: 150
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Graph getAbstractPass()
+    return:
+      type: VDS.RDF.Graph
+      description: ''
+    content.vb: Public Function getAbstractPass As Graph
+  overload: alps_.net_api.OwlGraph.getAbstractPass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.getFiles
+  commentId: M:alps_.net_api.OwlGraph.getFiles
+  id: getFiles
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: getFiles()
+  nameWithType: OwlGraph.getFiles()
+  fullName: alps_.net_api.OwlGraph.getFiles()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getFiles
+    path: OwlGraph.cs
+    startLine: 160
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the read graphs\n"
+  example: []
+  syntax:
+    content: public List<Graph> getFiles()
+    return:
+      type: System.Collections.Generic.List{VDS.RDF.Graph}
+      description: A List of Graphes
+    content.vb: Public Function getFiles As List(Of Graph)
+  overload: alps_.net_api.OwlGraph.getFiles*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.getTopLayer
+  commentId: M:alps_.net_api.OwlGraph.getTopLayer
+  id: getTopLayer
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: getTopLayer()
+  nameWithType: OwlGraph.getTopLayer()
+  fullName: alps_.net_api.OwlGraph.getTopLayer()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getTopLayer
+    path: OwlGraph.cs
+    startLine: 169
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public List<Triple> getTopLayer()
+    return:
+      type: System.Collections.Generic.List{VDS.RDF.Triple}
+      description: ''
+    content.vb: Public Function getTopLayer As List(Of Triple)
+  overload: alps_.net_api.OwlGraph.getTopLayer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.readingFiles(System.String,System.String)
+  commentId: M:alps_.net_api.OwlGraph.readingFiles(System.String,System.String)
+  id: readingFiles(System.String,System.String)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: readingFiles(String, String)
+  nameWithType: OwlGraph.readingFiles(String, String)
+  fullName: alps_.net_api.OwlGraph.readingFiles(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: readingFiles
+    path: OwlGraph.cs
+    startLine: 181
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool readingFiles(string filePathStandartPass, string filePathAbstractPass)
+    parameters:
+    - id: filePathStandartPass
+      type: System.String
+      description: ''
+    - id: filePathAbstractPass
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function readingFiles(filePathStandartPass As String, filePathAbstractPass As String) As Boolean
+  overload: alps_.net_api.OwlGraph.readingFiles*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.readingFiles(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.OwlGraph.readingFiles(System.Collections.Generic.List{System.String})
+  id: readingFiles(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: readingFiles(List<String>)
+  nameWithType: OwlGraph.readingFiles(List<String>)
+  fullName: alps_.net_api.OwlGraph.readingFiles(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: readingFiles
+    path: OwlGraph.cs
+    startLine: 225
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nReads in all the files to Process them later \n"
+  example: []
+  syntax:
+    content: public bool readingFiles(List<string> filepath)
+    parameters:
+    - id: filepath
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function readingFiles(filepath As List(Of String)) As Boolean
+  overload: alps_.net_api.OwlGraph.readingFiles*
+  nameWithType.vb: OwlGraph.readingFiles(List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: alps_.net_api.OwlGraph.readingFiles(System.Collections.Generic.List(Of System.String))
+  name.vb: readingFiles(List(Of String))
+- uid: alps_.net_api.OwlGraph.load(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.OwlGraph.load(System.Collections.Generic.List{System.String})
+  id: load(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: load(List<String>)
+  nameWithType: OwlGraph.load(List<String>)
+  fullName: alps_.net_api.OwlGraph.load(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: load
+    path: OwlGraph.cs
+    startLine: 263
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nLoads in all the required Files and creates the inheritans Graph within the Programm\n"
+  example: []
+  syntax:
+    content: public bool load(List<string> filepath)
+    parameters:
+    - id: filepath
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    return:
+      type: System.Boolean
+      description: A boolean that shows if the creation of the Trees worked
+    content.vb: Public Function load(filepath As List(Of String)) As Boolean
+  overload: alps_.net_api.OwlGraph.load*
+  nameWithType.vb: OwlGraph.load(List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: alps_.net_api.OwlGraph.load(System.Collections.Generic.List(Of System.String))
+  name.vb: load(List(Of String))
+- uid: alps_.net_api.OwlGraph.readingStandartPass(System.String)
+  commentId: M:alps_.net_api.OwlGraph.readingStandartPass(System.String)
+  id: readingStandartPass(System.String)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: readingStandartPass(String)
+  nameWithType: OwlGraph.readingStandartPass(String)
+  fullName: alps_.net_api.OwlGraph.readingStandartPass(System.String)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: readingStandartPass
+    path: OwlGraph.cs
+    startLine: 319
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool readingStandartPass(string filePathStandartPass)
+    parameters:
+    - id: filePathStandartPass
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function readingStandartPass(filePathStandartPass As String) As Boolean
+  overload: alps_.net_api.OwlGraph.readingStandartPass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.readingAbstractPass(System.String)
+  commentId: M:alps_.net_api.OwlGraph.readingAbstractPass(System.String)
+  id: readingAbstractPass(System.String)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: readingAbstractPass(String)
+  nameWithType: OwlGraph.readingAbstractPass(String)
+  fullName: alps_.net_api.OwlGraph.readingAbstractPass(System.String)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: readingAbstractPass
+    path: OwlGraph.cs
+    startLine: 347
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool readingAbstractPass(string filePathAbstractPass)
+    parameters:
+    - id: filePathAbstractPass
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function readingAbstractPass(filePathAbstractPass As String) As Boolean
+  overload: alps_.net_api.OwlGraph.readingAbstractPass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.readingFile(System.String)
+  commentId: M:alps_.net_api.OwlGraph.readingFile(System.String)
+  id: readingFile(System.String)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: readingFile(String)
+  nameWithType: OwlGraph.readingFile(String)
+  fullName: alps_.net_api.OwlGraph.readingFile(System.String)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: readingFile
+    path: OwlGraph.cs
+    startLine: 375
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool readingFile(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function readingFile(filePath As String) As Boolean
+  overload: alps_.net_api.OwlGraph.readingFile*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.findAllSubclasses(System.String,alps_.net_api.TreeNode,VDS.RDF.Graph)
+  commentId: M:alps_.net_api.OwlGraph.findAllSubclasses(System.String,alps_.net_api.TreeNode,VDS.RDF.Graph)
+  id: findAllSubclasses(System.String,alps_.net_api.TreeNode,VDS.RDF.Graph)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: findAllSubclasses(String, TreeNode, Graph)
+  nameWithType: OwlGraph.findAllSubclasses(String, TreeNode, Graph)
+  fullName: alps_.net_api.OwlGraph.findAllSubclasses(System.String, alps_.net_api.TreeNode, VDS.RDF.Graph)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: findAllSubclasses
+    path: OwlGraph.cs
+    startLine: 404
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nThis Method finds all the Subclasses in the given OWL Ontologies\nIt takes the URI String of the Super Class and returns all the Sub Classes as a Tree Node List\n"
+  example: []
+  syntax:
+    content: public List<TreeNode> findAllSubclasses(string className, TreeNode fatherNode, Graph graph)
+    parameters:
+    - id: className
+      type: System.String
+    - id: fatherNode
+      type: alps_.net_api.TreeNode
+    - id: graph
+      type: VDS.RDF.Graph
+    return:
+      type: System.Collections.Generic.List{alps_.net_api.TreeNode}
+      description: A Tree Node List of all the Sub Classes
+    content.vb: Public Function findAllSubclasses(className As String, fatherNode As TreeNode, graph As Graph) As List(Of TreeNode)
+  overload: alps_.net_api.OwlGraph.findAllSubclasses*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.hasSubNodes(System.String,VDS.RDF.Graph)
+  commentId: M:alps_.net_api.OwlGraph.hasSubNodes(System.String,VDS.RDF.Graph)
+  id: hasSubNodes(System.String,VDS.RDF.Graph)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: hasSubNodes(String, Graph)
+  nameWithType: OwlGraph.hasSubNodes(String, Graph)
+  fullName: alps_.net_api.OwlGraph.hasSubNodes(System.String, VDS.RDF.Graph)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: hasSubNodes
+    path: OwlGraph.cs
+    startLine: 467
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nThe Method test if a certain class has subclasses and returns true of false accordingly\n"
+  example: []
+  syntax:
+    content: public bool hasSubNodes(string className, Graph graph)
+    parameters:
+    - id: className
+      type: System.String
+      description: ''
+    - id: graph
+      type: VDS.RDF.Graph
+      description: ''
+    return:
+      type: System.Boolean
+      description: boolean true or false
+    content.vb: Public Function hasSubNodes(className As String, graph As Graph) As Boolean
+  overload: alps_.net_api.OwlGraph.hasSubNodes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.findAllParentClasses(System.String,VDS.RDF.Graph)
+  commentId: M:alps_.net_api.OwlGraph.findAllParentClasses(System.String,VDS.RDF.Graph)
+  id: findAllParentClasses(System.String,VDS.RDF.Graph)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: findAllParentClasses(String, Graph)
+  nameWithType: OwlGraph.findAllParentClasses(String, Graph)
+  fullName: alps_.net_api.OwlGraph.findAllParentClasses(System.String, VDS.RDF.Graph)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: findAllParentClasses
+    path: OwlGraph.cs
+    startLine: 520
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that finds and returns all the Parent Classes within a given Graph\n"
+  example: []
+  syntax:
+    content: public List<TreeNode> findAllParentClasses(string className, Graph graph)
+    parameters:
+    - id: className
+      type: System.String
+      description: ''
+    - id: graph
+      type: VDS.RDF.Graph
+      description: ''
+    return:
+      type: System.Collections.Generic.List{alps_.net_api.TreeNode}
+      description: A List of TreeNodes with the Parent Classes
+    content.vb: Public Function findAllParentClasses(className As String, graph As Graph) As List(Of TreeNode)
+  overload: alps_.net_api.OwlGraph.findAllParentClasses*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.hasParentNode(System.String,VDS.RDF.Graph)
+  commentId: M:alps_.net_api.OwlGraph.hasParentNode(System.String,VDS.RDF.Graph)
+  id: hasParentNode(System.String,VDS.RDF.Graph)
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: hasParentNode(String, Graph)
+  nameWithType: OwlGraph.hasParentNode(String, Graph)
+  fullName: alps_.net_api.OwlGraph.hasParentNode(System.String, VDS.RDF.Graph)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: hasParentNode
+    path: OwlGraph.cs
+    startLine: 566
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that tests if a given subject has Parents and returns a boolean \n"
+  example: []
+  syntax:
+    content: public bool hasParentNode(string className, Graph graph)
+    parameters:
+    - id: className
+      type: System.String
+      description: ''
+    - id: graph
+      type: VDS.RDF.Graph
+      description: ''
+    return:
+      type: System.Boolean
+      description: A boolean that shows if a Subject has a Parent
+    content.vb: Public Function hasParentNode(className As String, graph As Graph) As Boolean
+  overload: alps_.net_api.OwlGraph.hasParentNode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.creatingTree
+  commentId: M:alps_.net_api.OwlGraph.creatingTree
+  id: creatingTree
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: creatingTree()
+  nameWithType: OwlGraph.creatingTree()
+  fullName: alps_.net_api.OwlGraph.creatingTree()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: creatingTree
+    path: OwlGraph.cs
+    startLine: 611
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nDie Klasse erzeugt aus den gegeben Quelldateien die Vererbungsbäume\n"
+  example: []
+  syntax:
+    content: public bool creatingTree()
+    return:
+      type: System.Boolean
+    content.vb: Public Function creatingTree As Boolean
+  overload: alps_.net_api.OwlGraph.creatingTree*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.findAllURI
+  commentId: M:alps_.net_api.OwlGraph.findAllURI
+  id: findAllURI
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: findAllURI()
+  nameWithType: OwlGraph.findAllURI()
+  fullName: alps_.net_api.OwlGraph.findAllURI()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: findAllURI
+    path: OwlGraph.cs
+    startLine: 743
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void findAllURI()
+    content.vb: Public Sub findAllURI
+  overload: alps_.net_api.OwlGraph.findAllURI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.findTopLayer
+  commentId: M:alps_.net_api.OwlGraph.findTopLayer
+  id: findTopLayer
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: findTopLayer()
+  nameWithType: OwlGraph.findTopLayer()
+  fullName: alps_.net_api.OwlGraph.findTopLayer()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: findTopLayer
+    path: OwlGraph.cs
+    startLine: 786
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nFinds all the SID&apos;s within the given files and saves them in a List\n"
+  example: []
+  syntax:
+    content: public void findTopLayer()
+    content.vb: Public Sub findTopLayer
+  overload: alps_.net_api.OwlGraph.findTopLayer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.OwlGraph.createTree
+  commentId: M:alps_.net_api.OwlGraph.createTree
+  id: createTree
+  parent: alps_.net_api.OwlGraph
+  langs:
+  - csharp
+  - vb
+  name: createTree()
+  nameWithType: OwlGraph.createTree()
+  fullName: alps_.net_api.OwlGraph.createTree()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/OwlGraph.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: createTree
+    path: OwlGraph.cs
+    startLine: 3832
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nCreates the inheraitans Graph out of hardcodet classes\nWIP: Hier müssen noch die korrekten Namen der Elemente (URIs) eingetragen werden\n"
+  example: []
+  syntax:
+    content: public void createTree()
+    content.vb: Public Sub createTree
+  overload: alps_.net_api.OwlGraph.createTree*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{VDS.RDF.Graph}
+  commentId: T:System.Collections.Generic.List{VDS.RDF.Graph}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Graph>
+  nameWithType: List<Graph>
+  fullName: System.Collections.Generic.List<VDS.RDF.Graph>
+  nameWithType.vb: List(Of Graph)
+  fullName.vb: System.Collections.Generic.List(Of VDS.RDF.Graph)
+  name.vb: List(Of Graph)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VDS.RDF.Graph
+    name: Graph
+    nameWithType: Graph
+    fullName: VDS.RDF.Graph
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VDS.RDF.Graph
+    name: Graph
+    nameWithType: Graph
+    fullName: VDS.RDF.Graph
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: alps_.net_api.OwlGraph.#ctor*
+  commentId: Overload:alps_.net_api.OwlGraph.#ctor
+  name: OwlGraph
+  nameWithType: OwlGraph.OwlGraph
+  fullName: alps_.net_api.OwlGraph.OwlGraph
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: alps_.net_api.OwlGraph.setStandartPass*
+  commentId: Overload:alps_.net_api.OwlGraph.setStandartPass
+  name: setStandartPass
+  nameWithType: OwlGraph.setStandartPass
+  fullName: alps_.net_api.OwlGraph.setStandartPass
+- uid: VDS.RDF.Graph
+  commentId: T:VDS.RDF.Graph
+  parent: VDS.RDF
+  isExternal: true
+  name: Graph
+  nameWithType: Graph
+  fullName: VDS.RDF.Graph
+- uid: VDS.RDF
+  commentId: N:VDS.RDF
+  isExternal: true
+  name: VDS.RDF
+  nameWithType: VDS.RDF
+  fullName: VDS.RDF
+- uid: alps_.net_api.OwlGraph.getStandartPass*
+  commentId: Overload:alps_.net_api.OwlGraph.getStandartPass
+  name: getStandartPass
+  nameWithType: OwlGraph.getStandartPass
+  fullName: alps_.net_api.OwlGraph.getStandartPass
+- uid: alps_.net_api.OwlGraph.setAbstractPass*
+  commentId: Overload:alps_.net_api.OwlGraph.setAbstractPass
+  name: setAbstractPass
+  nameWithType: OwlGraph.setAbstractPass
+  fullName: alps_.net_api.OwlGraph.setAbstractPass
+- uid: alps_.net_api.OwlGraph.getAbstractPass*
+  commentId: Overload:alps_.net_api.OwlGraph.getAbstractPass
+  name: getAbstractPass
+  nameWithType: OwlGraph.getAbstractPass
+  fullName: alps_.net_api.OwlGraph.getAbstractPass
+- uid: alps_.net_api.OwlGraph.getFiles*
+  commentId: Overload:alps_.net_api.OwlGraph.getFiles
+  name: getFiles
+  nameWithType: OwlGraph.getFiles
+  fullName: alps_.net_api.OwlGraph.getFiles
+- uid: alps_.net_api.OwlGraph.getTopLayer*
+  commentId: Overload:alps_.net_api.OwlGraph.getTopLayer
+  name: getTopLayer
+  nameWithType: OwlGraph.getTopLayer
+  fullName: alps_.net_api.OwlGraph.getTopLayer
+- uid: System.Collections.Generic.List{VDS.RDF.Triple}
+  commentId: T:System.Collections.Generic.List{VDS.RDF.Triple}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Triple>
+  nameWithType: List<Triple>
+  fullName: System.Collections.Generic.List<VDS.RDF.Triple>
+  nameWithType.vb: List(Of Triple)
+  fullName.vb: System.Collections.Generic.List(Of VDS.RDF.Triple)
+  name.vb: List(Of Triple)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VDS.RDF.Triple
+    name: Triple
+    nameWithType: Triple
+    fullName: VDS.RDF.Triple
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VDS.RDF.Triple
+    name: Triple
+    nameWithType: Triple
+    fullName: VDS.RDF.Triple
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlGraph.readingFiles*
+  commentId: Overload:alps_.net_api.OwlGraph.readingFiles
+  name: readingFiles
+  nameWithType: OwlGraph.readingFiles
+  fullName: alps_.net_api.OwlGraph.readingFiles
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlGraph.load*
+  commentId: Overload:alps_.net_api.OwlGraph.load
+  name: load
+  nameWithType: OwlGraph.load
+  fullName: alps_.net_api.OwlGraph.load
+- uid: alps_.net_api.OwlGraph.readingStandartPass*
+  commentId: Overload:alps_.net_api.OwlGraph.readingStandartPass
+  name: readingStandartPass
+  nameWithType: OwlGraph.readingStandartPass
+  fullName: alps_.net_api.OwlGraph.readingStandartPass
+- uid: alps_.net_api.OwlGraph.readingAbstractPass*
+  commentId: Overload:alps_.net_api.OwlGraph.readingAbstractPass
+  name: readingAbstractPass
+  nameWithType: OwlGraph.readingAbstractPass
+  fullName: alps_.net_api.OwlGraph.readingAbstractPass
+- uid: alps_.net_api.OwlGraph.readingFile*
+  commentId: Overload:alps_.net_api.OwlGraph.readingFile
+  name: readingFile
+  nameWithType: OwlGraph.readingFile
+  fullName: alps_.net_api.OwlGraph.readingFile
+- uid: alps_.net_api.OwlGraph.findAllSubclasses*
+  commentId: Overload:alps_.net_api.OwlGraph.findAllSubclasses
+  name: findAllSubclasses
+  nameWithType: OwlGraph.findAllSubclasses
+  fullName: alps_.net_api.OwlGraph.findAllSubclasses
+- uid: alps_.net_api.TreeNode
+  commentId: T:alps_.net_api.TreeNode
+  parent: alps_.net_api
+  name: TreeNode
+  nameWithType: TreeNode
+  fullName: alps_.net_api.TreeNode
+- uid: System.Collections.Generic.List{alps_.net_api.TreeNode}
+  commentId: T:System.Collections.Generic.List{alps_.net_api.TreeNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TreeNode>
+  nameWithType: List<TreeNode>
+  fullName: System.Collections.Generic.List<alps_.net_api.TreeNode>
+  nameWithType.vb: List(Of TreeNode)
+  fullName.vb: System.Collections.Generic.List(Of alps_.net_api.TreeNode)
+  name.vb: List(Of TreeNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: alps_.net_api.TreeNode
+    name: TreeNode
+    nameWithType: TreeNode
+    fullName: alps_.net_api.TreeNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: alps_.net_api.TreeNode
+    name: TreeNode
+    nameWithType: TreeNode
+    fullName: alps_.net_api.TreeNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlGraph.hasSubNodes*
+  commentId: Overload:alps_.net_api.OwlGraph.hasSubNodes
+  name: hasSubNodes
+  nameWithType: OwlGraph.hasSubNodes
+  fullName: alps_.net_api.OwlGraph.hasSubNodes
+- uid: alps_.net_api.OwlGraph.findAllParentClasses*
+  commentId: Overload:alps_.net_api.OwlGraph.findAllParentClasses
+  name: findAllParentClasses
+  nameWithType: OwlGraph.findAllParentClasses
+  fullName: alps_.net_api.OwlGraph.findAllParentClasses
+- uid: alps_.net_api.OwlGraph.hasParentNode*
+  commentId: Overload:alps_.net_api.OwlGraph.hasParentNode
+  name: hasParentNode
+  nameWithType: OwlGraph.hasParentNode
+  fullName: alps_.net_api.OwlGraph.hasParentNode
+- uid: alps_.net_api.OwlGraph.creatingTree*
+  commentId: Overload:alps_.net_api.OwlGraph.creatingTree
+  name: creatingTree
+  nameWithType: OwlGraph.creatingTree
+  fullName: alps_.net_api.OwlGraph.creatingTree
+- uid: alps_.net_api.OwlGraph.findAllURI*
+  commentId: Overload:alps_.net_api.OwlGraph.findAllURI
+  name: findAllURI
+  nameWithType: OwlGraph.findAllURI
+  fullName: alps_.net_api.OwlGraph.findAllURI
+- uid: alps_.net_api.OwlGraph.findTopLayer*
+  commentId: Overload:alps_.net_api.OwlGraph.findTopLayer
+  name: findTopLayer
+  nameWithType: OwlGraph.findTopLayer
+  fullName: alps_.net_api.OwlGraph.findTopLayer
+- uid: alps_.net_api.OwlGraph.createTree*
+  commentId: Overload:alps_.net_api.OwlGraph.createTree
+  name: createTree
+  nameWithType: OwlGraph.createTree
+  fullName: alps_.net_api.OwlGraph.createTree

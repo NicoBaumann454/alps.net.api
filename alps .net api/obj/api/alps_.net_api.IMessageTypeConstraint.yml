@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.IMessageTypeConstraint
+  commentId: T:alps_.net_api.IMessageTypeConstraint
+  id: IMessageTypeConstraint
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.IMessageTypeConstraint.factoryMethod
+  - alps_.net_api.IMessageTypeConstraint.getMessageSpecification
+  - alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification(alps_.net_api.IMessageSpecification)
+  langs:
+  - csharp
+  - vb
+  name: IMessageTypeConstraint
+  nameWithType: IMessageTypeConstraint
+  fullName: alps_.net_api.IMessageTypeConstraint
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMessageTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: IMessageTypeConstraint
+    path: IMessageTypeConstraint.cs
+    startLine: 5
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the message type constraint class\n"
+  example: []
+  syntax:
+    content: 'public interface IMessageTypeConstraint : IInputPoolConstraint, IInteractionDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface IMessageTypeConstraint
+          Inherits IInputPoolConstraint
+  inheritedMembers:
+  - alps_.net_api.IInputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  - alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  - alps_.net_api.IInputPoolConstraint.setLimit(System.Int32)
+  - alps_.net_api.IInputPoolConstraint.getLimit
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification(alps_.net_api.IMessageSpecification)
+  commentId: M:alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification(alps_.net_api.IMessageSpecification)
+  id: setReferncesMessageSpecification(alps_.net_api.IMessageSpecification)
+  parent: alps_.net_api.IMessageTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: setReferncesMessageSpecification(IMessageSpecification)
+  nameWithType: IMessageTypeConstraint.setReferncesMessageSpecification(IMessageSpecification)
+  fullName: alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification(alps_.net_api.IMessageSpecification)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMessageTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setReferncesMessageSpecification
+    path: IMessageTypeConstraint.cs
+    startLine: 11
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void setReferncesMessageSpecification(IMessageSpecification messageSpecification)
+    parameters:
+    - id: messageSpecification
+      type: alps_.net_api.IMessageSpecification
+      description: ''
+    content.vb: Sub setReferncesMessageSpecification(messageSpecification As IMessageSpecification)
+  overload: alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification*
+- uid: alps_.net_api.IMessageTypeConstraint.getMessageSpecification
+  commentId: M:alps_.net_api.IMessageTypeConstraint.getMessageSpecification
+  id: getMessageSpecification
+  parent: alps_.net_api.IMessageTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: getMessageSpecification()
+  nameWithType: IMessageTypeConstraint.getMessageSpecification()
+  fullName: alps_.net_api.IMessageTypeConstraint.getMessageSpecification()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMessageTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getMessageSpecification
+    path: IMessageTypeConstraint.cs
+    startLine: 17
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: IMessageSpecification getMessageSpecification()
+    return:
+      type: alps_.net_api.IMessageSpecification
+      description: ''
+    content.vb: Function getMessageSpecification As IMessageSpecification
+  overload: alps_.net_api.IMessageTypeConstraint.getMessageSpecification*
+- uid: alps_.net_api.IMessageTypeConstraint.factoryMethod
+  commentId: M:alps_.net_api.IMessageTypeConstraint.factoryMethod
+  id: factoryMethod
+  parent: alps_.net_api.IMessageTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: factoryMethod()
+  nameWithType: IMessageTypeConstraint.factoryMethod()
+  fullName: alps_.net_api.IMessageTypeConstraint.factoryMethod()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMessageTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: factoryMethod
+    path: IMessageTypeConstraint.cs
+    startLine: 23
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: MessageTypeConstraint factoryMethod()
+    return:
+      type: alps_.net_api.MessageTypeConstraint
+      description: ''
+    content.vb: Function factoryMethod As MessageTypeConstraint
+  overload: alps_.net_api.IMessageTypeConstraint.factoryMethod*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.IInputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  commentId: M:alps_.net_api.IInputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  parent: alps_.net_api.IInputPoolConstraint
+  name: setHandlingStrategy(IInputPoolConstraintHandlingStrategy)
+  nameWithType: IInputPoolConstraint.setHandlingStrategy(IInputPoolConstraintHandlingStrategy)
+  fullName: alps_.net_api.IInputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  spec.csharp:
+  - uid: alps_.net_api.IInputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+    name: setHandlingStrategy
+    nameWithType: IInputPoolConstraint.setHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraint.setHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IInputPoolConstraintHandlingStrategy
+    name: IInputPoolConstraintHandlingStrategy
+    nameWithType: IInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraintHandlingStrategy
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IInputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+    name: setHandlingStrategy
+    nameWithType: IInputPoolConstraint.setHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraint.setHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IInputPoolConstraintHandlingStrategy
+    name: IInputPoolConstraintHandlingStrategy
+    nameWithType: IInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraintHandlingStrategy
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  commentId: M:alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  parent: alps_.net_api.IInputPoolConstraint
+  name: getInputPoolConstraintHandlingStrategy()
+  nameWithType: IInputPoolConstraint.getInputPoolConstraintHandlingStrategy()
+  fullName: alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy()
+  spec.csharp:
+  - uid: alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    name: getInputPoolConstraintHandlingStrategy
+    nameWithType: IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    name: getInputPoolConstraintHandlingStrategy
+    nameWithType: IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IInputPoolConstraint.setLimit(System.Int32)
+  commentId: M:alps_.net_api.IInputPoolConstraint.setLimit(System.Int32)
+  parent: alps_.net_api.IInputPoolConstraint
+  isExternal: true
+  name: setLimit(Int32)
+  nameWithType: IInputPoolConstraint.setLimit(Int32)
+  fullName: alps_.net_api.IInputPoolConstraint.setLimit(System.Int32)
+  spec.csharp:
+  - uid: alps_.net_api.IInputPoolConstraint.setLimit(System.Int32)
+    name: setLimit
+    nameWithType: IInputPoolConstraint.setLimit
+    fullName: alps_.net_api.IInputPoolConstraint.setLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IInputPoolConstraint.setLimit(System.Int32)
+    name: setLimit
+    nameWithType: IInputPoolConstraint.setLimit
+    fullName: alps_.net_api.IInputPoolConstraint.setLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IInputPoolConstraint.getLimit
+  commentId: M:alps_.net_api.IInputPoolConstraint.getLimit
+  parent: alps_.net_api.IInputPoolConstraint
+  name: getLimit()
+  nameWithType: IInputPoolConstraint.getLimit()
+  fullName: alps_.net_api.IInputPoolConstraint.getLimit()
+  spec.csharp:
+  - uid: alps_.net_api.IInputPoolConstraint.getLimit
+    name: getLimit
+    nameWithType: IInputPoolConstraint.getLimit
+    fullName: alps_.net_api.IInputPoolConstraint.getLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IInputPoolConstraint.getLimit
+    name: getLimit
+    nameWithType: IInputPoolConstraint.getLimit
+    fullName: alps_.net_api.IInputPoolConstraint.getLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IInputPoolConstraint
+  commentId: T:alps_.net_api.IInputPoolConstraint
+  parent: alps_.net_api
+  name: IInputPoolConstraint
+  nameWithType: IInputPoolConstraint
+  fullName: alps_.net_api.IInputPoolConstraint
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification*
+  commentId: Overload:alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification
+  name: setReferncesMessageSpecification
+  nameWithType: IMessageTypeConstraint.setReferncesMessageSpecification
+  fullName: alps_.net_api.IMessageTypeConstraint.setReferncesMessageSpecification
+- uid: alps_.net_api.IMessageSpecification
+  commentId: T:alps_.net_api.IMessageSpecification
+  parent: alps_.net_api
+  name: IMessageSpecification
+  nameWithType: IMessageSpecification
+  fullName: alps_.net_api.IMessageSpecification
+- uid: alps_.net_api.IMessageTypeConstraint.getMessageSpecification*
+  commentId: Overload:alps_.net_api.IMessageTypeConstraint.getMessageSpecification
+  name: getMessageSpecification
+  nameWithType: IMessageTypeConstraint.getMessageSpecification
+  fullName: alps_.net_api.IMessageTypeConstraint.getMessageSpecification
+- uid: alps_.net_api.IMessageTypeConstraint.factoryMethod*
+  commentId: Overload:alps_.net_api.IMessageTypeConstraint.factoryMethod
+  name: factoryMethod
+  nameWithType: IMessageTypeConstraint.factoryMethod
+  fullName: alps_.net_api.IMessageTypeConstraint.factoryMethod
+- uid: alps_.net_api.MessageTypeConstraint
+  commentId: T:alps_.net_api.MessageTypeConstraint
+  parent: alps_.net_api
+  name: MessageTypeConstraint
+  nameWithType: MessageTypeConstraint
+  fullName: alps_.net_api.MessageTypeConstraint

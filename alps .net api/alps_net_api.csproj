@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>alps.net_api</RootNamespace>
+    <AssemblyName>alps.net_api</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\alps.net_api.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotNetRDF, Version=2.7.0.0, Culture=neutral, PublicKeyToken=6055ffe4c97cc780, processorArchitecture=MSIL">
+      <HintPath>packages\dotNetRDF.2.7.0\lib\net40\dotNetRDF.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.31.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.11.31\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>packages\Serilog.2.10.0\lib\net46\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Console, Version=3.1.1.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>packages\Serilog.Sinks.Console.3.1.1\lib\net45\Serilog.Sinks.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>packages\Serilog.Sinks.File.4.1.0\lib\net45\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VDS.Common, Version=1.10.0.0, Culture=neutral, PublicKeyToken=ab5f4eb908061bf0, processorArchitecture=MSIL">
+      <HintPath>packages\VDS.Common.1.10.0\lib\net40-client\VDS.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractCommunicationChannel.cs" />
+    <Compile Include="AbstractDoState.cs" />
+    <Compile Include="AbstractLayer.cs" />
+    <Compile Include="AbstractMessageExchange.cs" />
+    <Compile Include="AbstractMultiSubject.cs" />
+    <Compile Include="AbstractPASSTransition.cs" />
+    <Compile Include="AbstractReceiveState.cs" />
+    <Compile Include="AbstractSendState.cs" />
+    <Compile Include="AbstractSingleSubject.cs" />
+    <Compile Include="AbstractState.cs" />
+    <Compile Include="AbstractSubject.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="ActorPlaceHolder.cs" />
+    <Compile Include="ALPSModelElement.cs" />
+    <Compile Include="ALPSSBDComponent.cs" />
+    <Compile Include="ALPSSIDComponent.cs" />
+    <Compile Include="BaseLayer.cs" />
+    <Compile Include="BehaviorDescriptionComponent.cs" />
+    <Compile Include="BiDirectionalCommunicationChannel.cs" />
+    <Compile Include="BuisnessDayTimerTransition.cs" />
+    <Compile Include="BuisnessDayTimerTransitionCondition.cs" />
+    <Compile Include="BusinessDayTimerTransitionCondition.cs" />
+    <Compile Include="CalenderBasedReminderTransition.cs" />
+    <Compile Include="CalenderBasedReminderTransitionCondition.cs" />
+    <Compile Include="ChoiceSegment.cs" />
+    <Compile Include="ChoiceSegmentPath.cs" />
+    <Compile Include="CommunicationAct.cs" />
+    <Compile Include="CommunicationRestriction.cs" />
+    <Compile Include="CommunicationTransition.cs" />
+    <Compile Include="CustomOrExternalDataTypeDefinition.cs" />
+    <Compile Include="DataDescribingComponent.cs" />
+    <Compile Include="DataMappingFunction.cs" />
+    <Compile Include="DataMappingIncomingToLocal.cs" />
+    <Compile Include="DataMappingLocalToOutgoing.cs" />
+    <Compile Include="DataObjectDefinition.cs" />
+    <Compile Include="DataObjectListDefiniton.cs" />
+    <Compile Include="DataTypeDefintion.cs" />
+    <Compile Include="DayTimerTransitionCondition.cs" />
+    <Compile Include="DayTimeTimerTransition.cs" />
+    <Compile Include="DayTimeTimerTransitionCondition.cs" />
+    <Compile Include="DoFunction.cs" />
+    <Compile Include="DoState.cs" />
+    <Compile Include="DoTransition.cs" />
+    <Compile Include="DoTransitionCondition.cs" />
+    <Compile Include="EndState.cs" />
+    <Compile Include="ExtensionBehavior.cs" />
+    <Compile Include="ExtensionLayer.cs" />
+    <Compile Include="FinalizedMessageExchange.cs" />
+    <Compile Include="FinalReceiveTransition.cs" />
+    <Compile Include="FinalSendTransition.cs" />
+    <Compile Include="FinalTransition.cs" />
+    <Compile Include="FinalTransitionType.cs" />
+    <Compile Include="FullySpecifiedSubject.cs" />
+    <Compile Include="FunctionSpecification.cs" />
+    <Compile Include="GeneralAbstractState.cs" />
+    <Compile Include="GenericReturnToOriginReference.cs" />
+    <Compile Include="GroupState.cs" />
+    <Compile Include="GuardBehavior.cs" />
+    <Compile Include="GuardLayer.cs" />
+    <Compile Include="GuardReceiveState.cs" />
+    <Compile Include="IAbstractCommunicationChannel.cs" />
+    <Compile Include="IAbstractDoState.cs" />
+    <Compile Include="IAbstractLayer.cs" />
+    <Compile Include="IAbstractMessageExchange.cs" />
+    <Compile Include="IAbstractMultiSubject.cs" />
+    <Compile Include="IAbstractPASSTransition.cs" />
+    <Compile Include="IAbstractReceiveState.cs" />
+    <Compile Include="IAbstractSendState.cs" />
+    <Compile Include="IAbstractSingleSubject.cs" />
+    <Compile Include="IAbstractState.cs" />
+    <Compile Include="IAbstractSubject.cs" />
+    <Compile Include="IAction.cs" />
+    <Compile Include="IActorPlaceHolder.cs" />
+    <Compile Include="IALPSModelElement.cs" />
+    <Compile Include="IALPSSBDComponent.cs" />
+    <Compile Include="IALPSSIDComponent.cs" />
+    <Compile Include="IBaseLayer.cs" />
+    <Compile Include="IBehaviorDescriptionComponent.cs" />
+    <Compile Include="IBiDirectionalCommunicationChannel.cs" />
+    <Compile Include="IBuisnessDayTimerTransition.cs" />
+    <Compile Include="IBusinessDayTimerTransitionCondition.cs" />
+    <Compile Include="ICalenderBasedReminderTransition.cs" />
+    <Compile Include="ICalenderBasedReminderTransitionCondition.cs" />
+    <Compile Include="IChoiceSegment.cs" />
+    <Compile Include="IChoiceSegmentPath.cs" />
+    <Compile Include="ICommunicationAct.cs" />
+    <Compile Include="ICommunicationRestriction.cs" />
+    <Compile Include="ICommunicationTransition.cs" />
+    <Compile Include="ICustomOrExternalDataTypeDefintion.cs" />
+    <Compile Include="IDataDescribingComponent.cs" />
+    <Compile Include="IDataMappingFunction.cs" />
+    <Compile Include="IDataMappingIncomingToLocal.cs" />
+    <Compile Include="IDataMappingLocalToOutgoing.cs" />
+    <Compile Include="IDataObjectDefiniton.cs" />
+    <Compile Include="IDataObjectListDefiniton.cs" />
+    <Compile Include="IDataTypeDefintion.cs" />
+    <Compile Include="IDayTimerTransitionCondition.cs" />
+    <Compile Include="IDayTimeTimerTransition.cs" />
+    <Compile Include="IDayTimeTimerTransitionCondition.cs" />
+    <Compile Include="IDoFunction.cs" />
+    <Compile Include="IDoState.cs" />
+    <Compile Include="IDoTransition.cs" />
+    <Compile Include="IDoTransitionCondition.cs" />
+    <Compile Include="IEndState.cs" />
+    <Compile Include="IExtensionBehavior.cs" />
+    <Compile Include="IExtensionLayer.cs" />
+    <Compile Include="IFinalizedMessageExchange.cs" />
+    <Compile Include="IFinalReceiveTransition.cs" />
+    <Compile Include="IFinalSendTransition.cs" />
+    <Compile Include="IFinalTransition.cs" />
+    <Compile Include="IFinalTransitionType.cs" />
+    <Compile Include="IFullySpecifiedSubject.cs" />
+    <Compile Include="IFunctionSpecification.cs" />
+    <Compile Include="IGeneralAbstractState.cs" />
+    <Compile Include="IGenericReturnToOriginRefrence.cs" />
+    <Compile Include="IGroupState.cs" />
+    <Compile Include="IGuardBehavior.cs" />
+    <Compile Include="IGuardLayer.cs" />
+    <Compile Include="IInitialStateOfBehavior.cs" />
+    <Compile Include="IInitialstateOfChoiceSegmentPath.cs" />
+    <Compile Include="IInputPoolConstraint.cs" />
+    <Compile Include="IInputPoolConstraintHandlingStrategy.cs" />
+    <Compile Include="IInteractionDescriptionComponent.cs" />
+    <Compile Include="IInterfaceSubject.cs" />
+    <Compile Include="IJSONDataTypeDefintion.cs" />
+    <Compile Include="ILayeredPassProcessModel.cs" />
+    <Compile Include="IMacroBehavior.cs" />
+    <Compile Include="IMacroLayer.cs" />
+    <Compile Include="IMacroState.cs" />
+    <Compile Include="IMandatoryToEndChoiceSegmentPath.cs" />
+    <Compile Include="IMandatoryToStartChoiceSegmentPath.cs" />
+    <Compile Include="IMessageExchange.cs" />
+    <Compile Include="IMessageExchangeCondition.cs" />
+    <Compile Include="IMessageExchangeList.cs" />
+    <Compile Include="IMessageSenderTypeConstraint.cs" />
+    <Compile Include="IMessageSpecification.cs" />
+    <Compile Include="IMessageTypeConstraint.cs" />
+    <Compile Include="IModelBuiltInDataTypes.cs" />
+    <Compile Include="IModelLayer.cs" />
+    <Compile Include="IMultiSubject.cs" />
+    <Compile Include="InitialStateOfBehavior.cs" />
+    <Compile Include="InitialStateOfChoiceSegmentPath.cs" />
+    <Compile Include="InputPoolConstraint.cs" />
+    <Compile Include="InputPoolConstraintHandlingStrategy.cs" />
+    <Compile Include="InteractionDescriptionComponent.cs" />
+    <Compile Include="InterfaceSubject.cs" />
+    <Compile Include="IOptionalToEndChoiceSegmentPath.cs" />
+    <Compile Include="IOptionalToStartChoiceSegmentPath.cs" />
+    <Compile Include="IOWLDataTypeDefintion.cs" />
+    <Compile Include="IPassProcessModell.cs" />
+    <Compile Include="IPASSProcessModellElement.cs" />
+    <Compile Include="IPayloadDescription.cs" />
+    <Compile Include="IPrecedenceReceiveTransition.cs" />
+    <Compile Include="IPrecedenceTransition.cs" />
+    <Compile Include="IPrecedenceTransitionType.cs" />
+    <Compile Include="IReceiveFunction.cs" />
+    <Compile Include="IReceiveState.cs" />
+    <Compile Include="IReceiveTransition.cs" />
+    <Compile Include="IReceiveTransitionCondition.cs" />
+    <Compile Include="IReceiveType.cs" />
+    <Compile Include="IReminderEventTransitionCondition.cs" />
+    <Compile Include="IReminderTransition.cs" />
+    <Compile Include="ISenderTypeConstraint.cs" />
+    <Compile Include="ISendFunction.cs" />
+    <Compile Include="ISendingFailedCondition.cs" />
+    <Compile Include="ISendingFailedTransition.cs" />
+    <Compile Include="ISendState.cs" />
+    <Compile Include="ISendTransition.cs" />
+    <Compile Include="ISendTransitionCondition.cs" />
+    <Compile Include="ISendType.cs" />
+    <Compile Include="ISingleSubject.cs" />
+    <Compile Include="IStandartPASSState.cs" />
+    <Compile Include="IStartSubject.cs" />
+    <Compile Include="IState.cs" />
+    <Compile Include="IStatePlaceholder.cs" />
+    <Compile Include="IStateReference.cs" />
+    <Compile Include="ISubject.cs" />
+    <Compile Include="ISubjectBaseBehavior.cs" />
+    <Compile Include="ISubjectBehavior.cs" />
+    <Compile Include="ISubjectDataDefinition.cs" />
+    <Compile Include="ISubjectExtension.cs" />
+    <Compile Include="ITimeBasedReminderTransition.cs" />
+    <Compile Include="ITimeBasedReminderTransitionCondition.cs" />
+    <Compile Include="ITimerTransition.cs" />
+    <Compile Include="ITimerTransitionCondition.cs" />
+    <Compile Include="ITimeTransition.cs" />
+    <Compile Include="ITimeTransitionCondition.cs" />
+    <Compile Include="ITransition.cs" />
+    <Compile Include="ITransitionCondition.cs" />
+    <Compile Include="ITriggerReceiveTransition.cs" />
+    <Compile Include="ITriggerSendTransition.cs" />
+    <Compile Include="ITriggerTransition.cs" />
+    <Compile Include="ITriggerTransitionType.cs" />
+    <Compile Include="IUniDirectionalCommunicationChannel.cs" />
+    <Compile Include="IUserCancelTransition.cs" />
+    <Compile Include="IXSDDataTypeDefintion.cs" />
+    <Compile Include="IYearMonthTimerTransition.cs" />
+    <Compile Include="IYearMonthTimerTransitionCondition.cs" />
+    <Compile Include="JSONDataTypeDefintion.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="LayeredPASSProcessModel.cs" />
+    <Compile Include="MacroBehavior.cs" />
+    <Compile Include="MacroLayer.cs" />
+    <Compile Include="MacroState.cs" />
+    <Compile Include="MandatoryToEndChoiceSegment.cs" />
+    <Compile Include="MandatoryToStartChoiceSegment.cs" />
+    <Compile Include="MessageExchange.cs" />
+    <Compile Include="MessageExchangeCondition.cs" />
+    <Compile Include="MessageExchangeList.cs" />
+    <Compile Include="MessageSenderTypeConstraint.cs" />
+    <Compile Include="MessageSpecification.cs" />
+    <Compile Include="MessageTypeConstraint.cs" />
+    <Compile Include="ModelBuiltInDataTypes.cs" />
+    <Compile Include="ModelLayer.cs" />
+    <Compile Include="MultiSubject.cs" />
+    <Compile Include="OptionalToEndChoiceSegmentPath.cs" />
+    <Compile Include="OptionalToStartChoiceSegmentPath.cs" />
+    <Compile Include="OWLDataTypeDefintion.cs" />
+    <Compile Include="OwlGraph.cs" />
+    <Compile Include="OwlThing.cs" />
+    <Compile Include="PASSProcessModelElement.cs" />
+    <Compile Include="PassProcessModel.cs" />
+    <Compile Include="PayloadDataObjectDefinition.cs" />
+    <Compile Include="PayloadDescription.cs" />
+    <Compile Include="PrecedenceReceiveTransition.cs" />
+    <Compile Include="PrecedenceSendTransition.cs" />
+    <Compile Include="PrecedenceTransition.cs" />
+    <Compile Include="PrecedenceTransitionType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiveFunction.cs" />
+    <Compile Include="ReceiveState.cs" />
+    <Compile Include="ReceiveTransition.cs" />
+    <Compile Include="ReceiveTransitionCondition.cs" />
+    <Compile Include="ReceiveType.cs" />
+    <Compile Include="ReminderEventTransitionCondition.cs" />
+    <Compile Include="ReminderTransition.cs" />
+    <Compile Include="SenderTypeConstraint.cs" />
+    <Compile Include="SendFunction.cs" />
+    <Compile Include="SendingFailedCondition.cs" />
+    <Compile Include="SendingFailedTransition.cs" />
+    <Compile Include="SendState.cs" />
+    <Compile Include="SendTransition.cs" />
+    <Compile Include="SendTransitionCondition.cs" />
+    <Compile Include="SendType.cs" />
+    <Compile Include="SingleSubject.cs" />
+    <Compile Include="StandartPASSState.cs" />
+    <Compile Include="StartSubject.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="StatePlaceholder.cs" />
+    <Compile Include="StateReference.cs" />
+    <Compile Include="Subject.cs" />
+    <Compile Include="SubjectBaseBehavior.cs" />
+    <Compile Include="SubjectBehavior.cs" />
+    <Compile Include="SubjectDataDefinition.cs" />
+    <Compile Include="SubjectExtension.cs" />
+    <Compile Include="TimeBasedReminderTransition.cs" />
+    <Compile Include="TimeBasedReminderTransitionCondition.cs" />
+    <Compile Include="TimerTransition.cs" />
+    <Compile Include="TimerTransitionCondition.cs" />
+    <Compile Include="TimeTransition.cs" />
+    <Compile Include="TimeTransitionCondition.cs" />
+    <Compile Include="Transition.cs" />
+    <Compile Include="TransitionCondition.cs" />
+    <Compile Include="Tree.cs" />
+    <Compile Include="TreeNode.cs" />
+    <Compile Include="TriggerReceiveTransition.cs" />
+    <Compile Include="TriggerSendTransition.cs" />
+    <Compile Include="TriggerTransition.cs" />
+    <Compile Include="TriggerTransitionType.cs" />
+    <Compile Include="UniDirectionalCommunicationChannel.cs" />
+    <Compile Include="UserCancelTransition.cs" />
+    <Compile Include="XSDDataTypeDefintion.cs" />
+    <Compile Include="YearMonthTimerTransition.cs" />
+    <Compile Include="YearMonthTimerTransitionCondition.cs" />
+    <Compile Include="YearMonthTimerTransitionConditions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,2123 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.SenderTypeConstraint
+  commentId: T:alps_.net_api.SenderTypeConstraint
+  id: SenderTypeConstraint
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.SenderTypeConstraint.#ctor
+  - alps_.net_api.SenderTypeConstraint.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.InputPoolConstraintHandlingStrategy,System.Int32,alps_.net_api.Subject)
+  - alps_.net_api.SenderTypeConstraint.className
+  - alps_.net_api.SenderTypeConstraint.completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  - alps_.net_api.SenderTypeConstraint.factoryMethod
+  - alps_.net_api.SenderTypeConstraint.getReferenceSubject
+  - alps_.net_api.SenderTypeConstraint.getTmpSubject
+  - alps_.net_api.SenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  langs:
+  - csharp
+  - vb
+  name: SenderTypeConstraint
+  nameWithType: SenderTypeConstraint
+  fullName: alps_.net_api.SenderTypeConstraint
+  type: Class
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: SenderTypeConstraint
+    path: SenderTypeConstraint.cs
+    startLine: 7
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nClass that represents a sender type constraint\n"
+  example: []
+  syntax:
+    content: 'public class SenderTypeConstraint : InputPoolConstraint, ISenderTypeConstraint, IInputPoolConstraint, IInteractionDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Class SenderTypeConstraint
+          Inherits InputPoolConstraint
+          Implements ISenderTypeConstraint, IInputPoolConstraint, IInteractionDescriptionComponent, IPASSProcessModellElement, IOwlThing
+  inheritance:
+  - System.Object
+  - alps_.net_api.OwlThing
+  - alps_.net_api.PASSProcessModelElement
+  - alps_.net_api.InteractionDescriptionComponent
+  - alps_.net_api.InputPoolConstraint
+  implements:
+  - alps_.net_api.ISenderTypeConstraint
+  - alps_.net_api.IInputPoolConstraint
+  - alps_.net_api.IInteractionDescriptionComponent
+  - alps_.net_api.IPASSProcessModellElement
+  - alps_.net_api.IOwlThing
+  inheritedMembers:
+  - alps_.net_api.InputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  - alps_.net_api.InputPoolConstraint.setLimit(System.Int32)
+  - alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  - alps_.net_api.InputPoolConstraint.getLimit
+  - alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+  - alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  - alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  - alps_.net_api.PASSProcessModelElement.getModelComponentID
+  - alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  - alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  - alps_.net_api.PASSProcessModelElement.getComment
+  - alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  - alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+  - alps_.net_api.PASSProcessModelElement.getAttributes
+  - alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  - alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  - alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  - alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+  - alps_.net_api.OwlThing.setType(System.String)
+  - alps_.net_api.OwlThing.getType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: alps_.net_api.SenderTypeConstraint.className
+  commentId: F:alps_.net_api.SenderTypeConstraint.className
+  id: className
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: className
+  nameWithType: SenderTypeConstraint.className
+  fullName: alps_.net_api.SenderTypeConstraint.className
+  type: Field
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: className
+    path: SenderTypeConstraint.cs
+    startLine: 14
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nName of the class\n"
+  example: []
+  syntax:
+    content: public const string className = "SenderTypeConstraint"
+    return:
+      type: System.String
+    content.vb: Public Const className As String = "SenderTypeConstraint"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: alps_.net_api.SenderTypeConstraint.#ctor
+  commentId: M:alps_.net_api.SenderTypeConstraint.#ctor
+  id: '#ctor'
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: SenderTypeConstraint()
+  nameWithType: SenderTypeConstraint.SenderTypeConstraint()
+  fullName: alps_.net_api.SenderTypeConstraint.SenderTypeConstraint()
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: SenderTypeConstraint.cs
+    startLine: 19
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nConstructor that creates a new empty instance of the sender type constraint class\n"
+  example: []
+  syntax:
+    content: public SenderTypeConstraint()
+    content.vb: Public Sub New
+  overload: alps_.net_api.SenderTypeConstraint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.SenderTypeConstraint.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.InputPoolConstraintHandlingStrategy,System.Int32,alps_.net_api.Subject)
+  commentId: M:alps_.net_api.SenderTypeConstraint.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.InputPoolConstraintHandlingStrategy,System.Int32,alps_.net_api.Subject)
+  id: '#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.InputPoolConstraintHandlingStrategy,System.Int32,alps_.net_api.Subject)'
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: SenderTypeConstraint(List<String>, String, List<String>, String, InputPoolConstraintHandlingStrategy, Int32, Subject)
+  nameWithType: SenderTypeConstraint.SenderTypeConstraint(List<String>, String, List<String>, String, InputPoolConstraintHandlingStrategy, Int32, Subject)
+  fullName: alps_.net_api.SenderTypeConstraint.SenderTypeConstraint(System.Collections.Generic.List<System.String>, System.String, System.Collections.Generic.List<System.String>, System.String, alps_.net_api.InputPoolConstraintHandlingStrategy, System.Int32, alps_.net_api.Subject)
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: SenderTypeConstraint.cs
+    startLine: 35
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nConstructor that creates a new fully specified instance of the sender type constraint class\n"
+  example: []
+  syntax:
+    content: public SenderTypeConstraint(List<string> additionalAttribute, string modelComponentID, List<string> modelComponentLabel, string comment, InputPoolConstraintHandlingStrategy inputPoolConstraintHandlingStrategy, int limit, Subject subject)
+    parameters:
+    - id: additionalAttribute
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    - id: modelComponentID
+      type: System.String
+      description: ''
+    - id: modelComponentLabel
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    - id: comment
+      type: System.String
+      description: ''
+    - id: inputPoolConstraintHandlingStrategy
+      type: alps_.net_api.InputPoolConstraintHandlingStrategy
+      description: ''
+    - id: limit
+      type: System.Int32
+      description: ''
+    - id: subject
+      type: alps_.net_api.Subject
+      description: ''
+    content.vb: Public Sub New(additionalAttribute As List(Of String), modelComponentID As String, modelComponentLabel As List(Of String), comment As String, inputPoolConstraintHandlingStrategy As InputPoolConstraintHandlingStrategy, limit As Integer, subject As Subject)
+  overload: alps_.net_api.SenderTypeConstraint.#ctor*
+  nameWithType.vb: SenderTypeConstraint.SenderTypeConstraint(List(Of String), String, List(Of String), String, InputPoolConstraintHandlingStrategy, Int32, Subject)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: alps_.net_api.SenderTypeConstraint.SenderTypeConstraint(System.Collections.Generic.List(Of System.String), System.String, System.Collections.Generic.List(Of System.String), System.String, alps_.net_api.InputPoolConstraintHandlingStrategy, System.Int32, alps_.net_api.Subject)
+  name.vb: SenderTypeConstraint(List(Of String), String, List(Of String), String, InputPoolConstraintHandlingStrategy, Int32, Subject)
+- uid: alps_.net_api.SenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  commentId: M:alps_.net_api.SenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  id: setReferencesSubject(alps_.net_api.ISubject)
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: setReferencesSubject(ISubject)
+  nameWithType: SenderTypeConstraint.setReferencesSubject(ISubject)
+  fullName: alps_.net_api.SenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setReferencesSubject
+    path: SenderTypeConstraint.cs
+    startLine: 50
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: public void setReferencesSubject(ISubject subject)
+    parameters:
+    - id: subject
+      type: alps_.net_api.ISubject
+      description: ''
+    content.vb: Public Sub setReferencesSubject(subject As ISubject)
+  overload: alps_.net_api.SenderTypeConstraint.setReferencesSubject*
+  implements:
+  - alps_.net_api.ISenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.SenderTypeConstraint.getReferenceSubject
+  commentId: M:alps_.net_api.SenderTypeConstraint.getReferenceSubject
+  id: getReferenceSubject
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: getReferenceSubject()
+  nameWithType: SenderTypeConstraint.getReferenceSubject()
+  fullName: alps_.net_api.SenderTypeConstraint.getReferenceSubject()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getReferenceSubject
+    path: SenderTypeConstraint.cs
+    startLine: 59
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: public ISubject getReferenceSubject()
+    return:
+      type: alps_.net_api.ISubject
+      description: The subject attribute of the instance
+    content.vb: Public Function getReferenceSubject As ISubject
+  overload: alps_.net_api.SenderTypeConstraint.getReferenceSubject*
+  implements:
+  - alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.SenderTypeConstraint.getTmpSubject
+  commentId: M:alps_.net_api.SenderTypeConstraint.getTmpSubject
+  id: getTmpSubject
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: getTmpSubject()
+  nameWithType: SenderTypeConstraint.getTmpSubject()
+  fullName: alps_.net_api.SenderTypeConstraint.getTmpSubject()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getTmpSubject
+    path: SenderTypeConstraint.cs
+    startLine: 68
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public string getTmpSubject()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function getTmpSubject As String
+  overload: alps_.net_api.SenderTypeConstraint.getTmpSubject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.SenderTypeConstraint.factoryMethod
+  commentId: M:alps_.net_api.SenderTypeConstraint.factoryMethod
+  id: factoryMethod
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: factoryMethod()
+  nameWithType: SenderTypeConstraint.factoryMethod()
+  fullName: alps_.net_api.SenderTypeConstraint.factoryMethod()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: factoryMethod
+    path: SenderTypeConstraint.cs
+    startLine: 77
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nFactory method that creates and returns a empty instance of the sender type constraint class\n"
+  example: []
+  syntax:
+    content: public SenderTypeConstraint factoryMethod()
+    return:
+      type: alps_.net_api.SenderTypeConstraint
+      description: A empty instance of the sender type constraint class
+    content.vb: Public Function factoryMethod As SenderTypeConstraint
+  overload: alps_.net_api.SenderTypeConstraint.factoryMethod*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.SenderTypeConstraint.completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  commentId: M:alps_.net_api.SenderTypeConstraint.completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  id: completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  parent: alps_.net_api.SenderTypeConstraint
+  langs:
+  - csharp
+  - vb
+  name: completeObject(ref Dictionary<String, PASSProcessModelElement>, ref List<String>)
+  nameWithType: SenderTypeConstraint.completeObject(ref Dictionary<String, PASSProcessModelElement>, ref List<String>)
+  fullName: alps_.net_api.SenderTypeConstraint.completeObject(ref System.Collections.Generic.Dictionary<System.String, alps_.net_api.PASSProcessModelElement>, ref System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/SenderTypeConstraint.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: completeObject
+    path: SenderTypeConstraint.cs
+    startLine: 90
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take \n"
+  example: []
+  syntax:
+    content: public void completeObject(ref Dictionary<string, PASSProcessModelElement> allElements, ref List<string> tmp)
+    parameters:
+    - id: allElements
+      type: System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}
+      description: ''
+    - id: tmp
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    content.vb: Public Sub completeObject(ByRef allElements As Dictionary(Of String, PASSProcessModelElement), ByRef tmp As List(Of String))
+  overload: alps_.net_api.SenderTypeConstraint.completeObject*
+  nameWithType.vb: SenderTypeConstraint.completeObject(ByRef Dictionary(Of String, PASSProcessModelElement), ByRef List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: alps_.net_api.SenderTypeConstraint.completeObject(ByRef System.Collections.Generic.Dictionary(Of System.String, alps_.net_api.PASSProcessModelElement), ByRef System.Collections.Generic.List(Of System.String))
+  name.vb: completeObject(ByRef Dictionary(Of String, PASSProcessModelElement), ByRef List(Of String))
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: alps_.net_api.OwlThing
+  commentId: T:alps_.net_api.OwlThing
+  parent: alps_.net_api
+  name: OwlThing
+  nameWithType: OwlThing
+  fullName: alps_.net_api.OwlThing
+- uid: alps_.net_api.PASSProcessModelElement
+  commentId: T:alps_.net_api.PASSProcessModelElement
+  parent: alps_.net_api
+  name: PASSProcessModelElement
+  nameWithType: PASSProcessModelElement
+  fullName: alps_.net_api.PASSProcessModelElement
+- uid: alps_.net_api.InteractionDescriptionComponent
+  commentId: T:alps_.net_api.InteractionDescriptionComponent
+  parent: alps_.net_api
+  name: InteractionDescriptionComponent
+  nameWithType: InteractionDescriptionComponent
+  fullName: alps_.net_api.InteractionDescriptionComponent
+- uid: alps_.net_api.InputPoolConstraint
+  commentId: T:alps_.net_api.InputPoolConstraint
+  parent: alps_.net_api
+  name: InputPoolConstraint
+  nameWithType: InputPoolConstraint
+  fullName: alps_.net_api.InputPoolConstraint
+- uid: alps_.net_api.ISenderTypeConstraint
+  commentId: T:alps_.net_api.ISenderTypeConstraint
+  parent: alps_.net_api
+  name: ISenderTypeConstraint
+  nameWithType: ISenderTypeConstraint
+  fullName: alps_.net_api.ISenderTypeConstraint
+- uid: alps_.net_api.IInputPoolConstraint
+  commentId: T:alps_.net_api.IInputPoolConstraint
+  parent: alps_.net_api
+  name: IInputPoolConstraint
+  nameWithType: IInputPoolConstraint
+  fullName: alps_.net_api.IInputPoolConstraint
+- uid: alps_.net_api.IInteractionDescriptionComponent
+  commentId: T:alps_.net_api.IInteractionDescriptionComponent
+  parent: alps_.net_api
+  name: IInteractionDescriptionComponent
+  nameWithType: IInteractionDescriptionComponent
+  fullName: alps_.net_api.IInteractionDescriptionComponent
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IOwlThing
+  commentId: T:alps_.net_api.IOwlThing
+  parent: alps_.net_api
+  name: IOwlThing
+  nameWithType: IOwlThing
+  fullName: alps_.net_api.IOwlThing
+- uid: alps_.net_api.InputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  commentId: M:alps_.net_api.InputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  parent: alps_.net_api.InputPoolConstraint
+  name: setHandlingStrategy(IInputPoolConstraintHandlingStrategy)
+  nameWithType: InputPoolConstraint.setHandlingStrategy(IInputPoolConstraintHandlingStrategy)
+  fullName: alps_.net_api.InputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+  spec.csharp:
+  - uid: alps_.net_api.InputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+    name: setHandlingStrategy
+    nameWithType: InputPoolConstraint.setHandlingStrategy
+    fullName: alps_.net_api.InputPoolConstraint.setHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IInputPoolConstraintHandlingStrategy
+    name: IInputPoolConstraintHandlingStrategy
+    nameWithType: IInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraintHandlingStrategy
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.InputPoolConstraint.setHandlingStrategy(alps_.net_api.IInputPoolConstraintHandlingStrategy)
+    name: setHandlingStrategy
+    nameWithType: InputPoolConstraint.setHandlingStrategy
+    fullName: alps_.net_api.InputPoolConstraint.setHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IInputPoolConstraintHandlingStrategy
+    name: IInputPoolConstraintHandlingStrategy
+    nameWithType: IInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.IInputPoolConstraintHandlingStrategy
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.InputPoolConstraint.setLimit(System.Int32)
+  commentId: M:alps_.net_api.InputPoolConstraint.setLimit(System.Int32)
+  parent: alps_.net_api.InputPoolConstraint
+  isExternal: true
+  name: setLimit(Int32)
+  nameWithType: InputPoolConstraint.setLimit(Int32)
+  fullName: alps_.net_api.InputPoolConstraint.setLimit(System.Int32)
+  spec.csharp:
+  - uid: alps_.net_api.InputPoolConstraint.setLimit(System.Int32)
+    name: setLimit
+    nameWithType: InputPoolConstraint.setLimit
+    fullName: alps_.net_api.InputPoolConstraint.setLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.InputPoolConstraint.setLimit(System.Int32)
+    name: setLimit
+    nameWithType: InputPoolConstraint.setLimit
+    fullName: alps_.net_api.InputPoolConstraint.setLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  commentId: M:alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  parent: alps_.net_api.InputPoolConstraint
+  name: getInputPoolConstraintHandlingStrategy()
+  nameWithType: InputPoolConstraint.getInputPoolConstraintHandlingStrategy()
+  fullName: alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy()
+  spec.csharp:
+  - uid: alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    name: getInputPoolConstraintHandlingStrategy
+    nameWithType: InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    name: getInputPoolConstraintHandlingStrategy
+    nameWithType: InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.InputPoolConstraint.getInputPoolConstraintHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.InputPoolConstraint.getLimit
+  commentId: M:alps_.net_api.InputPoolConstraint.getLimit
+  parent: alps_.net_api.InputPoolConstraint
+  name: getLimit()
+  nameWithType: InputPoolConstraint.getLimit()
+  fullName: alps_.net_api.InputPoolConstraint.getLimit()
+  spec.csharp:
+  - uid: alps_.net_api.InputPoolConstraint.getLimit
+    name: getLimit
+    nameWithType: InputPoolConstraint.getLimit
+    fullName: alps_.net_api.InputPoolConstraint.getLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.InputPoolConstraint.getLimit
+    name: getLimit
+    nameWithType: InputPoolConstraint.getLimit
+    fullName: alps_.net_api.InputPoolConstraint.getLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+  commentId: M:alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+  parent: alps_.net_api.InputPoolConstraint
+  name: getTmpInputPoolConstraintHandlingStrategy()
+  nameWithType: InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy()
+  fullName: alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy()
+  spec.csharp:
+  - uid: alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+    name: getTmpInputPoolConstraintHandlingStrategy
+    nameWithType: InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+    name: getTmpInputPoolConstraintHandlingStrategy
+    nameWithType: InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+    fullName: alps_.net_api.InputPoolConstraint.getTmpInputPoolConstraintHandlingStrategy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.InteractionDescriptionComponent
+  isExternal: true
+  name: createInstance(List<String>, List<String>)
+  nameWithType: InteractionDescriptionComponent.createInstance(List<String>, List<String>)
+  fullName: alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List<System.String>, System.Collections.Generic.List<System.String>)
+  nameWithType.vb: InteractionDescriptionComponent.createInstance(List(Of String), List(Of String))
+  fullName.vb: alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List(Of System.String), System.Collections.Generic.List(Of System.String))
+  name.vb: createInstance(List(Of String), List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+    name: createInstance
+    nameWithType: InteractionDescriptionComponent.createInstance
+    fullName: alps_.net_api.InteractionDescriptionComponent.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.InteractionDescriptionComponent.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+    name: createInstance
+    nameWithType: InteractionDescriptionComponent.createInstance
+    fullName: alps_.net_api.InteractionDescriptionComponent.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: PASSProcessModelElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: PASSProcessModelElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: PASSProcessModelElement.setAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: PASSProcessModelElement.setAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getAdditionalAttribute()
+  nameWithType: PASSProcessModelElement.getAdditionalAttribute()
+  fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: PASSProcessModelElement.getAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: PASSProcessModelElement.getAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: PASSProcessModelElement.setModelComponentID(String)
+  fullName: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: PASSProcessModelElement.setModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: PASSProcessModelElement.setModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getModelComponentID
+  commentId: M:alps_.net_api.PASSProcessModelElement.getModelComponentID
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getModelComponentID()
+  nameWithType: PASSProcessModelElement.getModelComponentID()
+  fullName: alps_.net_api.PASSProcessModelElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: PASSProcessModelElement.getModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: PASSProcessModelElement.getModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: PASSProcessModelElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: PASSProcessModelElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: PASSProcessModelElement.setModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: PASSProcessModelElement.setModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  commentId: M:alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getModelComponentLabel()
+  nameWithType: PASSProcessModelElement.getModelComponentLabel()
+  fullName: alps_.net_api.PASSProcessModelElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: PASSProcessModelElement.getModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: PASSProcessModelElement.getModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: PASSProcessModelElement.setComment(String)
+  fullName: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+    name: setComment
+    nameWithType: PASSProcessModelElement.setComment
+    fullName: alps_.net_api.PASSProcessModelElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+    name: setComment
+    nameWithType: PASSProcessModelElement.setComment
+    fullName: alps_.net_api.PASSProcessModelElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getComment
+  commentId: M:alps_.net_api.PASSProcessModelElement.getComment
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getComment()
+  nameWithType: PASSProcessModelElement.getComment()
+  fullName: alps_.net_api.PASSProcessModelElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getComment
+    name: getComment
+    nameWithType: PASSProcessModelElement.getComment
+    fullName: alps_.net_api.PASSProcessModelElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getComment
+    name: getComment
+    nameWithType: PASSProcessModelElement.getComment
+    fullName: alps_.net_api.PASSProcessModelElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setAdditionalAttributeType(List<String>)
+  nameWithType: PASSProcessModelElement.setAdditionalAttributeType(List<String>)
+  fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: PASSProcessModelElement.setAdditionalAttributeType(List(Of String))
+  fullName.vb: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttributeType(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.setAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.setAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  commentId: M:alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getAdditionalAttributeType()
+  nameWithType: PASSProcessModelElement.getAdditionalAttributeType()
+  fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+    name: getAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.getAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+    name: getAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.getAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: addAttribute(String, String)
+  nameWithType: PASSProcessModelElement.addAttribute(String, String)
+  fullName: alps_.net_api.PASSProcessModelElement.addAttribute(System.String, System.String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+    name: addAttribute
+    nameWithType: PASSProcessModelElement.addAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.addAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+    name: addAttribute
+    nameWithType: PASSProcessModelElement.addAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.addAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getAttributes
+  commentId: M:alps_.net_api.PASSProcessModelElement.getAttributes
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getAttributes()
+  nameWithType: PASSProcessModelElement.getAttributes()
+  fullName: alps_.net_api.PASSProcessModelElement.getAttributes()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getAttributes
+    name: getAttributes
+    nameWithType: PASSProcessModelElement.getAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getAttributes
+    name: getAttributes
+    nameWithType: PASSProcessModelElement.getAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  commentId: M:alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getSingleAttribute()
+  nameWithType: PASSProcessModelElement.getSingleAttribute()
+  fullName: alps_.net_api.PASSProcessModelElement.getSingleAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+    name: getSingleAttribute
+    nameWithType: PASSProcessModelElement.getSingleAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+    name: getSingleAttribute
+    nameWithType: PASSProcessModelElement.getSingleAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  commentId: M:alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getMultiAttributes()
+  nameWithType: PASSProcessModelElement.getMultiAttributes()
+  fullName: alps_.net_api.PASSProcessModelElement.getMultiAttributes()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+    name: getMultiAttributes
+    nameWithType: PASSProcessModelElement.getMultiAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+    name: getMultiAttributes
+    nameWithType: PASSProcessModelElement.getMultiAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  commentId: M:alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  parent: alps_.net_api.PASSProcessModelElement
+  name: emptyAdditionalAttribute()
+  nameWithType: PASSProcessModelElement.emptyAdditionalAttribute()
+  fullName: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+    name: emptyAdditionalAttribute
+    nameWithType: PASSProcessModelElement.emptyAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+    name: emptyAdditionalAttribute
+    nameWithType: PASSProcessModelElement.emptyAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: createInstance(List<String>, String, List<String>, String)
+  nameWithType: PASSProcessModelElement.createInstance(List<String>, String, List<String>, String)
+  fullName: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List<System.String>, System.String, System.Collections.Generic.List<System.String>, System.String)
+  nameWithType.vb: PASSProcessModelElement.createInstance(List(Of String), String, List(Of String), String)
+  fullName.vb: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List(Of System.String), System.String, System.Collections.Generic.List(Of System.String), System.String)
+  name.vb: createInstance(List(Of String), String, List(Of String), String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+    name: createInstance
+    nameWithType: PASSProcessModelElement.createInstance
+    fullName: alps_.net_api.PASSProcessModelElement.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+    name: createInstance
+    nameWithType: PASSProcessModelElement.createInstance
+    fullName: alps_.net_api.PASSProcessModelElement.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlThing.setType(System.String)
+  commentId: M:alps_.net_api.OwlThing.setType(System.String)
+  parent: alps_.net_api.OwlThing
+  isExternal: true
+  name: setType(String)
+  nameWithType: OwlThing.setType(String)
+  fullName: alps_.net_api.OwlThing.setType(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.OwlThing.setType(System.String)
+    name: setType
+    nameWithType: OwlThing.setType
+    fullName: alps_.net_api.OwlThing.setType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.OwlThing.setType(System.String)
+    name: setType
+    nameWithType: OwlThing.setType
+    fullName: alps_.net_api.OwlThing.setType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlThing.getType
+  commentId: M:alps_.net_api.OwlThing.getType
+  parent: alps_.net_api.OwlThing
+  name: getType()
+  nameWithType: OwlThing.getType()
+  fullName: alps_.net_api.OwlThing.getType()
+  spec.csharp:
+  - uid: alps_.net_api.OwlThing.getType
+    name: getType
+    nameWithType: OwlThing.getType
+    fullName: alps_.net_api.OwlThing.getType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.OwlThing.getType
+    name: getType
+    nameWithType: OwlThing.getType
+    fullName: alps_.net_api.OwlThing.getType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: alps_.net_api.SenderTypeConstraint.#ctor*
+  commentId: Overload:alps_.net_api.SenderTypeConstraint.#ctor
+  name: SenderTypeConstraint
+  nameWithType: SenderTypeConstraint.SenderTypeConstraint
+  fullName: alps_.net_api.SenderTypeConstraint.SenderTypeConstraint
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.InputPoolConstraintHandlingStrategy
+  commentId: T:alps_.net_api.InputPoolConstraintHandlingStrategy
+  parent: alps_.net_api
+  name: InputPoolConstraintHandlingStrategy
+  nameWithType: InputPoolConstraintHandlingStrategy
+  fullName: alps_.net_api.InputPoolConstraintHandlingStrategy
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: alps_.net_api.Subject
+  commentId: T:alps_.net_api.Subject
+  parent: alps_.net_api
+  name: Subject
+  nameWithType: Subject
+  fullName: alps_.net_api.Subject
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: alps_.net_api.SenderTypeConstraint.setReferencesSubject*
+  commentId: Overload:alps_.net_api.SenderTypeConstraint.setReferencesSubject
+  name: setReferencesSubject
+  nameWithType: SenderTypeConstraint.setReferencesSubject
+  fullName: alps_.net_api.SenderTypeConstraint.setReferencesSubject
+- uid: alps_.net_api.ISenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  commentId: M:alps_.net_api.ISenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  parent: alps_.net_api.ISenderTypeConstraint
+  name: setReferencesSubject(ISubject)
+  nameWithType: ISenderTypeConstraint.setReferencesSubject(ISubject)
+  fullName: alps_.net_api.ISenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+  spec.csharp:
+  - uid: alps_.net_api.ISenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+    name: setReferencesSubject
+    nameWithType: ISenderTypeConstraint.setReferencesSubject
+    fullName: alps_.net_api.ISenderTypeConstraint.setReferencesSubject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubject
+    name: ISubject
+    nameWithType: ISubject
+    fullName: alps_.net_api.ISubject
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ISenderTypeConstraint.setReferencesSubject(alps_.net_api.ISubject)
+    name: setReferencesSubject
+    nameWithType: ISenderTypeConstraint.setReferencesSubject
+    fullName: alps_.net_api.ISenderTypeConstraint.setReferencesSubject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubject
+    name: ISubject
+    nameWithType: ISubject
+    fullName: alps_.net_api.ISubject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ISubject
+  commentId: T:alps_.net_api.ISubject
+  parent: alps_.net_api
+  name: ISubject
+  nameWithType: ISubject
+  fullName: alps_.net_api.ISubject
+- uid: alps_.net_api.SenderTypeConstraint.getReferenceSubject*
+  commentId: Overload:alps_.net_api.SenderTypeConstraint.getReferenceSubject
+  name: getReferenceSubject
+  nameWithType: SenderTypeConstraint.getReferenceSubject
+  fullName: alps_.net_api.SenderTypeConstraint.getReferenceSubject
+- uid: alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+  commentId: M:alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+  parent: alps_.net_api.ISenderTypeConstraint
+  name: getReferenceSubject()
+  nameWithType: ISenderTypeConstraint.getReferenceSubject()
+  fullName: alps_.net_api.ISenderTypeConstraint.getReferenceSubject()
+  spec.csharp:
+  - uid: alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+    name: getReferenceSubject
+    nameWithType: ISenderTypeConstraint.getReferenceSubject
+    fullName: alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+    name: getReferenceSubject
+    nameWithType: ISenderTypeConstraint.getReferenceSubject
+    fullName: alps_.net_api.ISenderTypeConstraint.getReferenceSubject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.SenderTypeConstraint.getTmpSubject*
+  commentId: Overload:alps_.net_api.SenderTypeConstraint.getTmpSubject
+  name: getTmpSubject
+  nameWithType: SenderTypeConstraint.getTmpSubject
+  fullName: alps_.net_api.SenderTypeConstraint.getTmpSubject
+- uid: alps_.net_api.SenderTypeConstraint.factoryMethod*
+  commentId: Overload:alps_.net_api.SenderTypeConstraint.factoryMethod
+  name: factoryMethod
+  nameWithType: SenderTypeConstraint.factoryMethod
+  fullName: alps_.net_api.SenderTypeConstraint.factoryMethod
+- uid: alps_.net_api.SenderTypeConstraint
+  commentId: T:alps_.net_api.SenderTypeConstraint
+  parent: alps_.net_api
+  name: SenderTypeConstraint
+  nameWithType: SenderTypeConstraint
+  fullName: alps_.net_api.SenderTypeConstraint
+- uid: alps_.net_api.SenderTypeConstraint.completeObject*
+  commentId: Overload:alps_.net_api.SenderTypeConstraint.completeObject
+  name: completeObject
+  nameWithType: SenderTypeConstraint.completeObject
+  fullName: alps_.net_api.SenderTypeConstraint.completeObject
+- uid: System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, PASSProcessModelElement>
+  nameWithType: Dictionary<String, PASSProcessModelElement>
+  fullName: System.Collections.Generic.Dictionary<System.String, alps_.net_api.PASSProcessModelElement>
+  nameWithType.vb: Dictionary(Of String, PASSProcessModelElement)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, alps_.net_api.PASSProcessModelElement)
+  name.vb: Dictionary(Of String, PASSProcessModelElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: alps_.net_api.PASSProcessModelElement
+    name: PASSProcessModelElement
+    nameWithType: PASSProcessModelElement
+    fullName: alps_.net_api.PASSProcessModelElement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: alps_.net_api.PASSProcessModelElement
+    name: PASSProcessModelElement
+    nameWithType: PASSProcessModelElement
+    fullName: alps_.net_api.PASSProcessModelElement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )

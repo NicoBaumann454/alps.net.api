@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.ITreeNode
+  commentId: T:alps_.net_api.ITreeNode
+  id: ITreeNode
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.ITreeNode.addChild(alps_.net_api.TreeNode)
+  - alps_.net_api.ITreeNode.getChildNodes
+  - alps_.net_api.ITreeNode.getContent
+  - alps_.net_api.ITreeNode.getParentNode
+  - alps_.net_api.ITreeNode.setParentNode(alps_.net_api.TreeNode)
+  langs:
+  - csharp
+  - vb
+  name: ITreeNode
+  nameWithType: ITreeNode
+  fullName: alps_.net_api.ITreeNode
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/TreeNode.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: ITreeNode
+    path: TreeNode.cs
+    startLine: 8
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the tree node class\n"
+  example: []
+  syntax:
+    content: public interface ITreeNode
+    content.vb: Public Interface ITreeNode
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.ITreeNode.setParentNode(alps_.net_api.TreeNode)
+  commentId: M:alps_.net_api.ITreeNode.setParentNode(alps_.net_api.TreeNode)
+  id: setParentNode(alps_.net_api.TreeNode)
+  parent: alps_.net_api.ITreeNode
+  langs:
+  - csharp
+  - vb
+  name: setParentNode(TreeNode)
+  nameWithType: ITreeNode.setParentNode(TreeNode)
+  fullName: alps_.net_api.ITreeNode.setParentNode(alps_.net_api.TreeNode)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/TreeNode.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setParentNode
+    path: TreeNode.cs
+    startLine: 14
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void setParentNode(TreeNode parent)
+    parameters:
+    - id: parent
+      type: alps_.net_api.TreeNode
+      description: ''
+    content.vb: Sub setParentNode(parent As TreeNode)
+  overload: alps_.net_api.ITreeNode.setParentNode*
+- uid: alps_.net_api.ITreeNode.addChild(alps_.net_api.TreeNode)
+  commentId: M:alps_.net_api.ITreeNode.addChild(alps_.net_api.TreeNode)
+  id: addChild(alps_.net_api.TreeNode)
+  parent: alps_.net_api.ITreeNode
+  langs:
+  - csharp
+  - vb
+  name: addChild(TreeNode)
+  nameWithType: ITreeNode.addChild(TreeNode)
+  fullName: alps_.net_api.ITreeNode.addChild(alps_.net_api.TreeNode)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/TreeNode.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: addChild
+    path: TreeNode.cs
+    startLine: 20
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void addChild(TreeNode child)
+    parameters:
+    - id: child
+      type: alps_.net_api.TreeNode
+      description: ''
+    content.vb: Sub addChild(child As TreeNode)
+  overload: alps_.net_api.ITreeNode.addChild*
+- uid: alps_.net_api.ITreeNode.getParentNode
+  commentId: M:alps_.net_api.ITreeNode.getParentNode
+  id: getParentNode
+  parent: alps_.net_api.ITreeNode
+  langs:
+  - csharp
+  - vb
+  name: getParentNode()
+  nameWithType: ITreeNode.getParentNode()
+  fullName: alps_.net_api.ITreeNode.getParentNode()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/TreeNode.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getParentNode
+    path: TreeNode.cs
+    startLine: 26
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: TreeNode getParentNode()
+    return:
+      type: alps_.net_api.TreeNode
+      description: ''
+    content.vb: Function getParentNode As TreeNode
+  overload: alps_.net_api.ITreeNode.getParentNode*
+- uid: alps_.net_api.ITreeNode.getChildNodes
+  commentId: M:alps_.net_api.ITreeNode.getChildNodes
+  id: getChildNodes
+  parent: alps_.net_api.ITreeNode
+  langs:
+  - csharp
+  - vb
+  name: getChildNodes()
+  nameWithType: ITreeNode.getChildNodes()
+  fullName: alps_.net_api.ITreeNode.getChildNodes()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/TreeNode.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getChildNodes
+    path: TreeNode.cs
+    startLine: 32
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: List<TreeNode> getChildNodes()
+    return:
+      type: System.Collections.Generic.List{alps_.net_api.TreeNode}
+      description: ''
+    content.vb: Function getChildNodes As List(Of TreeNode)
+  overload: alps_.net_api.ITreeNode.getChildNodes*
+- uid: alps_.net_api.ITreeNode.getContent
+  commentId: M:alps_.net_api.ITreeNode.getContent
+  id: getContent
+  parent: alps_.net_api.ITreeNode
+  langs:
+  - csharp
+  - vb
+  name: getContent()
+  nameWithType: ITreeNode.getContent()
+  fullName: alps_.net_api.ITreeNode.getContent()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/TreeNode.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getContent
+    path: TreeNode.cs
+    startLine: 38
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: string getContent()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function getContent As String
+  overload: alps_.net_api.ITreeNode.getContent*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.ITreeNode.setParentNode*
+  commentId: Overload:alps_.net_api.ITreeNode.setParentNode
+  name: setParentNode
+  nameWithType: ITreeNode.setParentNode
+  fullName: alps_.net_api.ITreeNode.setParentNode
+- uid: alps_.net_api.TreeNode
+  commentId: T:alps_.net_api.TreeNode
+  parent: alps_.net_api
+  name: TreeNode
+  nameWithType: TreeNode
+  fullName: alps_.net_api.TreeNode
+- uid: alps_.net_api.ITreeNode.addChild*
+  commentId: Overload:alps_.net_api.ITreeNode.addChild
+  name: addChild
+  nameWithType: ITreeNode.addChild
+  fullName: alps_.net_api.ITreeNode.addChild
+- uid: alps_.net_api.ITreeNode.getParentNode*
+  commentId: Overload:alps_.net_api.ITreeNode.getParentNode
+  name: getParentNode
+  nameWithType: ITreeNode.getParentNode
+  fullName: alps_.net_api.ITreeNode.getParentNode
+- uid: alps_.net_api.ITreeNode.getChildNodes*
+  commentId: Overload:alps_.net_api.ITreeNode.getChildNodes
+  name: getChildNodes
+  nameWithType: ITreeNode.getChildNodes
+  fullName: alps_.net_api.ITreeNode.getChildNodes
+- uid: System.Collections.Generic.List{alps_.net_api.TreeNode}
+  commentId: T:System.Collections.Generic.List{alps_.net_api.TreeNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TreeNode>
+  nameWithType: List<TreeNode>
+  fullName: System.Collections.Generic.List<alps_.net_api.TreeNode>
+  nameWithType.vb: List(Of TreeNode)
+  fullName.vb: System.Collections.Generic.List(Of alps_.net_api.TreeNode)
+  name.vb: List(Of TreeNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: alps_.net_api.TreeNode
+    name: TreeNode
+    nameWithType: TreeNode
+    fullName: alps_.net_api.TreeNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: alps_.net_api.TreeNode
+    name: TreeNode
+    nameWithType: TreeNode
+    fullName: alps_.net_api.TreeNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: alps_.net_api.ITreeNode.getContent*
+  commentId: Overload:alps_.net_api.ITreeNode.getContent
+  name: getContent
+  nameWithType: ITreeNode.getContent
+  fullName: alps_.net_api.ITreeNode.getContent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

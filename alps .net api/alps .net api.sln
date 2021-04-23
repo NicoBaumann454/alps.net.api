@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alps_net_api", "alps_net_api.csproj", "{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMappe", "..\..\TestMappe\TestMappe.csproj", "{992C0A38-7411-475A-8395-62E7ACA1DA6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992C0A38-7411-475A-8395-62E7ACA1DA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992C0A38-7411-475A-8395-62E7ACA1DA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992C0A38-7411-475A-8395-62E7ACA1DA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992C0A38-7411-475A-8395-62E7ACA1DA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97FA1FB4-58E3-4600-A157-5FD5E6F18B4D}
+	EndGlobalSection
+EndGlobal

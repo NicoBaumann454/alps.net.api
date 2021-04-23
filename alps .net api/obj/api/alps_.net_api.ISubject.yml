@@ -1,0 +1,656 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.ISubject
+  commentId: T:alps_.net_api.ISubject
+  id: ISubject
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.ISubject.getIncomingMessageExchange
+  - alps_.net_api.ISubject.getInstanceRestriction
+  - alps_.net_api.ISubject.getOutgoingMessageExchange
+  - alps_.net_api.ISubject.setIncomingMessageExchange(alps_.net_api.IMessageExchange)
+  - alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction(System.Int32)
+  - alps_.net_api.ISubject.setOutgoingMessageExchange(alps_.net_api.IMessageExchange)
+  langs:
+  - csharp
+  - vb
+  name: ISubject
+  nameWithType: ISubject
+  fullName: alps_.net_api.ISubject
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: ISubject
+    path: ISubject.cs
+    startLine: 5
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the subject class\n"
+  example: []
+  syntax:
+    content: 'public interface ISubject : IInteractionDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface ISubject
+          Inherits IInteractionDescriptionComponent
+  inheritedMembers:
+  - alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.ISubject.setIncomingMessageExchange(alps_.net_api.IMessageExchange)
+  commentId: M:alps_.net_api.ISubject.setIncomingMessageExchange(alps_.net_api.IMessageExchange)
+  id: setIncomingMessageExchange(alps_.net_api.IMessageExchange)
+  parent: alps_.net_api.ISubject
+  langs:
+  - csharp
+  - vb
+  name: setIncomingMessageExchange(IMessageExchange)
+  nameWithType: ISubject.setIncomingMessageExchange(IMessageExchange)
+  fullName: alps_.net_api.ISubject.setIncomingMessageExchange(alps_.net_api.IMessageExchange)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setIncomingMessageExchange
+    path: ISubject.cs
+    startLine: 11
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the incoming message exchange attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setIncomingMessageExchange(IMessageExchange incomingMessageExchange)
+    parameters:
+    - id: incomingMessageExchange
+      type: alps_.net_api.IMessageExchange
+      description: ''
+    content.vb: Sub setIncomingMessageExchange(incomingMessageExchange As IMessageExchange)
+  overload: alps_.net_api.ISubject.setIncomingMessageExchange*
+- uid: alps_.net_api.ISubject.getIncomingMessageExchange
+  commentId: M:alps_.net_api.ISubject.getIncomingMessageExchange
+  id: getIncomingMessageExchange
+  parent: alps_.net_api.ISubject
+  langs:
+  - csharp
+  - vb
+  name: getIncomingMessageExchange()
+  nameWithType: ISubject.getIncomingMessageExchange()
+  fullName: alps_.net_api.ISubject.getIncomingMessageExchange()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getIncomingMessageExchange
+    path: ISubject.cs
+    startLine: 17
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the incoming message exchange attribute of the instance\n"
+  example: []
+  syntax:
+    content: IMessageExchange getIncomingMessageExchange()
+    return:
+      type: alps_.net_api.IMessageExchange
+      description: The incoming message exchange attribute of the instance
+    content.vb: Function getIncomingMessageExchange As IMessageExchange
+  overload: alps_.net_api.ISubject.getIncomingMessageExchange*
+- uid: alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction(System.Int32)
+  commentId: M:alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction(System.Int32)
+  id: setMaximumSubjectInstanceRestriction(System.Int32)
+  parent: alps_.net_api.ISubject
+  langs:
+  - csharp
+  - vb
+  name: setMaximumSubjectInstanceRestriction(Int32)
+  nameWithType: ISubject.setMaximumSubjectInstanceRestriction(Int32)
+  fullName: alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setMaximumSubjectInstanceRestriction
+    path: ISubject.cs
+    startLine: 23
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the instance restriction attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setMaximumSubjectInstanceRestriction(int instanceRestriction)
+    parameters:
+    - id: instanceRestriction
+      type: System.Int32
+      description: ''
+    content.vb: Sub setMaximumSubjectInstanceRestriction(instanceRestriction As Integer)
+  overload: alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction*
+- uid: alps_.net_api.ISubject.getInstanceRestriction
+  commentId: M:alps_.net_api.ISubject.getInstanceRestriction
+  id: getInstanceRestriction
+  parent: alps_.net_api.ISubject
+  langs:
+  - csharp
+  - vb
+  name: getInstanceRestriction()
+  nameWithType: ISubject.getInstanceRestriction()
+  fullName: alps_.net_api.ISubject.getInstanceRestriction()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getInstanceRestriction
+    path: ISubject.cs
+    startLine: 29
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the instance restriction attribute of the instance\n"
+  example: []
+  syntax:
+    content: int getInstanceRestriction()
+    return:
+      type: System.Int32
+      description: The instance restriction attribute of the instance
+    content.vb: Function getInstanceRestriction As Integer
+  overload: alps_.net_api.ISubject.getInstanceRestriction*
+- uid: alps_.net_api.ISubject.setOutgoingMessageExchange(alps_.net_api.IMessageExchange)
+  commentId: M:alps_.net_api.ISubject.setOutgoingMessageExchange(alps_.net_api.IMessageExchange)
+  id: setOutgoingMessageExchange(alps_.net_api.IMessageExchange)
+  parent: alps_.net_api.ISubject
+  langs:
+  - csharp
+  - vb
+  name: setOutgoingMessageExchange(IMessageExchange)
+  nameWithType: ISubject.setOutgoingMessageExchange(IMessageExchange)
+  fullName: alps_.net_api.ISubject.setOutgoingMessageExchange(alps_.net_api.IMessageExchange)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setOutgoingMessageExchange
+    path: ISubject.cs
+    startLine: 35
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the outgoing message exchange attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setOutgoingMessageExchange(IMessageExchange outgoingMessageExchange)
+    parameters:
+    - id: outgoingMessageExchange
+      type: alps_.net_api.IMessageExchange
+      description: ''
+    content.vb: Sub setOutgoingMessageExchange(outgoingMessageExchange As IMessageExchange)
+  overload: alps_.net_api.ISubject.setOutgoingMessageExchange*
+- uid: alps_.net_api.ISubject.getOutgoingMessageExchange
+  commentId: M:alps_.net_api.ISubject.getOutgoingMessageExchange
+  id: getOutgoingMessageExchange
+  parent: alps_.net_api.ISubject
+  langs:
+  - csharp
+  - vb
+  name: getOutgoingMessageExchange()
+  nameWithType: ISubject.getOutgoingMessageExchange()
+  fullName: alps_.net_api.ISubject.getOutgoingMessageExchange()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/ISubject.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getOutgoingMessageExchange
+    path: ISubject.cs
+    startLine: 41
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the outgoing message exchange attribute of the instance\n"
+  example: []
+  syntax:
+    content: IMessageExchange getOutgoingMessageExchange()
+    return:
+      type: alps_.net_api.IMessageExchange
+      description: The outgoing message exchange attribute of the instance
+    content.vb: Function getOutgoingMessageExchange As IMessageExchange
+  overload: alps_.net_api.ISubject.getOutgoingMessageExchange*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+  commentId: M:alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+  parent: alps_.net_api.IInteractionDescriptionComponent
+  name: factoryMethod()
+  nameWithType: IInteractionDescriptionComponent.factoryMethod()
+  fullName: alps_.net_api.IInteractionDescriptionComponent.factoryMethod()
+  spec.csharp:
+  - uid: alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+    name: factoryMethod
+    nameWithType: IInteractionDescriptionComponent.factoryMethod
+    fullName: alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+    name: factoryMethod
+    nameWithType: IInteractionDescriptionComponent.factoryMethod
+    fullName: alps_.net_api.IInteractionDescriptionComponent.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IInteractionDescriptionComponent
+  commentId: T:alps_.net_api.IInteractionDescriptionComponent
+  parent: alps_.net_api
+  name: IInteractionDescriptionComponent
+  nameWithType: IInteractionDescriptionComponent
+  fullName: alps_.net_api.IInteractionDescriptionComponent
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.ISubject.setIncomingMessageExchange*
+  commentId: Overload:alps_.net_api.ISubject.setIncomingMessageExchange
+  name: setIncomingMessageExchange
+  nameWithType: ISubject.setIncomingMessageExchange
+  fullName: alps_.net_api.ISubject.setIncomingMessageExchange
+- uid: alps_.net_api.IMessageExchange
+  commentId: T:alps_.net_api.IMessageExchange
+  parent: alps_.net_api
+  name: IMessageExchange
+  nameWithType: IMessageExchange
+  fullName: alps_.net_api.IMessageExchange
+- uid: alps_.net_api.ISubject.getIncomingMessageExchange*
+  commentId: Overload:alps_.net_api.ISubject.getIncomingMessageExchange
+  name: getIncomingMessageExchange
+  nameWithType: ISubject.getIncomingMessageExchange
+  fullName: alps_.net_api.ISubject.getIncomingMessageExchange
+- uid: alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction*
+  commentId: Overload:alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction
+  name: setMaximumSubjectInstanceRestriction
+  nameWithType: ISubject.setMaximumSubjectInstanceRestriction
+  fullName: alps_.net_api.ISubject.setMaximumSubjectInstanceRestriction
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: alps_.net_api.ISubject.getInstanceRestriction*
+  commentId: Overload:alps_.net_api.ISubject.getInstanceRestriction
+  name: getInstanceRestriction
+  nameWithType: ISubject.getInstanceRestriction
+  fullName: alps_.net_api.ISubject.getInstanceRestriction
+- uid: alps_.net_api.ISubject.setOutgoingMessageExchange*
+  commentId: Overload:alps_.net_api.ISubject.setOutgoingMessageExchange
+  name: setOutgoingMessageExchange
+  nameWithType: ISubject.setOutgoingMessageExchange
+  fullName: alps_.net_api.ISubject.setOutgoingMessageExchange
+- uid: alps_.net_api.ISubject.getOutgoingMessageExchange*
+  commentId: Overload:alps_.net_api.ISubject.getOutgoingMessageExchange
+  name: getOutgoingMessageExchange
+  nameWithType: ISubject.getOutgoingMessageExchange
+  fullName: alps_.net_api.ISubject.getOutgoingMessageExchange

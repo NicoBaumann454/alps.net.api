@@ -1,0 +1,492 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.IPayloadDataObjectDefinition
+  commentId: T:alps_.net_api.IPayloadDataObjectDefinition
+  id: IPayloadDataObjectDefinition
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.IPayloadDataObjectDefinition.factoryMethod
+  langs:
+  - csharp
+  - vb
+  name: IPayloadDataObjectDefinition
+  nameWithType: IPayloadDataObjectDefinition
+  fullName: alps_.net_api.IPayloadDataObjectDefinition
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/PayloadDataObjectDefinition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: IPayloadDataObjectDefinition
+    path: PayloadDataObjectDefinition.cs
+    startLine: 7
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the payload data object definition class\n"
+  example: []
+  syntax:
+    content: 'public interface IPayloadDataObjectDefinition : IDataObjectDefiniton, IDataDescribingComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface IPayloadDataObjectDefinition
+          Inherits IDataObjectDefiniton
+  inheritedMembers:
+  - alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition(alps_.net_api.IDataTypeDefintion)
+  - alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.IPayloadDataObjectDefinition.factoryMethod
+  commentId: M:alps_.net_api.IPayloadDataObjectDefinition.factoryMethod
+  id: factoryMethod
+  parent: alps_.net_api.IPayloadDataObjectDefinition
+  langs:
+  - csharp
+  - vb
+  name: factoryMethod()
+  nameWithType: IPayloadDataObjectDefinition.factoryMethod()
+  fullName: alps_.net_api.IPayloadDataObjectDefinition.factoryMethod()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/PayloadDataObjectDefinition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: factoryMethod
+    path: PayloadDataObjectDefinition.cs
+    startLine: 13
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nFactory method that creates and returns a new empty instance of the payload data object definition class\n"
+  example: []
+  syntax:
+    content: PayloadDataObjectDefinition factoryMethod()
+    return:
+      type: alps_.net_api.PayloadDataObjectDefinition
+      description: ''
+    content.vb: Function factoryMethod As PayloadDataObjectDefinition
+  overload: alps_.net_api.IPayloadDataObjectDefinition.factoryMethod*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition(alps_.net_api.IDataTypeDefintion)
+  commentId: M:alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition(alps_.net_api.IDataTypeDefintion)
+  parent: alps_.net_api.IDataObjectDefiniton
+  name: setDataTypeDefinition(IDataTypeDefintion)
+  nameWithType: IDataObjectDefiniton.setDataTypeDefinition(IDataTypeDefintion)
+  fullName: alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition(alps_.net_api.IDataTypeDefintion)
+  spec.csharp:
+  - uid: alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition(alps_.net_api.IDataTypeDefintion)
+    name: setDataTypeDefinition
+    nameWithType: IDataObjectDefiniton.setDataTypeDefinition
+    fullName: alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IDataTypeDefintion
+    name: IDataTypeDefintion
+    nameWithType: IDataTypeDefintion
+    fullName: alps_.net_api.IDataTypeDefintion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition(alps_.net_api.IDataTypeDefintion)
+    name: setDataTypeDefinition
+    nameWithType: IDataObjectDefiniton.setDataTypeDefinition
+    fullName: alps_.net_api.IDataObjectDefiniton.setDataTypeDefinition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IDataTypeDefintion
+    name: IDataTypeDefintion
+    nameWithType: IDataTypeDefintion
+    fullName: alps_.net_api.IDataTypeDefintion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+  commentId: M:alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+  parent: alps_.net_api.IDataObjectDefiniton
+  name: getDataTypeDefintion()
+  nameWithType: IDataObjectDefiniton.getDataTypeDefintion()
+  fullName: alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion()
+  spec.csharp:
+  - uid: alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+    name: getDataTypeDefintion
+    nameWithType: IDataObjectDefiniton.getDataTypeDefintion
+    fullName: alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+    name: getDataTypeDefintion
+    nameWithType: IDataObjectDefiniton.getDataTypeDefintion
+    fullName: alps_.net_api.IDataObjectDefiniton.getDataTypeDefintion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IDataObjectDefiniton
+  commentId: T:alps_.net_api.IDataObjectDefiniton
+  parent: alps_.net_api
+  name: IDataObjectDefiniton
+  nameWithType: IDataObjectDefiniton
+  fullName: alps_.net_api.IDataObjectDefiniton
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IPayloadDataObjectDefinition.factoryMethod*
+  commentId: Overload:alps_.net_api.IPayloadDataObjectDefinition.factoryMethod
+  name: factoryMethod
+  nameWithType: IPayloadDataObjectDefinition.factoryMethod
+  fullName: alps_.net_api.IPayloadDataObjectDefinition.factoryMethod
+- uid: alps_.net_api.PayloadDataObjectDefinition
+  commentId: T:alps_.net_api.PayloadDataObjectDefinition
+  parent: alps_.net_api
+  name: PayloadDataObjectDefinition
+  nameWithType: PayloadDataObjectDefinition
+  fullName: alps_.net_api.PayloadDataObjectDefinition

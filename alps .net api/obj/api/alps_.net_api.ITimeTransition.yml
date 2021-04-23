@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.ITimeTransition
+  commentId: T:alps_.net_api.ITimeTransition
+  id: ITimeTransition
+  parent: alps_.net_api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ITimeTransition
+  nameWithType: ITimeTransition
+  fullName: alps_.net_api.ITimeTransition
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/ITimeTransition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: ITimeTransition
+    path: ITimeTransition.cs
+    startLine: 5
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the time transition class\n"
+  example: []
+  syntax:
+    content: 'public interface ITimeTransition : ITransition, IBehaviorDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface ITimeTransition
+          Inherits ITransition
+  inheritedMembers:
+  - alps_.net_api.ITransition.setBelongsToAction(alps_.net_api.IAction)
+  - alps_.net_api.ITransition.getBelongsToAction
+  - alps_.net_api.ITransition.setSourceState(alps_.net_api.IState)
+  - alps_.net_api.ITransition.getSourceState
+  - alps_.net_api.ITransition.setTargetState(alps_.net_api.IState)
+  - alps_.net_api.ITransition.getTargetState
+  - alps_.net_api.ITransition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  - alps_.net_api.ITransition.getTransitionCondition
+  - alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  - alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.ITransition.setBelongsToAction(alps_.net_api.IAction)
+  commentId: M:alps_.net_api.ITransition.setBelongsToAction(alps_.net_api.IAction)
+  parent: alps_.net_api.ITransition
+  name: setBelongsToAction(IAction)
+  nameWithType: ITransition.setBelongsToAction(IAction)
+  fullName: alps_.net_api.ITransition.setBelongsToAction(alps_.net_api.IAction)
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.setBelongsToAction(alps_.net_api.IAction)
+    name: setBelongsToAction
+    nameWithType: ITransition.setBelongsToAction
+    fullName: alps_.net_api.ITransition.setBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IAction
+    name: IAction
+    nameWithType: IAction
+    fullName: alps_.net_api.IAction
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.setBelongsToAction(alps_.net_api.IAction)
+    name: setBelongsToAction
+    nameWithType: ITransition.setBelongsToAction
+    fullName: alps_.net_api.ITransition.setBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IAction
+    name: IAction
+    nameWithType: IAction
+    fullName: alps_.net_api.IAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.getBelongsToAction
+  commentId: M:alps_.net_api.ITransition.getBelongsToAction
+  parent: alps_.net_api.ITransition
+  name: getBelongsToAction()
+  nameWithType: ITransition.getBelongsToAction()
+  fullName: alps_.net_api.ITransition.getBelongsToAction()
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.getBelongsToAction
+    name: getBelongsToAction
+    nameWithType: ITransition.getBelongsToAction
+    fullName: alps_.net_api.ITransition.getBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.getBelongsToAction
+    name: getBelongsToAction
+    nameWithType: ITransition.getBelongsToAction
+    fullName: alps_.net_api.ITransition.getBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.setSourceState(alps_.net_api.IState)
+  commentId: M:alps_.net_api.ITransition.setSourceState(alps_.net_api.IState)
+  parent: alps_.net_api.ITransition
+  name: setSourceState(IState)
+  nameWithType: ITransition.setSourceState(IState)
+  fullName: alps_.net_api.ITransition.setSourceState(alps_.net_api.IState)
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.setSourceState(alps_.net_api.IState)
+    name: setSourceState
+    nameWithType: ITransition.setSourceState
+    fullName: alps_.net_api.ITransition.setSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.setSourceState(alps_.net_api.IState)
+    name: setSourceState
+    nameWithType: ITransition.setSourceState
+    fullName: alps_.net_api.ITransition.setSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.getSourceState
+  commentId: M:alps_.net_api.ITransition.getSourceState
+  parent: alps_.net_api.ITransition
+  name: getSourceState()
+  nameWithType: ITransition.getSourceState()
+  fullName: alps_.net_api.ITransition.getSourceState()
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.getSourceState
+    name: getSourceState
+    nameWithType: ITransition.getSourceState
+    fullName: alps_.net_api.ITransition.getSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.getSourceState
+    name: getSourceState
+    nameWithType: ITransition.getSourceState
+    fullName: alps_.net_api.ITransition.getSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.setTargetState(alps_.net_api.IState)
+  commentId: M:alps_.net_api.ITransition.setTargetState(alps_.net_api.IState)
+  parent: alps_.net_api.ITransition
+  name: setTargetState(IState)
+  nameWithType: ITransition.setTargetState(IState)
+  fullName: alps_.net_api.ITransition.setTargetState(alps_.net_api.IState)
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.setTargetState(alps_.net_api.IState)
+    name: setTargetState
+    nameWithType: ITransition.setTargetState
+    fullName: alps_.net_api.ITransition.setTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.setTargetState(alps_.net_api.IState)
+    name: setTargetState
+    nameWithType: ITransition.setTargetState
+    fullName: alps_.net_api.ITransition.setTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.getTargetState
+  commentId: M:alps_.net_api.ITransition.getTargetState
+  parent: alps_.net_api.ITransition
+  name: getTargetState()
+  nameWithType: ITransition.getTargetState()
+  fullName: alps_.net_api.ITransition.getTargetState()
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.getTargetState
+    name: getTargetState
+    nameWithType: ITransition.getTargetState
+    fullName: alps_.net_api.ITransition.getTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.getTargetState
+    name: getTargetState
+    nameWithType: ITransition.getTargetState
+    fullName: alps_.net_api.ITransition.getTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  commentId: M:alps_.net_api.ITransition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  parent: alps_.net_api.ITransition
+  name: setTransitionCondition(ITransitionCondition)
+  nameWithType: ITransition.setTransitionCondition(ITransitionCondition)
+  fullName: alps_.net_api.ITransition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+    name: setTransitionCondition
+    nameWithType: ITransition.setTransitionCondition
+    fullName: alps_.net_api.ITransition.setTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransitionCondition
+    name: ITransitionCondition
+    nameWithType: ITransitionCondition
+    fullName: alps_.net_api.ITransitionCondition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+    name: setTransitionCondition
+    nameWithType: ITransition.setTransitionCondition
+    fullName: alps_.net_api.ITransition.setTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransitionCondition
+    name: ITransitionCondition
+    nameWithType: ITransitionCondition
+    fullName: alps_.net_api.ITransitionCondition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition.getTransitionCondition
+  commentId: M:alps_.net_api.ITransition.getTransitionCondition
+  parent: alps_.net_api.ITransition
+  name: getTransitionCondition()
+  nameWithType: ITransition.getTransitionCondition()
+  fullName: alps_.net_api.ITransition.getTransitionCondition()
+  spec.csharp:
+  - uid: alps_.net_api.ITransition.getTransitionCondition
+    name: getTransitionCondition
+    nameWithType: ITransition.getTransitionCondition
+    fullName: alps_.net_api.ITransition.getTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransition.getTransitionCondition
+    name: getTransitionCondition
+    nameWithType: ITransition.getTransitionCondition
+    fullName: alps_.net_api.ITransition.getTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: setBelongsToSubjectBehavior(ISubjectBehavior)
+  nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(ISubjectBehavior)
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: getSubjectBehavior()
+  nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior()
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior()
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: factoryMethod()
+  nameWithType: IBehaviorDescriptionComponent.factoryMethod()
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.factoryMethod()
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+    name: factoryMethod
+    nameWithType: IBehaviorDescriptionComponent.factoryMethod
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+    name: factoryMethod
+    nameWithType: IBehaviorDescriptionComponent.factoryMethod
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransition
+  commentId: T:alps_.net_api.ITransition
+  parent: alps_.net_api
+  name: ITransition
+  nameWithType: ITransition
+  fullName: alps_.net_api.ITransition
+- uid: alps_.net_api.IBehaviorDescriptionComponent
+  commentId: T:alps_.net_api.IBehaviorDescriptionComponent
+  parent: alps_.net_api
+  name: IBehaviorDescriptionComponent
+  nameWithType: IBehaviorDescriptionComponent
+  fullName: alps_.net_api.IBehaviorDescriptionComponent
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement

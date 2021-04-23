@@ -1,0 +1,2276 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.CalenderBasedReminderTransition
+  commentId: T:alps_.net_api.CalenderBasedReminderTransition
+  id: CalenderBasedReminderTransition
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.CalenderBasedReminderTransition.#ctor
+  - alps_.net_api.CalenderBasedReminderTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.SubjectBehavior,alps_.net_api.Action,alps_.net_api.State,alps_.net_api.State,alps_.net_api.TransitionCondition)
+  - alps_.net_api.CalenderBasedReminderTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  - alps_.net_api.CalenderBasedReminderTransition.factoryMethod
+  langs:
+  - csharp
+  - vb
+  name: CalenderBasedReminderTransition
+  nameWithType: CalenderBasedReminderTransition
+  fullName: alps_.net_api.CalenderBasedReminderTransition
+  type: Class
+  source:
+    remote:
+      path: alps .net api/alps .net api/CalenderBasedReminderTransition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: CalenderBasedReminderTransition
+    path: CalenderBasedReminderTransition.cs
+    startLine: 8
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nClass that represents an CalenderBasedReminderTransition\n"
+  example: []
+  syntax:
+    content: 'public class CalenderBasedReminderTransition : ReminderTransition, ICalenderBasedReminderTransition, IReminderTransition, ITimeTransition, ITransition, IBehaviorDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Class CalenderBasedReminderTransition
+          Inherits ReminderTransition
+          Implements ICalenderBasedReminderTransition, IReminderTransition, ITimeTransition, ITransition, IBehaviorDescriptionComponent, IPASSProcessModellElement, IOwlThing
+  inheritance:
+  - System.Object
+  - alps_.net_api.OwlThing
+  - alps_.net_api.PASSProcessModelElement
+  - alps_.net_api.BehaviorDescriptionComponent
+  - alps_.net_api.Transition
+  - alps_.net_api.TimeTransition
+  - alps_.net_api.ReminderTransition
+  implements:
+  - alps_.net_api.ICalenderBasedReminderTransition
+  - alps_.net_api.IReminderTransition
+  - alps_.net_api.ITimeTransition
+  - alps_.net_api.ITransition
+  - alps_.net_api.IBehaviorDescriptionComponent
+  - alps_.net_api.IPASSProcessModellElement
+  - alps_.net_api.IOwlThing
+  inheritedMembers:
+  - alps_.net_api.ReminderTransition.className
+  - alps_.net_api.Transition.setBelongsToAction(alps_.net_api.IAction)
+  - alps_.net_api.Transition.setSourceState(alps_.net_api.IState)
+  - alps_.net_api.Transition.setTargetState(alps_.net_api.IState)
+  - alps_.net_api.Transition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  - alps_.net_api.Transition.getBelongsToAction
+  - alps_.net_api.Transition.getSourceState
+  - alps_.net_api.Transition.getTargetState
+  - alps_.net_api.Transition.getTransitionCondition
+  - alps_.net_api.Transition.getTmpBelonstToAction
+  - alps_.net_api.Transition.getTmpSourceState
+  - alps_.net_api.Transition.getTmpTargetState
+  - alps_.net_api.Transition.getTmpTransitionCondition
+  - alps_.net_api.Transition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  - alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  - alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+  - alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+  - alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  - alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  - alps_.net_api.PASSProcessModelElement.getModelComponentID
+  - alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  - alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  - alps_.net_api.PASSProcessModelElement.getComment
+  - alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+  - alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  - alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+  - alps_.net_api.PASSProcessModelElement.getAttributes
+  - alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  - alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  - alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  - alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+  - alps_.net_api.OwlThing.setType(System.String)
+  - alps_.net_api.OwlThing.getType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: alps_.net_api.CalenderBasedReminderTransition.#ctor
+  commentId: M:alps_.net_api.CalenderBasedReminderTransition.#ctor
+  id: '#ctor'
+  parent: alps_.net_api.CalenderBasedReminderTransition
+  langs:
+  - csharp
+  - vb
+  name: CalenderBasedReminderTransition()
+  nameWithType: CalenderBasedReminderTransition.CalenderBasedReminderTransition()
+  fullName: alps_.net_api.CalenderBasedReminderTransition.CalenderBasedReminderTransition()
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/CalenderBasedReminderTransition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: CalenderBasedReminderTransition.cs
+    startLine: 13
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nConstructor that creates an empty instance of the Calender Based Reminder Transition class\n"
+  example: []
+  syntax:
+    content: public CalenderBasedReminderTransition()
+    content.vb: Public Sub New
+  overload: alps_.net_api.CalenderBasedReminderTransition.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.CalenderBasedReminderTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.SubjectBehavior,alps_.net_api.Action,alps_.net_api.State,alps_.net_api.State,alps_.net_api.TransitionCondition)
+  commentId: M:alps_.net_api.CalenderBasedReminderTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.SubjectBehavior,alps_.net_api.Action,alps_.net_api.State,alps_.net_api.State,alps_.net_api.TransitionCondition)
+  id: '#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps_.net_api.SubjectBehavior,alps_.net_api.Action,alps_.net_api.State,alps_.net_api.State,alps_.net_api.TransitionCondition)'
+  parent: alps_.net_api.CalenderBasedReminderTransition
+  langs:
+  - csharp
+  - vb
+  name: CalenderBasedReminderTransition(List<String>, String, List<String>, String, SubjectBehavior, Action, State, State, TransitionCondition)
+  nameWithType: CalenderBasedReminderTransition.CalenderBasedReminderTransition(List<String>, String, List<String>, String, SubjectBehavior, Action, State, State, TransitionCondition)
+  fullName: alps_.net_api.CalenderBasedReminderTransition.CalenderBasedReminderTransition(System.Collections.Generic.List<System.String>, System.String, System.Collections.Generic.List<System.String>, System.String, alps_.net_api.SubjectBehavior, alps_.net_api.Action, alps_.net_api.State, alps_.net_api.State, alps_.net_api.TransitionCondition)
+  type: Constructor
+  source:
+    remote:
+      path: alps .net api/alps .net api/CalenderBasedReminderTransition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: .ctor
+    path: CalenderBasedReminderTransition.cs
+    startLine: 31
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nConstructor that creates an fully specified instance of the Calender Based Reminder Transition class\n"
+  example: []
+  syntax:
+    content: public CalenderBasedReminderTransition(List<string> additionalAttribute, string modelComponentID, List<string> modelComponentLabel, string comment, SubjectBehavior subjectBehavior, Action belongsToaction, State sourceState, State targetState, TransitionCondition transitionCondition)
+    parameters:
+    - id: additionalAttribute
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    - id: modelComponentID
+      type: System.String
+      description: ''
+    - id: modelComponentLabel
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    - id: comment
+      type: System.String
+      description: ''
+    - id: subjectBehavior
+      type: alps_.net_api.SubjectBehavior
+      description: ''
+    - id: belongsToaction
+      type: alps_.net_api.Action
+      description: ''
+    - id: sourceState
+      type: alps_.net_api.State
+      description: ''
+    - id: targetState
+      type: alps_.net_api.State
+      description: ''
+    - id: transitionCondition
+      type: alps_.net_api.TransitionCondition
+      description: ''
+    content.vb: Public Sub New(additionalAttribute As List(Of String), modelComponentID As String, modelComponentLabel As List(Of String), comment As String, subjectBehavior As SubjectBehavior, belongsToaction As Action, sourceState As State, targetState As State, transitionCondition As TransitionCondition)
+  overload: alps_.net_api.CalenderBasedReminderTransition.#ctor*
+  nameWithType.vb: CalenderBasedReminderTransition.CalenderBasedReminderTransition(List(Of String), String, List(Of String), String, SubjectBehavior, Action, State, State, TransitionCondition)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: alps_.net_api.CalenderBasedReminderTransition.CalenderBasedReminderTransition(System.Collections.Generic.List(Of System.String), System.String, System.Collections.Generic.List(Of System.String), System.String, alps_.net_api.SubjectBehavior, alps_.net_api.Action, alps_.net_api.State, alps_.net_api.State, alps_.net_api.TransitionCondition)
+  name.vb: CalenderBasedReminderTransition(List(Of String), String, List(Of String), String, SubjectBehavior, Action, State, State, TransitionCondition)
+- uid: alps_.net_api.CalenderBasedReminderTransition.factoryMethod
+  commentId: M:alps_.net_api.CalenderBasedReminderTransition.factoryMethod
+  id: factoryMethod
+  parent: alps_.net_api.CalenderBasedReminderTransition
+  langs:
+  - csharp
+  - vb
+  name: factoryMethod()
+  nameWithType: CalenderBasedReminderTransition.factoryMethod()
+  fullName: alps_.net_api.CalenderBasedReminderTransition.factoryMethod()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/CalenderBasedReminderTransition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: factoryMethod
+    path: CalenderBasedReminderTransition.cs
+    startLine: 49
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nFactory method that creates and returns an empty instance of the Calender Based Reminder Transition class\n"
+  example: []
+  syntax:
+    content: public CalenderBasedReminderTransition factoryMethod()
+    return:
+      type: alps_.net_api.CalenderBasedReminderTransition
+      description: An empty instance of the Calender Based Reminder Transition class
+    content.vb: Public Function factoryMethod As CalenderBasedReminderTransition
+  overload: alps_.net_api.CalenderBasedReminderTransition.factoryMethod*
+  implements:
+  - alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: alps_.net_api.CalenderBasedReminderTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  commentId: M:alps_.net_api.CalenderBasedReminderTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  id: completeObject(System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)
+  parent: alps_.net_api.CalenderBasedReminderTransition
+  langs:
+  - csharp
+  - vb
+  name: completeObject(ref Dictionary<String, PASSProcessModelElement>, ref List<String>)
+  nameWithType: CalenderBasedReminderTransition.completeObject(ref Dictionary<String, PASSProcessModelElement>, ref List<String>)
+  fullName: alps_.net_api.CalenderBasedReminderTransition.completeObject(ref System.Collections.Generic.Dictionary<System.String, alps_.net_api.PASSProcessModelElement>, ref System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/CalenderBasedReminderTransition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: completeObject
+    path: CalenderBasedReminderTransition.cs
+    startLine: 62
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take \n"
+  example: []
+  syntax:
+    content: public void completeObject(ref Dictionary<string, PASSProcessModelElement> allElements, ref List<string> tmp)
+    parameters:
+    - id: allElements
+      type: System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}
+      description: ''
+    - id: tmp
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    content.vb: Public Sub completeObject(ByRef allElements As Dictionary(Of String, PASSProcessModelElement), ByRef tmp As List(Of String))
+  overload: alps_.net_api.CalenderBasedReminderTransition.completeObject*
+  nameWithType.vb: CalenderBasedReminderTransition.completeObject(ByRef Dictionary(Of String, PASSProcessModelElement), ByRef List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: alps_.net_api.CalenderBasedReminderTransition.completeObject(ByRef System.Collections.Generic.Dictionary(Of System.String, alps_.net_api.PASSProcessModelElement), ByRef System.Collections.Generic.List(Of System.String))
+  name.vb: completeObject(ByRef Dictionary(Of String, PASSProcessModelElement), ByRef List(Of String))
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: alps_.net_api.OwlThing
+  commentId: T:alps_.net_api.OwlThing
+  parent: alps_.net_api
+  name: OwlThing
+  nameWithType: OwlThing
+  fullName: alps_.net_api.OwlThing
+- uid: alps_.net_api.PASSProcessModelElement
+  commentId: T:alps_.net_api.PASSProcessModelElement
+  parent: alps_.net_api
+  name: PASSProcessModelElement
+  nameWithType: PASSProcessModelElement
+  fullName: alps_.net_api.PASSProcessModelElement
+- uid: alps_.net_api.BehaviorDescriptionComponent
+  commentId: T:alps_.net_api.BehaviorDescriptionComponent
+  parent: alps_.net_api
+  name: BehaviorDescriptionComponent
+  nameWithType: BehaviorDescriptionComponent
+  fullName: alps_.net_api.BehaviorDescriptionComponent
+- uid: alps_.net_api.Transition
+  commentId: T:alps_.net_api.Transition
+  parent: alps_.net_api
+  name: Transition
+  nameWithType: Transition
+  fullName: alps_.net_api.Transition
+- uid: alps_.net_api.TimeTransition
+  commentId: T:alps_.net_api.TimeTransition
+  parent: alps_.net_api
+  name: TimeTransition
+  nameWithType: TimeTransition
+  fullName: alps_.net_api.TimeTransition
+- uid: alps_.net_api.ReminderTransition
+  commentId: T:alps_.net_api.ReminderTransition
+  parent: alps_.net_api
+  name: ReminderTransition
+  nameWithType: ReminderTransition
+  fullName: alps_.net_api.ReminderTransition
+- uid: alps_.net_api.ICalenderBasedReminderTransition
+  commentId: T:alps_.net_api.ICalenderBasedReminderTransition
+  parent: alps_.net_api
+  name: ICalenderBasedReminderTransition
+  nameWithType: ICalenderBasedReminderTransition
+  fullName: alps_.net_api.ICalenderBasedReminderTransition
+- uid: alps_.net_api.IReminderTransition
+  commentId: T:alps_.net_api.IReminderTransition
+  parent: alps_.net_api
+  name: IReminderTransition
+  nameWithType: IReminderTransition
+  fullName: alps_.net_api.IReminderTransition
+- uid: alps_.net_api.ITimeTransition
+  commentId: T:alps_.net_api.ITimeTransition
+  parent: alps_.net_api
+  name: ITimeTransition
+  nameWithType: ITimeTransition
+  fullName: alps_.net_api.ITimeTransition
+- uid: alps_.net_api.ITransition
+  commentId: T:alps_.net_api.ITransition
+  parent: alps_.net_api
+  name: ITransition
+  nameWithType: ITransition
+  fullName: alps_.net_api.ITransition
+- uid: alps_.net_api.IBehaviorDescriptionComponent
+  commentId: T:alps_.net_api.IBehaviorDescriptionComponent
+  parent: alps_.net_api
+  name: IBehaviorDescriptionComponent
+  nameWithType: IBehaviorDescriptionComponent
+  fullName: alps_.net_api.IBehaviorDescriptionComponent
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IOwlThing
+  commentId: T:alps_.net_api.IOwlThing
+  parent: alps_.net_api
+  name: IOwlThing
+  nameWithType: IOwlThing
+  fullName: alps_.net_api.IOwlThing
+- uid: alps_.net_api.ReminderTransition.className
+  commentId: F:alps_.net_api.ReminderTransition.className
+  parent: alps_.net_api.ReminderTransition
+  name: className
+  nameWithType: ReminderTransition.className
+  fullName: alps_.net_api.ReminderTransition.className
+- uid: alps_.net_api.Transition.setBelongsToAction(alps_.net_api.IAction)
+  commentId: M:alps_.net_api.Transition.setBelongsToAction(alps_.net_api.IAction)
+  parent: alps_.net_api.Transition
+  name: setBelongsToAction(IAction)
+  nameWithType: Transition.setBelongsToAction(IAction)
+  fullName: alps_.net_api.Transition.setBelongsToAction(alps_.net_api.IAction)
+  spec.csharp:
+  - uid: alps_.net_api.Transition.setBelongsToAction(alps_.net_api.IAction)
+    name: setBelongsToAction
+    nameWithType: Transition.setBelongsToAction
+    fullName: alps_.net_api.Transition.setBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IAction
+    name: IAction
+    nameWithType: IAction
+    fullName: alps_.net_api.IAction
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.setBelongsToAction(alps_.net_api.IAction)
+    name: setBelongsToAction
+    nameWithType: Transition.setBelongsToAction
+    fullName: alps_.net_api.Transition.setBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IAction
+    name: IAction
+    nameWithType: IAction
+    fullName: alps_.net_api.IAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.setSourceState(alps_.net_api.IState)
+  commentId: M:alps_.net_api.Transition.setSourceState(alps_.net_api.IState)
+  parent: alps_.net_api.Transition
+  name: setSourceState(IState)
+  nameWithType: Transition.setSourceState(IState)
+  fullName: alps_.net_api.Transition.setSourceState(alps_.net_api.IState)
+  spec.csharp:
+  - uid: alps_.net_api.Transition.setSourceState(alps_.net_api.IState)
+    name: setSourceState
+    nameWithType: Transition.setSourceState
+    fullName: alps_.net_api.Transition.setSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.setSourceState(alps_.net_api.IState)
+    name: setSourceState
+    nameWithType: Transition.setSourceState
+    fullName: alps_.net_api.Transition.setSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.setTargetState(alps_.net_api.IState)
+  commentId: M:alps_.net_api.Transition.setTargetState(alps_.net_api.IState)
+  parent: alps_.net_api.Transition
+  name: setTargetState(IState)
+  nameWithType: Transition.setTargetState(IState)
+  fullName: alps_.net_api.Transition.setTargetState(alps_.net_api.IState)
+  spec.csharp:
+  - uid: alps_.net_api.Transition.setTargetState(alps_.net_api.IState)
+    name: setTargetState
+    nameWithType: Transition.setTargetState
+    fullName: alps_.net_api.Transition.setTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.setTargetState(alps_.net_api.IState)
+    name: setTargetState
+    nameWithType: Transition.setTargetState
+    fullName: alps_.net_api.Transition.setTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  commentId: M:alps_.net_api.Transition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  parent: alps_.net_api.Transition
+  name: setTransitionCondition(ITransitionCondition)
+  nameWithType: Transition.setTransitionCondition(ITransitionCondition)
+  fullName: alps_.net_api.Transition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+  spec.csharp:
+  - uid: alps_.net_api.Transition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+    name: setTransitionCondition
+    nameWithType: Transition.setTransitionCondition
+    fullName: alps_.net_api.Transition.setTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransitionCondition
+    name: ITransitionCondition
+    nameWithType: ITransitionCondition
+    fullName: alps_.net_api.ITransitionCondition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.setTransitionCondition(alps_.net_api.ITransitionCondition)
+    name: setTransitionCondition
+    nameWithType: Transition.setTransitionCondition
+    fullName: alps_.net_api.Transition.setTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransitionCondition
+    name: ITransitionCondition
+    nameWithType: ITransitionCondition
+    fullName: alps_.net_api.ITransitionCondition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getBelongsToAction
+  commentId: M:alps_.net_api.Transition.getBelongsToAction
+  parent: alps_.net_api.Transition
+  name: getBelongsToAction()
+  nameWithType: Transition.getBelongsToAction()
+  fullName: alps_.net_api.Transition.getBelongsToAction()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getBelongsToAction
+    name: getBelongsToAction
+    nameWithType: Transition.getBelongsToAction
+    fullName: alps_.net_api.Transition.getBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getBelongsToAction
+    name: getBelongsToAction
+    nameWithType: Transition.getBelongsToAction
+    fullName: alps_.net_api.Transition.getBelongsToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getSourceState
+  commentId: M:alps_.net_api.Transition.getSourceState
+  parent: alps_.net_api.Transition
+  name: getSourceState()
+  nameWithType: Transition.getSourceState()
+  fullName: alps_.net_api.Transition.getSourceState()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getSourceState
+    name: getSourceState
+    nameWithType: Transition.getSourceState
+    fullName: alps_.net_api.Transition.getSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getSourceState
+    name: getSourceState
+    nameWithType: Transition.getSourceState
+    fullName: alps_.net_api.Transition.getSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getTargetState
+  commentId: M:alps_.net_api.Transition.getTargetState
+  parent: alps_.net_api.Transition
+  name: getTargetState()
+  nameWithType: Transition.getTargetState()
+  fullName: alps_.net_api.Transition.getTargetState()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getTargetState
+    name: getTargetState
+    nameWithType: Transition.getTargetState
+    fullName: alps_.net_api.Transition.getTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getTargetState
+    name: getTargetState
+    nameWithType: Transition.getTargetState
+    fullName: alps_.net_api.Transition.getTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getTransitionCondition
+  commentId: M:alps_.net_api.Transition.getTransitionCondition
+  parent: alps_.net_api.Transition
+  name: getTransitionCondition()
+  nameWithType: Transition.getTransitionCondition()
+  fullName: alps_.net_api.Transition.getTransitionCondition()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getTransitionCondition
+    name: getTransitionCondition
+    nameWithType: Transition.getTransitionCondition
+    fullName: alps_.net_api.Transition.getTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getTransitionCondition
+    name: getTransitionCondition
+    nameWithType: Transition.getTransitionCondition
+    fullName: alps_.net_api.Transition.getTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getTmpBelonstToAction
+  commentId: M:alps_.net_api.Transition.getTmpBelonstToAction
+  parent: alps_.net_api.Transition
+  name: getTmpBelonstToAction()
+  nameWithType: Transition.getTmpBelonstToAction()
+  fullName: alps_.net_api.Transition.getTmpBelonstToAction()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getTmpBelonstToAction
+    name: getTmpBelonstToAction
+    nameWithType: Transition.getTmpBelonstToAction
+    fullName: alps_.net_api.Transition.getTmpBelonstToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getTmpBelonstToAction
+    name: getTmpBelonstToAction
+    nameWithType: Transition.getTmpBelonstToAction
+    fullName: alps_.net_api.Transition.getTmpBelonstToAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getTmpSourceState
+  commentId: M:alps_.net_api.Transition.getTmpSourceState
+  parent: alps_.net_api.Transition
+  name: getTmpSourceState()
+  nameWithType: Transition.getTmpSourceState()
+  fullName: alps_.net_api.Transition.getTmpSourceState()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getTmpSourceState
+    name: getTmpSourceState
+    nameWithType: Transition.getTmpSourceState
+    fullName: alps_.net_api.Transition.getTmpSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getTmpSourceState
+    name: getTmpSourceState
+    nameWithType: Transition.getTmpSourceState
+    fullName: alps_.net_api.Transition.getTmpSourceState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getTmpTargetState
+  commentId: M:alps_.net_api.Transition.getTmpTargetState
+  parent: alps_.net_api.Transition
+  name: getTmpTargetState()
+  nameWithType: Transition.getTmpTargetState()
+  fullName: alps_.net_api.Transition.getTmpTargetState()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getTmpTargetState
+    name: getTmpTargetState
+    nameWithType: Transition.getTmpTargetState
+    fullName: alps_.net_api.Transition.getTmpTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getTmpTargetState
+    name: getTmpTargetState
+    nameWithType: Transition.getTmpTargetState
+    fullName: alps_.net_api.Transition.getTmpTargetState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.getTmpTransitionCondition
+  commentId: M:alps_.net_api.Transition.getTmpTransitionCondition
+  parent: alps_.net_api.Transition
+  name: getTmpTransitionCondition()
+  nameWithType: Transition.getTmpTransitionCondition()
+  fullName: alps_.net_api.Transition.getTmpTransitionCondition()
+  spec.csharp:
+  - uid: alps_.net_api.Transition.getTmpTransitionCondition
+    name: getTmpTransitionCondition
+    nameWithType: Transition.getTmpTransitionCondition
+    fullName: alps_.net_api.Transition.getTmpTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.getTmpTransitionCondition
+    name: getTmpTransitionCondition
+    nameWithType: Transition.getTmpTransitionCondition
+    fullName: alps_.net_api.Transition.getTmpTransitionCondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.Transition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.Transition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.Transition
+  isExternal: true
+  name: createInstance(List<String>, List<String>)
+  nameWithType: Transition.createInstance(List<String>, List<String>)
+  fullName: alps_.net_api.Transition.createInstance(System.Collections.Generic.List<System.String>, System.Collections.Generic.List<System.String>)
+  nameWithType.vb: Transition.createInstance(List(Of String), List(Of String))
+  fullName.vb: alps_.net_api.Transition.createInstance(System.Collections.Generic.List(Of System.String), System.Collections.Generic.List(Of System.String))
+  name.vb: createInstance(List(Of String), List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.Transition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+    name: createInstance
+    nameWithType: Transition.createInstance
+    fullName: alps_.net_api.Transition.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.Transition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+    name: createInstance
+    nameWithType: Transition.createInstance
+    fullName: alps_.net_api.Transition.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  commentId: M:alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  parent: alps_.net_api.BehaviorDescriptionComponent
+  name: setBelongsToSubjectBehavior(ISubjectBehavior)
+  nameWithType: BehaviorDescriptionComponent.setBelongsToSubjectBehavior(ISubjectBehavior)
+  fullName: alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  spec.csharp:
+  - uid: alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: BehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: BehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.BehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+  commentId: M:alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+  parent: alps_.net_api.BehaviorDescriptionComponent
+  name: getSubjectBehavior()
+  nameWithType: BehaviorDescriptionComponent.getSubjectBehavior()
+  fullName: alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior()
+  spec.csharp:
+  - uid: alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: BehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: BehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.BehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+  commentId: M:alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+  parent: alps_.net_api.BehaviorDescriptionComponent
+  name: getTmpSubjectBehavior()
+  nameWithType: BehaviorDescriptionComponent.getTmpSubjectBehavior()
+  fullName: alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior()
+  spec.csharp:
+  - uid: alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+    name: getTmpSubjectBehavior
+    nameWithType: BehaviorDescriptionComponent.getTmpSubjectBehavior
+    fullName: alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+    name: getTmpSubjectBehavior
+    nameWithType: BehaviorDescriptionComponent.getTmpSubjectBehavior
+    fullName: alps_.net_api.BehaviorDescriptionComponent.getTmpSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: PASSProcessModelElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: PASSProcessModelElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: PASSProcessModelElement.setAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: PASSProcessModelElement.setAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getAdditionalAttribute()
+  nameWithType: PASSProcessModelElement.getAdditionalAttribute()
+  fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: PASSProcessModelElement.getAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: PASSProcessModelElement.getAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: PASSProcessModelElement.setModelComponentID(String)
+  fullName: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: PASSProcessModelElement.setModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: PASSProcessModelElement.setModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getModelComponentID
+  commentId: M:alps_.net_api.PASSProcessModelElement.getModelComponentID
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getModelComponentID()
+  nameWithType: PASSProcessModelElement.getModelComponentID()
+  fullName: alps_.net_api.PASSProcessModelElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: PASSProcessModelElement.getModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: PASSProcessModelElement.getModelComponentID
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: PASSProcessModelElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: PASSProcessModelElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: PASSProcessModelElement.setModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: PASSProcessModelElement.setModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  commentId: M:alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getModelComponentLabel()
+  nameWithType: PASSProcessModelElement.getModelComponentLabel()
+  fullName: alps_.net_api.PASSProcessModelElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: PASSProcessModelElement.getModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: PASSProcessModelElement.getModelComponentLabel
+    fullName: alps_.net_api.PASSProcessModelElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: PASSProcessModelElement.setComment(String)
+  fullName: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+    name: setComment
+    nameWithType: PASSProcessModelElement.setComment
+    fullName: alps_.net_api.PASSProcessModelElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setComment(System.String)
+    name: setComment
+    nameWithType: PASSProcessModelElement.setComment
+    fullName: alps_.net_api.PASSProcessModelElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getComment
+  commentId: M:alps_.net_api.PASSProcessModelElement.getComment
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getComment()
+  nameWithType: PASSProcessModelElement.getComment()
+  fullName: alps_.net_api.PASSProcessModelElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getComment
+    name: getComment
+    nameWithType: PASSProcessModelElement.getComment
+    fullName: alps_.net_api.PASSProcessModelElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getComment
+    name: getComment
+    nameWithType: PASSProcessModelElement.getComment
+    fullName: alps_.net_api.PASSProcessModelElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: setAdditionalAttributeType(List<String>)
+  nameWithType: PASSProcessModelElement.setAdditionalAttributeType(List<String>)
+  fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: PASSProcessModelElement.setAdditionalAttributeType(List(Of String))
+  fullName.vb: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttributeType(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.setAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.setAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.setAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  commentId: M:alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getAdditionalAttributeType()
+  nameWithType: PASSProcessModelElement.getAdditionalAttributeType()
+  fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+    name: getAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.getAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+    name: getAdditionalAttributeType
+    nameWithType: PASSProcessModelElement.getAdditionalAttributeType
+    fullName: alps_.net_api.PASSProcessModelElement.getAdditionalAttributeType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: addAttribute(String, String)
+  nameWithType: PASSProcessModelElement.addAttribute(String, String)
+  fullName: alps_.net_api.PASSProcessModelElement.addAttribute(System.String, System.String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+    name: addAttribute
+    nameWithType: PASSProcessModelElement.addAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.addAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.addAttribute(System.String,System.String)
+    name: addAttribute
+    nameWithType: PASSProcessModelElement.addAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.addAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getAttributes
+  commentId: M:alps_.net_api.PASSProcessModelElement.getAttributes
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getAttributes()
+  nameWithType: PASSProcessModelElement.getAttributes()
+  fullName: alps_.net_api.PASSProcessModelElement.getAttributes()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getAttributes
+    name: getAttributes
+    nameWithType: PASSProcessModelElement.getAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getAttributes
+    name: getAttributes
+    nameWithType: PASSProcessModelElement.getAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  commentId: M:alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getSingleAttribute()
+  nameWithType: PASSProcessModelElement.getSingleAttribute()
+  fullName: alps_.net_api.PASSProcessModelElement.getSingleAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+    name: getSingleAttribute
+    nameWithType: PASSProcessModelElement.getSingleAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+    name: getSingleAttribute
+    nameWithType: PASSProcessModelElement.getSingleAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.getSingleAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  commentId: M:alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  parent: alps_.net_api.PASSProcessModelElement
+  name: getMultiAttributes()
+  nameWithType: PASSProcessModelElement.getMultiAttributes()
+  fullName: alps_.net_api.PASSProcessModelElement.getMultiAttributes()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+    name: getMultiAttributes
+    nameWithType: PASSProcessModelElement.getMultiAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+    name: getMultiAttributes
+    nameWithType: PASSProcessModelElement.getMultiAttributes
+    fullName: alps_.net_api.PASSProcessModelElement.getMultiAttributes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  commentId: M:alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  parent: alps_.net_api.PASSProcessModelElement
+  name: emptyAdditionalAttribute()
+  nameWithType: PASSProcessModelElement.emptyAdditionalAttribute()
+  fullName: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+    name: emptyAdditionalAttribute
+    nameWithType: PASSProcessModelElement.emptyAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+    name: emptyAdditionalAttribute
+    nameWithType: PASSProcessModelElement.emptyAdditionalAttribute
+    fullName: alps_.net_api.PASSProcessModelElement.emptyAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+  commentId: M:alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+  parent: alps_.net_api.PASSProcessModelElement
+  isExternal: true
+  name: createInstance(List<String>, String, List<String>, String)
+  nameWithType: PASSProcessModelElement.createInstance(List<String>, String, List<String>, String)
+  fullName: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List<System.String>, System.String, System.Collections.Generic.List<System.String>, System.String)
+  nameWithType.vb: PASSProcessModelElement.createInstance(List(Of String), String, List(Of String), String)
+  fullName.vb: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List(Of System.String), System.String, System.Collections.Generic.List(Of System.String), System.String)
+  name.vb: createInstance(List(Of String), String, List(Of String), String)
+  spec.csharp:
+  - uid: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+    name: createInstance
+    nameWithType: PASSProcessModelElement.createInstance
+    fullName: alps_.net_api.PASSProcessModelElement.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.PASSProcessModelElement.createInstance(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String)
+    name: createInstance
+    nameWithType: PASSProcessModelElement.createInstance
+    fullName: alps_.net_api.PASSProcessModelElement.createInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlThing.setType(System.String)
+  commentId: M:alps_.net_api.OwlThing.setType(System.String)
+  parent: alps_.net_api.OwlThing
+  isExternal: true
+  name: setType(String)
+  nameWithType: OwlThing.setType(String)
+  fullName: alps_.net_api.OwlThing.setType(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.OwlThing.setType(System.String)
+    name: setType
+    nameWithType: OwlThing.setType
+    fullName: alps_.net_api.OwlThing.setType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.OwlThing.setType(System.String)
+    name: setType
+    nameWithType: OwlThing.setType
+    fullName: alps_.net_api.OwlThing.setType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.OwlThing.getType
+  commentId: M:alps_.net_api.OwlThing.getType
+  parent: alps_.net_api.OwlThing
+  name: getType()
+  nameWithType: OwlThing.getType()
+  fullName: alps_.net_api.OwlThing.getType()
+  spec.csharp:
+  - uid: alps_.net_api.OwlThing.getType
+    name: getType
+    nameWithType: OwlThing.getType
+    fullName: alps_.net_api.OwlThing.getType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.OwlThing.getType
+    name: getType
+    nameWithType: OwlThing.getType
+    fullName: alps_.net_api.OwlThing.getType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: alps_.net_api.CalenderBasedReminderTransition.#ctor*
+  commentId: Overload:alps_.net_api.CalenderBasedReminderTransition.#ctor
+  name: CalenderBasedReminderTransition
+  nameWithType: CalenderBasedReminderTransition.CalenderBasedReminderTransition
+  fullName: alps_.net_api.CalenderBasedReminderTransition.CalenderBasedReminderTransition
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: alps_.net_api.SubjectBehavior
+  commentId: T:alps_.net_api.SubjectBehavior
+  parent: alps_.net_api
+  name: SubjectBehavior
+  nameWithType: SubjectBehavior
+  fullName: alps_.net_api.SubjectBehavior
+- uid: alps_.net_api.Action
+  commentId: T:alps_.net_api.Action
+  parent: alps_.net_api
+  name: Action
+  nameWithType: Action
+  fullName: alps_.net_api.Action
+- uid: alps_.net_api.State
+  commentId: T:alps_.net_api.State
+  parent: alps_.net_api
+  name: State
+  nameWithType: State
+  fullName: alps_.net_api.State
+- uid: alps_.net_api.TransitionCondition
+  commentId: T:alps_.net_api.TransitionCondition
+  parent: alps_.net_api
+  name: TransitionCondition
+  nameWithType: TransitionCondition
+  fullName: alps_.net_api.TransitionCondition
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: alps_.net_api.CalenderBasedReminderTransition.factoryMethod*
+  commentId: Overload:alps_.net_api.CalenderBasedReminderTransition.factoryMethod
+  name: factoryMethod
+  nameWithType: CalenderBasedReminderTransition.factoryMethod
+  fullName: alps_.net_api.CalenderBasedReminderTransition.factoryMethod
+- uid: alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+  commentId: M:alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+  parent: alps_.net_api.ICalenderBasedReminderTransition
+  name: factoryMethod()
+  nameWithType: ICalenderBasedReminderTransition.factoryMethod()
+  fullName: alps_.net_api.ICalenderBasedReminderTransition.factoryMethod()
+  spec.csharp:
+  - uid: alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+    name: factoryMethod
+    nameWithType: ICalenderBasedReminderTransition.factoryMethod
+    fullName: alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+    name: factoryMethod
+    nameWithType: ICalenderBasedReminderTransition.factoryMethod
+    fullName: alps_.net_api.ICalenderBasedReminderTransition.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.CalenderBasedReminderTransition
+  commentId: T:alps_.net_api.CalenderBasedReminderTransition
+  parent: alps_.net_api
+  name: CalenderBasedReminderTransition
+  nameWithType: CalenderBasedReminderTransition
+  fullName: alps_.net_api.CalenderBasedReminderTransition
+- uid: alps_.net_api.CalenderBasedReminderTransition.completeObject*
+  commentId: Overload:alps_.net_api.CalenderBasedReminderTransition.completeObject
+  name: completeObject
+  nameWithType: CalenderBasedReminderTransition.completeObject
+  fullName: alps_.net_api.CalenderBasedReminderTransition.completeObject
+- uid: System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,alps_.net_api.PASSProcessModelElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, PASSProcessModelElement>
+  nameWithType: Dictionary<String, PASSProcessModelElement>
+  fullName: System.Collections.Generic.Dictionary<System.String, alps_.net_api.PASSProcessModelElement>
+  nameWithType.vb: Dictionary(Of String, PASSProcessModelElement)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, alps_.net_api.PASSProcessModelElement)
+  name.vb: Dictionary(Of String, PASSProcessModelElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: alps_.net_api.PASSProcessModelElement
+    name: PASSProcessModelElement
+    nameWithType: PASSProcessModelElement
+    fullName: alps_.net_api.PASSProcessModelElement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: alps_.net_api.PASSProcessModelElement
+    name: PASSProcessModelElement
+    nameWithType: PASSProcessModelElement
+    fullName: alps_.net_api.PASSProcessModelElement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )

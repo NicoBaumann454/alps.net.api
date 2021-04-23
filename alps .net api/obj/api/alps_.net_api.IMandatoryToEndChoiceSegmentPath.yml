@@ -1,0 +1,1260 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  commentId: T:alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  id: IMandatoryToEndChoiceSegmentPath
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod
+  - alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction
+  - alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath
+  - alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction(alps_.net_api.IAction)
+  - alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath(alps_.net_api.IChoiceSegmentPath)
+  langs:
+  - csharp
+  - vb
+  name: IMandatoryToEndChoiceSegmentPath
+  nameWithType: IMandatoryToEndChoiceSegmentPath
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMandatoryToEndChoiceSegmentPath.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: IMandatoryToEndChoiceSegmentPath
+    path: IMandatoryToEndChoiceSegmentPath.cs
+    startLine: 6
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the mandatory to end choice segment path class\n"
+  example: []
+  syntax:
+    content: 'public interface IMandatoryToEndChoiceSegmentPath : IChoiceSegmentPath, IState, IBehaviorDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface IMandatoryToEndChoiceSegmentPath
+          Inherits IChoiceSegmentPath
+  inheritedMembers:
+  - alps_.net_api.IChoiceSegmentPath.setEndState(alps_.net_api.IState)
+  - alps_.net_api.IChoiceSegmentPath.getEndState
+  - alps_.net_api.IChoiceSegmentPath.setInitialState(alps_.net_api.IState)
+  - alps_.net_api.IChoiceSegmentPath.getInitialState
+  - alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(System.Boolean)
+  - alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+  - alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(System.Boolean)
+  - alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+  - alps_.net_api.IState.setIncomingTransition(alps_.net_api.ITransition)
+  - alps_.net_api.IState.getIncomingTransition
+  - alps_.net_api.IState.setOutgoingTransition(alps_.net_api.ITransition)
+  - alps_.net_api.IState.getOutgoingTransition
+  - alps_.net_api.IState.setFunctionSpecification(alps_.net_api.IFunctionSpecification)
+  - alps_.net_api.IState.getFunctionSpecification
+  - alps_.net_api.IState.setGuardBehavior(alps_.net_api.IGuardBehavior)
+  - alps_.net_api.IState.getGuardBehavior
+  - alps_.net_api.IState.setAction(alps_.net_api.IAction)
+  - alps_.net_api.IState.getAction
+  - alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  - alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction(alps_.net_api.IAction)
+  commentId: M:alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction(alps_.net_api.IAction)
+  id: setBelongsToAction(alps_.net_api.IAction)
+  parent: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  langs:
+  - csharp
+  - vb
+  name: setBelongsToAction(IAction)
+  nameWithType: IMandatoryToEndChoiceSegmentPath.setBelongsToAction(IAction)
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction(alps_.net_api.IAction)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMandatoryToEndChoiceSegmentPath.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setBelongsToAction
+    path: IMandatoryToEndChoiceSegmentPath.cs
+    startLine: 12
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void setBelongsToAction(IAction action)
+    parameters:
+    - id: action
+      type: alps_.net_api.IAction
+      description: ''
+    content.vb: Sub setBelongsToAction(action As IAction)
+  overload: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction*
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction
+  commentId: M:alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction
+  id: getBelongsToAction
+  parent: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  langs:
+  - csharp
+  - vb
+  name: getBelongsToAction()
+  nameWithType: IMandatoryToEndChoiceSegmentPath.getBelongsToAction()
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMandatoryToEndChoiceSegmentPath.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getBelongsToAction
+    path: IMandatoryToEndChoiceSegmentPath.cs
+    startLine: 18
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: IAction getBelongsToAction()
+    return:
+      type: alps_.net_api.IAction
+      description: ''
+    content.vb: Function getBelongsToAction As IAction
+  overload: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction*
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath(alps_.net_api.IChoiceSegmentPath)
+  commentId: M:alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath(alps_.net_api.IChoiceSegmentPath)
+  id: setChoiceSegmentPath(alps_.net_api.IChoiceSegmentPath)
+  parent: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  langs:
+  - csharp
+  - vb
+  name: setChoiceSegmentPath(IChoiceSegmentPath)
+  nameWithType: IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath(IChoiceSegmentPath)
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath(alps_.net_api.IChoiceSegmentPath)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMandatoryToEndChoiceSegmentPath.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setChoiceSegmentPath
+    path: IMandatoryToEndChoiceSegmentPath.cs
+    startLine: 24
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void setChoiceSegmentPath(IChoiceSegmentPath choiceSegmentPath)
+    parameters:
+    - id: choiceSegmentPath
+      type: alps_.net_api.IChoiceSegmentPath
+      description: ''
+    content.vb: Sub setChoiceSegmentPath(choiceSegmentPath As IChoiceSegmentPath)
+  overload: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath*
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath
+  commentId: M:alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath
+  id: getChoiceSegmentPath
+  parent: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  langs:
+  - csharp
+  - vb
+  name: getChoiceSegmentPath()
+  nameWithType: IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath()
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMandatoryToEndChoiceSegmentPath.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getChoiceSegmentPath
+    path: IMandatoryToEndChoiceSegmentPath.cs
+    startLine: 30
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: IChoiceSegmentPath getChoiceSegmentPath()
+    return:
+      type: alps_.net_api.IChoiceSegmentPath
+      description: ''
+    content.vb: Function getChoiceSegmentPath As IChoiceSegmentPath
+  overload: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath*
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod
+  commentId: M:alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod
+  id: factoryMethod
+  parent: alps_.net_api.IMandatoryToEndChoiceSegmentPath
+  langs:
+  - csharp
+  - vb
+  name: factoryMethod()
+  nameWithType: IMandatoryToEndChoiceSegmentPath.factoryMethod()
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IMandatoryToEndChoiceSegmentPath.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: factoryMethod
+    path: IMandatoryToEndChoiceSegmentPath.cs
+    startLine: 36
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: MandatoryToEndChoiceSegment factoryMethod()
+    return:
+      type: alps_.net_api.MandatoryToEndChoiceSegment
+      description: ''
+    content.vb: Function factoryMethod As MandatoryToEndChoiceSegment
+  overload: alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.IChoiceSegmentPath.setEndState(alps_.net_api.IState)
+  commentId: M:alps_.net_api.IChoiceSegmentPath.setEndState(alps_.net_api.IState)
+  parent: alps_.net_api.IChoiceSegmentPath
+  name: setEndState(IState)
+  nameWithType: IChoiceSegmentPath.setEndState(IState)
+  fullName: alps_.net_api.IChoiceSegmentPath.setEndState(alps_.net_api.IState)
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.setEndState(alps_.net_api.IState)
+    name: setEndState
+    nameWithType: IChoiceSegmentPath.setEndState
+    fullName: alps_.net_api.IChoiceSegmentPath.setEndState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.setEndState(alps_.net_api.IState)
+    name: setEndState
+    nameWithType: IChoiceSegmentPath.setEndState
+    fullName: alps_.net_api.IChoiceSegmentPath.setEndState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.getEndState
+  commentId: M:alps_.net_api.IChoiceSegmentPath.getEndState
+  parent: alps_.net_api.IChoiceSegmentPath
+  name: getEndState()
+  nameWithType: IChoiceSegmentPath.getEndState()
+  fullName: alps_.net_api.IChoiceSegmentPath.getEndState()
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.getEndState
+    name: getEndState
+    nameWithType: IChoiceSegmentPath.getEndState
+    fullName: alps_.net_api.IChoiceSegmentPath.getEndState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.getEndState
+    name: getEndState
+    nameWithType: IChoiceSegmentPath.getEndState
+    fullName: alps_.net_api.IChoiceSegmentPath.getEndState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.setInitialState(alps_.net_api.IState)
+  commentId: M:alps_.net_api.IChoiceSegmentPath.setInitialState(alps_.net_api.IState)
+  parent: alps_.net_api.IChoiceSegmentPath
+  name: setInitialState(IState)
+  nameWithType: IChoiceSegmentPath.setInitialState(IState)
+  fullName: alps_.net_api.IChoiceSegmentPath.setInitialState(alps_.net_api.IState)
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.setInitialState(alps_.net_api.IState)
+    name: setInitialState
+    nameWithType: IChoiceSegmentPath.setInitialState
+    fullName: alps_.net_api.IChoiceSegmentPath.setInitialState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.setInitialState(alps_.net_api.IState)
+    name: setInitialState
+    nameWithType: IChoiceSegmentPath.setInitialState
+    fullName: alps_.net_api.IChoiceSegmentPath.setInitialState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IState
+    name: IState
+    nameWithType: IState
+    fullName: alps_.net_api.IState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.getInitialState
+  commentId: M:alps_.net_api.IChoiceSegmentPath.getInitialState
+  parent: alps_.net_api.IChoiceSegmentPath
+  name: getInitialState()
+  nameWithType: IChoiceSegmentPath.getInitialState()
+  fullName: alps_.net_api.IChoiceSegmentPath.getInitialState()
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.getInitialState
+    name: getInitialState
+    nameWithType: IChoiceSegmentPath.getInitialState
+    fullName: alps_.net_api.IChoiceSegmentPath.getInitialState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.getInitialState
+    name: getInitialState
+    nameWithType: IChoiceSegmentPath.getInitialState
+    fullName: alps_.net_api.IChoiceSegmentPath.getInitialState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(System.Boolean)
+  commentId: M:alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(System.Boolean)
+  parent: alps_.net_api.IChoiceSegmentPath
+  isExternal: true
+  name: setIsOptionalToEndChoiceSegmentPath(Boolean)
+  nameWithType: IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(Boolean)
+  fullName: alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(System.Boolean)
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(System.Boolean)
+    name: setIsOptionalToEndChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath(System.Boolean)
+    name: setIsOptionalToEndChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.setIsOptionalToEndChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+  commentId: M:alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+  parent: alps_.net_api.IChoiceSegmentPath
+  name: getIsOptionalToEndChoiceSegmentPath()
+  nameWithType: IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath()
+  fullName: alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath()
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+    name: getIsOptionalToEndChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+    name: getIsOptionalToEndChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.getIsOptionalToEndChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(System.Boolean)
+  commentId: M:alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(System.Boolean)
+  parent: alps_.net_api.IChoiceSegmentPath
+  isExternal: true
+  name: setIsOptionalToStartChoiceSegmentPath(Boolean)
+  nameWithType: IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(Boolean)
+  fullName: alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(System.Boolean)
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(System.Boolean)
+    name: setIsOptionalToStartChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath(System.Boolean)
+    name: setIsOptionalToStartChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.setIsOptionalToStartChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+  commentId: M:alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+  parent: alps_.net_api.IChoiceSegmentPath
+  name: getIsOptionalToStartChoiceSegmentPath()
+  nameWithType: IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath()
+  fullName: alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath()
+  spec.csharp:
+  - uid: alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+    name: getIsOptionalToStartChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+    name: getIsOptionalToStartChoiceSegmentPath
+    nameWithType: IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+    fullName: alps_.net_api.IChoiceSegmentPath.getIsOptionalToStartChoiceSegmentPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.setIncomingTransition(alps_.net_api.ITransition)
+  commentId: M:alps_.net_api.IState.setIncomingTransition(alps_.net_api.ITransition)
+  parent: alps_.net_api.IState
+  name: setIncomingTransition(ITransition)
+  nameWithType: IState.setIncomingTransition(ITransition)
+  fullName: alps_.net_api.IState.setIncomingTransition(alps_.net_api.ITransition)
+  spec.csharp:
+  - uid: alps_.net_api.IState.setIncomingTransition(alps_.net_api.ITransition)
+    name: setIncomingTransition
+    nameWithType: IState.setIncomingTransition
+    fullName: alps_.net_api.IState.setIncomingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransition
+    name: ITransition
+    nameWithType: ITransition
+    fullName: alps_.net_api.ITransition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.setIncomingTransition(alps_.net_api.ITransition)
+    name: setIncomingTransition
+    nameWithType: IState.setIncomingTransition
+    fullName: alps_.net_api.IState.setIncomingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransition
+    name: ITransition
+    nameWithType: ITransition
+    fullName: alps_.net_api.ITransition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.getIncomingTransition
+  commentId: M:alps_.net_api.IState.getIncomingTransition
+  parent: alps_.net_api.IState
+  name: getIncomingTransition()
+  nameWithType: IState.getIncomingTransition()
+  fullName: alps_.net_api.IState.getIncomingTransition()
+  spec.csharp:
+  - uid: alps_.net_api.IState.getIncomingTransition
+    name: getIncomingTransition
+    nameWithType: IState.getIncomingTransition
+    fullName: alps_.net_api.IState.getIncomingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.getIncomingTransition
+    name: getIncomingTransition
+    nameWithType: IState.getIncomingTransition
+    fullName: alps_.net_api.IState.getIncomingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.setOutgoingTransition(alps_.net_api.ITransition)
+  commentId: M:alps_.net_api.IState.setOutgoingTransition(alps_.net_api.ITransition)
+  parent: alps_.net_api.IState
+  name: setOutgoingTransition(ITransition)
+  nameWithType: IState.setOutgoingTransition(ITransition)
+  fullName: alps_.net_api.IState.setOutgoingTransition(alps_.net_api.ITransition)
+  spec.csharp:
+  - uid: alps_.net_api.IState.setOutgoingTransition(alps_.net_api.ITransition)
+    name: setOutgoingTransition
+    nameWithType: IState.setOutgoingTransition
+    fullName: alps_.net_api.IState.setOutgoingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransition
+    name: ITransition
+    nameWithType: ITransition
+    fullName: alps_.net_api.ITransition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.setOutgoingTransition(alps_.net_api.ITransition)
+    name: setOutgoingTransition
+    nameWithType: IState.setOutgoingTransition
+    fullName: alps_.net_api.IState.setOutgoingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ITransition
+    name: ITransition
+    nameWithType: ITransition
+    fullName: alps_.net_api.ITransition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.getOutgoingTransition
+  commentId: M:alps_.net_api.IState.getOutgoingTransition
+  parent: alps_.net_api.IState
+  name: getOutgoingTransition()
+  nameWithType: IState.getOutgoingTransition()
+  fullName: alps_.net_api.IState.getOutgoingTransition()
+  spec.csharp:
+  - uid: alps_.net_api.IState.getOutgoingTransition
+    name: getOutgoingTransition
+    nameWithType: IState.getOutgoingTransition
+    fullName: alps_.net_api.IState.getOutgoingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.getOutgoingTransition
+    name: getOutgoingTransition
+    nameWithType: IState.getOutgoingTransition
+    fullName: alps_.net_api.IState.getOutgoingTransition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.setFunctionSpecification(alps_.net_api.IFunctionSpecification)
+  commentId: M:alps_.net_api.IState.setFunctionSpecification(alps_.net_api.IFunctionSpecification)
+  parent: alps_.net_api.IState
+  name: setFunctionSpecification(IFunctionSpecification)
+  nameWithType: IState.setFunctionSpecification(IFunctionSpecification)
+  fullName: alps_.net_api.IState.setFunctionSpecification(alps_.net_api.IFunctionSpecification)
+  spec.csharp:
+  - uid: alps_.net_api.IState.setFunctionSpecification(alps_.net_api.IFunctionSpecification)
+    name: setFunctionSpecification
+    nameWithType: IState.setFunctionSpecification
+    fullName: alps_.net_api.IState.setFunctionSpecification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IFunctionSpecification
+    name: IFunctionSpecification
+    nameWithType: IFunctionSpecification
+    fullName: alps_.net_api.IFunctionSpecification
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.setFunctionSpecification(alps_.net_api.IFunctionSpecification)
+    name: setFunctionSpecification
+    nameWithType: IState.setFunctionSpecification
+    fullName: alps_.net_api.IState.setFunctionSpecification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IFunctionSpecification
+    name: IFunctionSpecification
+    nameWithType: IFunctionSpecification
+    fullName: alps_.net_api.IFunctionSpecification
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.getFunctionSpecification
+  commentId: M:alps_.net_api.IState.getFunctionSpecification
+  parent: alps_.net_api.IState
+  name: getFunctionSpecification()
+  nameWithType: IState.getFunctionSpecification()
+  fullName: alps_.net_api.IState.getFunctionSpecification()
+  spec.csharp:
+  - uid: alps_.net_api.IState.getFunctionSpecification
+    name: getFunctionSpecification
+    nameWithType: IState.getFunctionSpecification
+    fullName: alps_.net_api.IState.getFunctionSpecification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.getFunctionSpecification
+    name: getFunctionSpecification
+    nameWithType: IState.getFunctionSpecification
+    fullName: alps_.net_api.IState.getFunctionSpecification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.setGuardBehavior(alps_.net_api.IGuardBehavior)
+  commentId: M:alps_.net_api.IState.setGuardBehavior(alps_.net_api.IGuardBehavior)
+  parent: alps_.net_api.IState
+  name: setGuardBehavior(IGuardBehavior)
+  nameWithType: IState.setGuardBehavior(IGuardBehavior)
+  fullName: alps_.net_api.IState.setGuardBehavior(alps_.net_api.IGuardBehavior)
+  spec.csharp:
+  - uid: alps_.net_api.IState.setGuardBehavior(alps_.net_api.IGuardBehavior)
+    name: setGuardBehavior
+    nameWithType: IState.setGuardBehavior
+    fullName: alps_.net_api.IState.setGuardBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IGuardBehavior
+    name: IGuardBehavior
+    nameWithType: IGuardBehavior
+    fullName: alps_.net_api.IGuardBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.setGuardBehavior(alps_.net_api.IGuardBehavior)
+    name: setGuardBehavior
+    nameWithType: IState.setGuardBehavior
+    fullName: alps_.net_api.IState.setGuardBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IGuardBehavior
+    name: IGuardBehavior
+    nameWithType: IGuardBehavior
+    fullName: alps_.net_api.IGuardBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.getGuardBehavior
+  commentId: M:alps_.net_api.IState.getGuardBehavior
+  parent: alps_.net_api.IState
+  name: getGuardBehavior()
+  nameWithType: IState.getGuardBehavior()
+  fullName: alps_.net_api.IState.getGuardBehavior()
+  spec.csharp:
+  - uid: alps_.net_api.IState.getGuardBehavior
+    name: getGuardBehavior
+    nameWithType: IState.getGuardBehavior
+    fullName: alps_.net_api.IState.getGuardBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.getGuardBehavior
+    name: getGuardBehavior
+    nameWithType: IState.getGuardBehavior
+    fullName: alps_.net_api.IState.getGuardBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.setAction(alps_.net_api.IAction)
+  commentId: M:alps_.net_api.IState.setAction(alps_.net_api.IAction)
+  parent: alps_.net_api.IState
+  name: setAction(IAction)
+  nameWithType: IState.setAction(IAction)
+  fullName: alps_.net_api.IState.setAction(alps_.net_api.IAction)
+  spec.csharp:
+  - uid: alps_.net_api.IState.setAction(alps_.net_api.IAction)
+    name: setAction
+    nameWithType: IState.setAction
+    fullName: alps_.net_api.IState.setAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IAction
+    name: IAction
+    nameWithType: IAction
+    fullName: alps_.net_api.IAction
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.setAction(alps_.net_api.IAction)
+    name: setAction
+    nameWithType: IState.setAction
+    fullName: alps_.net_api.IState.setAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IAction
+    name: IAction
+    nameWithType: IAction
+    fullName: alps_.net_api.IAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IState.getAction
+  commentId: M:alps_.net_api.IState.getAction
+  parent: alps_.net_api.IState
+  name: getAction()
+  nameWithType: IState.getAction()
+  fullName: alps_.net_api.IState.getAction()
+  spec.csharp:
+  - uid: alps_.net_api.IState.getAction
+    name: getAction
+    nameWithType: IState.getAction
+    fullName: alps_.net_api.IState.getAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IState.getAction
+    name: getAction
+    nameWithType: IState.getAction
+    fullName: alps_.net_api.IState.getAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: setBelongsToSubjectBehavior(ISubjectBehavior)
+  nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(ISubjectBehavior)
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: getSubjectBehavior()
+  nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior()
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior()
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IChoiceSegmentPath
+  commentId: T:alps_.net_api.IChoiceSegmentPath
+  parent: alps_.net_api
+  name: IChoiceSegmentPath
+  nameWithType: IChoiceSegmentPath
+  fullName: alps_.net_api.IChoiceSegmentPath
+- uid: alps_.net_api.IState
+  commentId: T:alps_.net_api.IState
+  parent: alps_.net_api
+  name: IState
+  nameWithType: IState
+  fullName: alps_.net_api.IState
+- uid: alps_.net_api.IBehaviorDescriptionComponent
+  commentId: T:alps_.net_api.IBehaviorDescriptionComponent
+  parent: alps_.net_api
+  name: IBehaviorDescriptionComponent
+  nameWithType: IBehaviorDescriptionComponent
+  fullName: alps_.net_api.IBehaviorDescriptionComponent
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction*
+  commentId: Overload:alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction
+  name: setBelongsToAction
+  nameWithType: IMandatoryToEndChoiceSegmentPath.setBelongsToAction
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setBelongsToAction
+- uid: alps_.net_api.IAction
+  commentId: T:alps_.net_api.IAction
+  parent: alps_.net_api
+  name: IAction
+  nameWithType: IAction
+  fullName: alps_.net_api.IAction
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction*
+  commentId: Overload:alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction
+  name: getBelongsToAction
+  nameWithType: IMandatoryToEndChoiceSegmentPath.getBelongsToAction
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getBelongsToAction
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath*
+  commentId: Overload:alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath
+  name: setChoiceSegmentPath
+  nameWithType: IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.setChoiceSegmentPath
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath*
+  commentId: Overload:alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath
+  name: getChoiceSegmentPath
+  nameWithType: IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.getChoiceSegmentPath
+- uid: alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod*
+  commentId: Overload:alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod
+  name: factoryMethod
+  nameWithType: IMandatoryToEndChoiceSegmentPath.factoryMethod
+  fullName: alps_.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod
+- uid: alps_.net_api.MandatoryToEndChoiceSegment
+  commentId: T:alps_.net_api.MandatoryToEndChoiceSegment
+  parent: alps_.net_api
+  name: MandatoryToEndChoiceSegment
+  nameWithType: MandatoryToEndChoiceSegment
+  fullName: alps_.net_api.MandatoryToEndChoiceSegment

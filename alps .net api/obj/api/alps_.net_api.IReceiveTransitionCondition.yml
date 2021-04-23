@@ -1,0 +1,1031 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.IReceiveTransitionCondition
+  commentId: T:alps_.net_api.IReceiveTransitionCondition
+  id: IReceiveTransitionCondition
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom
+  - alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound
+  - alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound
+  - alps_.net_api.IReceiveTransitionCondition.getReceiveType
+  - alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage
+  - alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound(System.Int32)
+  - alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound(System.Int32)
+  - alps_.net_api.IReceiveTransitionCondition.setReceiveType(alps_.net_api.IReceiveType)
+  - alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom(alps_.net_api.ISubject)
+  - alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage(alps_.net_api.IMessageSpecification)
+  langs:
+  - csharp
+  - vb
+  name: IReceiveTransitionCondition
+  nameWithType: IReceiveTransitionCondition
+  fullName: alps_.net_api.IReceiveTransitionCondition
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: IReceiveTransitionCondition
+    path: IReceiveTransitionCondition.cs
+    startLine: 5
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface to the receive transition condition class\n"
+  example: []
+  syntax:
+    content: 'public interface IReceiveTransitionCondition : IMessageExchangeCondition, ITransitionCondition, IBehaviorDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface IReceiveTransitionCondition
+          Inherits IMessageExchangeCondition
+  inheritedMembers:
+  - alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange(alps_.net_api.IMessageExchange)
+  - alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+  - alps_.net_api.IMessageExchangeCondition.factoryMethod
+  - alps_.net_api.ITransitionCondition.setToolSpecificDefiniton(System.String)
+  - alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+  - alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  - alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound(System.Int32)
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound(System.Int32)
+  id: setMultipleReceiveLowerBound(System.Int32)
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: setMultipleReceiveLowerBound(Int32)
+  nameWithType: IReceiveTransitionCondition.setMultipleReceiveLowerBound(Int32)
+  fullName: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setMultipleReceiveLowerBound
+    path: IReceiveTransitionCondition.cs
+    startLine: 11
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the lower bound attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setMultipleReceiveLowerBound(int lowerBound)
+    parameters:
+    - id: lowerBound
+      type: System.Int32
+      description: ''
+    content.vb: Sub setMultipleReceiveLowerBound(lowerBound As Integer)
+  overload: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound*
+- uid: alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound
+  id: getMultilpleLowerBound
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: getMultilpleLowerBound()
+  nameWithType: IReceiveTransitionCondition.getMultilpleLowerBound()
+  fullName: alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getMultilpleLowerBound
+    path: IReceiveTransitionCondition.cs
+    startLine: 17
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the lower bound attribute of the instance\n"
+  example: []
+  syntax:
+    content: int getMultilpleLowerBound()
+    return:
+      type: System.Int32
+      description: The lower bound attribute of the instance
+    content.vb: Function getMultilpleLowerBound As Integer
+  overload: alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound*
+- uid: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound(System.Int32)
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound(System.Int32)
+  id: setMultipleReceiveUpperBound(System.Int32)
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: setMultipleReceiveUpperBound(Int32)
+  nameWithType: IReceiveTransitionCondition.setMultipleReceiveUpperBound(Int32)
+  fullName: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setMultipleReceiveUpperBound
+    path: IReceiveTransitionCondition.cs
+    startLine: 23
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the upper bound attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setMultipleReceiveUpperBound(int upperBound)
+    parameters:
+    - id: upperBound
+      type: System.Int32
+      description: ''
+    content.vb: Sub setMultipleReceiveUpperBound(upperBound As Integer)
+  overload: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound*
+- uid: alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound
+  id: getMultipleUpperBound
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: getMultipleUpperBound()
+  nameWithType: IReceiveTransitionCondition.getMultipleUpperBound()
+  fullName: alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getMultipleUpperBound
+    path: IReceiveTransitionCondition.cs
+    startLine: 29
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the upper bound attribute of the instance\n"
+  example: []
+  syntax:
+    content: int getMultipleUpperBound()
+    return:
+      type: System.Int32
+      description: The upper bound attribute of the instance
+    content.vb: Function getMultipleUpperBound As Integer
+  overload: alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound*
+- uid: alps_.net_api.IReceiveTransitionCondition.setReceiveType(alps_.net_api.IReceiveType)
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.setReceiveType(alps_.net_api.IReceiveType)
+  id: setReceiveType(alps_.net_api.IReceiveType)
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: setReceiveType(IReceiveType)
+  nameWithType: IReceiveTransitionCondition.setReceiveType(IReceiveType)
+  fullName: alps_.net_api.IReceiveTransitionCondition.setReceiveType(alps_.net_api.IReceiveType)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setReceiveType
+    path: IReceiveTransitionCondition.cs
+    startLine: 35
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the receive type attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setReceiveType(IReceiveType receiveType)
+    parameters:
+    - id: receiveType
+      type: alps_.net_api.IReceiveType
+      description: ''
+    content.vb: Sub setReceiveType(receiveType As IReceiveType)
+  overload: alps_.net_api.IReceiveTransitionCondition.setReceiveType*
+- uid: alps_.net_api.IReceiveTransitionCondition.getReceiveType
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.getReceiveType
+  id: getReceiveType
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: getReceiveType()
+  nameWithType: IReceiveTransitionCondition.getReceiveType()
+  fullName: alps_.net_api.IReceiveTransitionCondition.getReceiveType()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getReceiveType
+    path: IReceiveTransitionCondition.cs
+    startLine: 41
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the receive type attribute of the instance\n"
+  example: []
+  syntax:
+    content: IReceiveType getReceiveType()
+    return:
+      type: alps_.net_api.IReceiveType
+      description: The receive type attribute of the instance
+    content.vb: Function getReceiveType As IReceiveType
+  overload: alps_.net_api.IReceiveTransitionCondition.getReceiveType*
+- uid: alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom(alps_.net_api.ISubject)
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom(alps_.net_api.ISubject)
+  id: setRequiresMessageSentFrom(alps_.net_api.ISubject)
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: setRequiresMessageSentFrom(ISubject)
+  nameWithType: IReceiveTransitionCondition.setRequiresMessageSentFrom(ISubject)
+  fullName: alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom(alps_.net_api.ISubject)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setRequiresMessageSentFrom
+    path: IReceiveTransitionCondition.cs
+    startLine: 47
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setRequiresMessageSentFrom(ISubject subject)
+    parameters:
+    - id: subject
+      type: alps_.net_api.ISubject
+      description: ''
+    content.vb: Sub setRequiresMessageSentFrom(subject As ISubject)
+  overload: alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom*
+- uid: alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom
+  id: getMessageSentFrom
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: getMessageSentFrom()
+  nameWithType: IReceiveTransitionCondition.getMessageSentFrom()
+  fullName: alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getMessageSentFrom
+    path: IReceiveTransitionCondition.cs
+    startLine: 53
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: ISubject getMessageSentFrom()
+    return:
+      type: alps_.net_api.ISubject
+      description: The subject attribute of the instance
+    content.vb: Function getMessageSentFrom As ISubject
+  overload: alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom*
+- uid: alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage(alps_.net_api.IMessageSpecification)
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage(alps_.net_api.IMessageSpecification)
+  id: setRequiresReceptionOfMessage(alps_.net_api.IMessageSpecification)
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: setRequiresReceptionOfMessage(IMessageSpecification)
+  nameWithType: IReceiveTransitionCondition.setRequiresReceptionOfMessage(IMessageSpecification)
+  fullName: alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage(alps_.net_api.IMessageSpecification)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setRequiresReceptionOfMessage
+    path: IReceiveTransitionCondition.cs
+    startLine: 59
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the message specification attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setRequiresReceptionOfMessage(IMessageSpecification messageSpecification)
+    parameters:
+    - id: messageSpecification
+      type: alps_.net_api.IMessageSpecification
+      description: ''
+    content.vb: Sub setRequiresReceptionOfMessage(messageSpecification As IMessageSpecification)
+  overload: alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage*
+- uid: alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage
+  commentId: M:alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage
+  id: getReceptionOfMessage
+  parent: alps_.net_api.IReceiveTransitionCondition
+  langs:
+  - csharp
+  - vb
+  name: getReceptionOfMessage()
+  nameWithType: IReceiveTransitionCondition.getReceptionOfMessage()
+  fullName: alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IReceiveTransitionCondition.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getReceptionOfMessage
+    path: IReceiveTransitionCondition.cs
+    startLine: 65
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the message specification attribute of the instance\n"
+  example: []
+  syntax:
+    content: IMessageSpecification getReceptionOfMessage()
+    return:
+      type: alps_.net_api.IMessageSpecification
+      description: The message specification attribute of the instance
+    content.vb: Function getReceptionOfMessage As IMessageSpecification
+  overload: alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange(alps_.net_api.IMessageExchange)
+  commentId: M:alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange(alps_.net_api.IMessageExchange)
+  parent: alps_.net_api.IMessageExchangeCondition
+  name: setRequiresPerformedMessageExchange(IMessageExchange)
+  nameWithType: IMessageExchangeCondition.setRequiresPerformedMessageExchange(IMessageExchange)
+  fullName: alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange(alps_.net_api.IMessageExchange)
+  spec.csharp:
+  - uid: alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange(alps_.net_api.IMessageExchange)
+    name: setRequiresPerformedMessageExchange
+    nameWithType: IMessageExchangeCondition.setRequiresPerformedMessageExchange
+    fullName: alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IMessageExchange
+    name: IMessageExchange
+    nameWithType: IMessageExchange
+    fullName: alps_.net_api.IMessageExchange
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange(alps_.net_api.IMessageExchange)
+    name: setRequiresPerformedMessageExchange
+    nameWithType: IMessageExchangeCondition.setRequiresPerformedMessageExchange
+    fullName: alps_.net_api.IMessageExchangeCondition.setRequiresPerformedMessageExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.IMessageExchange
+    name: IMessageExchange
+    nameWithType: IMessageExchange
+    fullName: alps_.net_api.IMessageExchange
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+  commentId: M:alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+  parent: alps_.net_api.IMessageExchangeCondition
+  name: getRequiresPerformedMessageExchange()
+  nameWithType: IMessageExchangeCondition.getRequiresPerformedMessageExchange()
+  fullName: alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange()
+  spec.csharp:
+  - uid: alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+    name: getRequiresPerformedMessageExchange
+    nameWithType: IMessageExchangeCondition.getRequiresPerformedMessageExchange
+    fullName: alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+    name: getRequiresPerformedMessageExchange
+    nameWithType: IMessageExchangeCondition.getRequiresPerformedMessageExchange
+    fullName: alps_.net_api.IMessageExchangeCondition.getRequiresPerformedMessageExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IMessageExchangeCondition.factoryMethod
+  commentId: M:alps_.net_api.IMessageExchangeCondition.factoryMethod
+  parent: alps_.net_api.IMessageExchangeCondition
+  name: factoryMethod()
+  nameWithType: IMessageExchangeCondition.factoryMethod()
+  fullName: alps_.net_api.IMessageExchangeCondition.factoryMethod()
+  spec.csharp:
+  - uid: alps_.net_api.IMessageExchangeCondition.factoryMethod
+    name: factoryMethod
+    nameWithType: IMessageExchangeCondition.factoryMethod
+    fullName: alps_.net_api.IMessageExchangeCondition.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IMessageExchangeCondition.factoryMethod
+    name: factoryMethod
+    nameWithType: IMessageExchangeCondition.factoryMethod
+    fullName: alps_.net_api.IMessageExchangeCondition.factoryMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransitionCondition.setToolSpecificDefiniton(System.String)
+  commentId: M:alps_.net_api.ITransitionCondition.setToolSpecificDefiniton(System.String)
+  parent: alps_.net_api.ITransitionCondition
+  isExternal: true
+  name: setToolSpecificDefiniton(String)
+  nameWithType: ITransitionCondition.setToolSpecificDefiniton(String)
+  fullName: alps_.net_api.ITransitionCondition.setToolSpecificDefiniton(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.ITransitionCondition.setToolSpecificDefiniton(System.String)
+    name: setToolSpecificDefiniton
+    nameWithType: ITransitionCondition.setToolSpecificDefiniton
+    fullName: alps_.net_api.ITransitionCondition.setToolSpecificDefiniton
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransitionCondition.setToolSpecificDefiniton(System.String)
+    name: setToolSpecificDefiniton
+    nameWithType: ITransitionCondition.setToolSpecificDefiniton
+    fullName: alps_.net_api.ITransitionCondition.setToolSpecificDefiniton
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+  commentId: M:alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+  parent: alps_.net_api.ITransitionCondition
+  name: getToolSpecificDefintion()
+  nameWithType: ITransitionCondition.getToolSpecificDefintion()
+  fullName: alps_.net_api.ITransitionCondition.getToolSpecificDefintion()
+  spec.csharp:
+  - uid: alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+    name: getToolSpecificDefintion
+    nameWithType: ITransitionCondition.getToolSpecificDefintion
+    fullName: alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+    name: getToolSpecificDefintion
+    nameWithType: ITransitionCondition.getToolSpecificDefintion
+    fullName: alps_.net_api.ITransitionCondition.getToolSpecificDefintion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: setBelongsToSubjectBehavior(ISubjectBehavior)
+  nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(ISubjectBehavior)
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior(alps_.net_api.ISubjectBehavior)
+    name: setBelongsToSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.setBelongsToSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: alps_.net_api.ISubjectBehavior
+    name: ISubjectBehavior
+    nameWithType: ISubjectBehavior
+    fullName: alps_.net_api.ISubjectBehavior
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  commentId: M:alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  parent: alps_.net_api.IBehaviorDescriptionComponent
+  name: getSubjectBehavior()
+  nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior()
+  fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior()
+  spec.csharp:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+    name: getSubjectBehavior
+    nameWithType: IBehaviorDescriptionComponent.getSubjectBehavior
+    fullName: alps_.net_api.IBehaviorDescriptionComponent.getSubjectBehavior
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IMessageExchangeCondition
+  commentId: T:alps_.net_api.IMessageExchangeCondition
+  parent: alps_.net_api
+  name: IMessageExchangeCondition
+  nameWithType: IMessageExchangeCondition
+  fullName: alps_.net_api.IMessageExchangeCondition
+- uid: alps_.net_api.ITransitionCondition
+  commentId: T:alps_.net_api.ITransitionCondition
+  parent: alps_.net_api
+  name: ITransitionCondition
+  nameWithType: ITransitionCondition
+  fullName: alps_.net_api.ITransitionCondition
+- uid: alps_.net_api.IBehaviorDescriptionComponent
+  commentId: T:alps_.net_api.IBehaviorDescriptionComponent
+  parent: alps_.net_api
+  name: IBehaviorDescriptionComponent
+  nameWithType: IBehaviorDescriptionComponent
+  fullName: alps_.net_api.IBehaviorDescriptionComponent
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound
+  name: setMultipleReceiveLowerBound
+  nameWithType: IReceiveTransitionCondition.setMultipleReceiveLowerBound
+  fullName: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveLowerBound
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound
+  name: getMultilpleLowerBound
+  nameWithType: IReceiveTransitionCondition.getMultilpleLowerBound
+  fullName: alps_.net_api.IReceiveTransitionCondition.getMultilpleLowerBound
+- uid: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound
+  name: setMultipleReceiveUpperBound
+  nameWithType: IReceiveTransitionCondition.setMultipleReceiveUpperBound
+  fullName: alps_.net_api.IReceiveTransitionCondition.setMultipleReceiveUpperBound
+- uid: alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound
+  name: getMultipleUpperBound
+  nameWithType: IReceiveTransitionCondition.getMultipleUpperBound
+  fullName: alps_.net_api.IReceiveTransitionCondition.getMultipleUpperBound
+- uid: alps_.net_api.IReceiveTransitionCondition.setReceiveType*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.setReceiveType
+  name: setReceiveType
+  nameWithType: IReceiveTransitionCondition.setReceiveType
+  fullName: alps_.net_api.IReceiveTransitionCondition.setReceiveType
+- uid: alps_.net_api.IReceiveType
+  commentId: T:alps_.net_api.IReceiveType
+  parent: alps_.net_api
+  name: IReceiveType
+  nameWithType: IReceiveType
+  fullName: alps_.net_api.IReceiveType
+- uid: alps_.net_api.IReceiveTransitionCondition.getReceiveType*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.getReceiveType
+  name: getReceiveType
+  nameWithType: IReceiveTransitionCondition.getReceiveType
+  fullName: alps_.net_api.IReceiveTransitionCondition.getReceiveType
+- uid: alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom
+  name: setRequiresMessageSentFrom
+  nameWithType: IReceiveTransitionCondition.setRequiresMessageSentFrom
+  fullName: alps_.net_api.IReceiveTransitionCondition.setRequiresMessageSentFrom
+- uid: alps_.net_api.ISubject
+  commentId: T:alps_.net_api.ISubject
+  parent: alps_.net_api
+  name: ISubject
+  nameWithType: ISubject
+  fullName: alps_.net_api.ISubject
+- uid: alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom
+  name: getMessageSentFrom
+  nameWithType: IReceiveTransitionCondition.getMessageSentFrom
+  fullName: alps_.net_api.IReceiveTransitionCondition.getMessageSentFrom
+- uid: alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage
+  name: setRequiresReceptionOfMessage
+  nameWithType: IReceiveTransitionCondition.setRequiresReceptionOfMessage
+  fullName: alps_.net_api.IReceiveTransitionCondition.setRequiresReceptionOfMessage
+- uid: alps_.net_api.IMessageSpecification
+  commentId: T:alps_.net_api.IMessageSpecification
+  parent: alps_.net_api
+  name: IMessageSpecification
+  nameWithType: IMessageSpecification
+  fullName: alps_.net_api.IMessageSpecification
+- uid: alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage*
+  commentId: Overload:alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage
+  name: getReceptionOfMessage
+  nameWithType: IReceiveTransitionCondition.getReceptionOfMessage
+  fullName: alps_.net_api.IReceiveTransitionCondition.getReceptionOfMessage

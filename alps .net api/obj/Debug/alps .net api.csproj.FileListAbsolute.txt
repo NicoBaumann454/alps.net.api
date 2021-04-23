@@ -1,0 +1,81 @@
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\obj\Debug\alps .net api.csprojAssemblyReference.cache
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\obj\Debug\alps .net api.csproj.CopyComplete
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\obj\Debug\alps.net_api.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\obj\Debug\alps.net_api.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\obj\Debug\alps .net api.csproj.CoreCompileInputs.cache
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\bin\Debug\alps.net_api.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\alps.net_api.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\alps.net_api.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\alps.net_api.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\dotNetRDF.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\HtmlAgilityPack.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Newtonsoft.Json.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.Sinks.Console.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.Sinks.File.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\VDS.Common.dll
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\dotNetRDF.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\HtmlAgilityPack.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\HtmlAgilityPack.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Newtonsoft.Json.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.Sinks.Console.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.Sinks.File.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\Serilog.Sinks.File.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\VDS.Common.xml
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\alps.net_api.dll.config
+D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\VDS.Common.pdb
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\obj\Debug\alps .net api.csprojAssemblyReference.cache
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\obj\Debug\alps .net api.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\obj\Debug\alps .net api.csproj.CopyComplete
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\alps.net_api.dll.config
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\obj\Debug\alps.net_api.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\bin\Debug\alps.net_api.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\obj\Debug\alps.net_api.pdb
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\alps.net_api.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\alps.net_api.pdb
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\alps.net_api.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\dotNetRDF.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\HtmlAgilityPack.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Newtonsoft.Json.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.Sinks.Console.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.Sinks.File.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\VDS.Common.dll
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\dotNetRDF.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\HtmlAgilityPack.pdb
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\HtmlAgilityPack.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Newtonsoft.Json.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.Sinks.Console.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.Sinks.File.pdb
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\Serilog.Sinks.File.xml
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\VDS.Common.pdb
+C:\Users\Nico\Source\Repos\alps-.net-api\alps .net api\alps .net api\VDS.Common.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\obj\Debug\alps .net api.csprojAssemblyReference.cache
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\obj\Debug\alps .net api.csproj.CoreCompileInputs.cache
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\obj\Debug\alps.net_api.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\bin\Debug\alps.net_api.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\obj\Debug\alps.net_api.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\obj\Debug\alps .net api.csproj.CopyComplete
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\alps.net_api.dll.config
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\alps.net_api.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\alps.net_api.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\alps.net_api.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\dotNetRDF.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\HtmlAgilityPack.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Newtonsoft.Json.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.Sinks.Console.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.Sinks.File.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\VDS.Common.dll
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\dotNetRDF.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\HtmlAgilityPack.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\HtmlAgilityPack.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Newtonsoft.Json.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.Sinks.Console.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.Sinks.File.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\Serilog.Sinks.File.xml
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\VDS.Common.pdb
+D:\Studium KIT\Hiwi IMI KIT\Code API\alps .net api\alps .net api\VDS.Common.xml

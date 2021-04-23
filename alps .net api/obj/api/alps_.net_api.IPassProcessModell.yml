@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: alps_.net_api.IPassProcessModell
+  commentId: T:alps_.net_api.IPassProcessModell
+  id: IPassProcessModell
+  parent: alps_.net_api
+  children:
+  - alps_.net_api.IPassProcessModell.factoryMethod
+  - alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange
+  - alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject
+  - alps_.net_api.IPassProcessModell.getStartSubject
+  - alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.IMessageExchange)
+  - alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.ISubject)
+  - alps_.net_api.IPassProcessModell.setStartSubject(alps_.net_api.IStartSubject)
+  langs:
+  - csharp
+  - vb
+  name: IPassProcessModell
+  nameWithType: IPassProcessModell
+  fullName: alps_.net_api.IPassProcessModell
+  type: Interface
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: IPassProcessModell
+    path: IPassProcessModell.cs
+    startLine: 5
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nInterface of the pass process model class\n"
+  example: []
+  syntax:
+    content: 'public interface IPassProcessModell : IInteractionDescriptionComponent, IPASSProcessModellElement, IOwlThing'
+    content.vb: >-
+      Public Interface IPassProcessModell
+          Inherits IInteractionDescriptionComponent
+  inheritedMembers:
+  - alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  - alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  - alps_.net_api.IPASSProcessModellElement.getComment
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.IMessageExchange)
+  commentId: M:alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.IMessageExchange)
+  id: setRelationToModelComponent(alps_.net_api.IMessageExchange)
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: setRelationToModelComponent(IMessageExchange)
+  nameWithType: IPassProcessModell.setRelationToModelComponent(IMessageExchange)
+  fullName: alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.IMessageExchange)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setRelationToModelComponent
+    path: IPassProcessModell.cs
+    startLine: 11
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the message exchange attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setRelationToModelComponent(IMessageExchange messageExchange)
+    parameters:
+    - id: messageExchange
+      type: alps_.net_api.IMessageExchange
+      description: ''
+    content.vb: Sub setRelationToModelComponent(messageExchange As IMessageExchange)
+  overload: alps_.net_api.IPassProcessModell.setRelationToModelComponent*
+- uid: alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange
+  commentId: M:alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange
+  id: getRelationToModelComponentMessageExchange
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: getRelationToModelComponentMessageExchange()
+  nameWithType: IPassProcessModell.getRelationToModelComponentMessageExchange()
+  fullName: alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getRelationToModelComponentMessageExchange
+    path: IPassProcessModell.cs
+    startLine: 17
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the message exchange attribute of the instance\n"
+  example: []
+  syntax:
+    content: IMessageExchange getRelationToModelComponentMessageExchange()
+    return:
+      type: alps_.net_api.IMessageExchange
+      description: The message exchange attribute of the instance
+    content.vb: Function getRelationToModelComponentMessageExchange As IMessageExchange
+  overload: alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange*
+- uid: alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.ISubject)
+  commentId: M:alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.ISubject)
+  id: setRelationToModelComponent(alps_.net_api.ISubject)
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: setRelationToModelComponent(ISubject)
+  nameWithType: IPassProcessModell.setRelationToModelComponent(ISubject)
+  fullName: alps_.net_api.IPassProcessModell.setRelationToModelComponent(alps_.net_api.ISubject)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setRelationToModelComponent
+    path: IPassProcessModell.cs
+    startLine: 23
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setRelationToModelComponent(ISubject subject)
+    parameters:
+    - id: subject
+      type: alps_.net_api.ISubject
+      description: ''
+    content.vb: Sub setRelationToModelComponent(subject As ISubject)
+  overload: alps_.net_api.IPassProcessModell.setRelationToModelComponent*
+- uid: alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject
+  commentId: M:alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject
+  id: getRelationToModelComponentSubject
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: getRelationToModelComponentSubject()
+  nameWithType: IPassProcessModell.getRelationToModelComponentSubject()
+  fullName: alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getRelationToModelComponentSubject
+    path: IPassProcessModell.cs
+    startLine: 29
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: ISubject getRelationToModelComponentSubject()
+    return:
+      type: alps_.net_api.ISubject
+      description: The subject attribute of the instance
+    content.vb: Function getRelationToModelComponentSubject As ISubject
+  overload: alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject*
+- uid: alps_.net_api.IPassProcessModell.setStartSubject(alps_.net_api.IStartSubject)
+  commentId: M:alps_.net_api.IPassProcessModell.setStartSubject(alps_.net_api.IStartSubject)
+  id: setStartSubject(alps_.net_api.IStartSubject)
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: setStartSubject(IStartSubject)
+  nameWithType: IPassProcessModell.setStartSubject(IStartSubject)
+  fullName: alps_.net_api.IPassProcessModell.setStartSubject(alps_.net_api.IStartSubject)
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: setStartSubject
+    path: IPassProcessModell.cs
+    startLine: 35
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that sets the start subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: void setStartSubject(IStartSubject startSubject)
+    parameters:
+    - id: startSubject
+      type: alps_.net_api.IStartSubject
+      description: ''
+    content.vb: Sub setStartSubject(startSubject As IStartSubject)
+  overload: alps_.net_api.IPassProcessModell.setStartSubject*
+- uid: alps_.net_api.IPassProcessModell.getStartSubject
+  commentId: M:alps_.net_api.IPassProcessModell.getStartSubject
+  id: getStartSubject
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: getStartSubject()
+  nameWithType: IPassProcessModell.getStartSubject()
+  fullName: alps_.net_api.IPassProcessModell.getStartSubject()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: getStartSubject
+    path: IPassProcessModell.cs
+    startLine: 41
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nMethod that returns the start subject attribute of the instance\n"
+  example: []
+  syntax:
+    content: IStartSubject getStartSubject()
+    return:
+      type: alps_.net_api.IStartSubject
+      description: The start subject attribute of the instance
+    content.vb: Function getStartSubject As IStartSubject
+  overload: alps_.net_api.IPassProcessModell.getStartSubject*
+- uid: alps_.net_api.IPassProcessModell.factoryMethod
+  commentId: M:alps_.net_api.IPassProcessModell.factoryMethod
+  id: factoryMethod
+  parent: alps_.net_api.IPassProcessModell
+  langs:
+  - csharp
+  - vb
+  name: factoryMethod()
+  nameWithType: IPassProcessModell.factoryMethod()
+  fullName: alps_.net_api.IPassProcessModell.factoryMethod()
+  type: Method
+  source:
+    remote:
+      path: alps .net api/alps .net api/IPassProcessModell.cs
+      branch: master
+      repo: http://imi-dev.imi.kit.edu:443/ukerz/alps-.net-api.git
+    id: factoryMethod
+    path: IPassProcessModell.cs
+    startLine: 47
+  assemblies:
+  - alps.net_api
+  namespace: alps_.net_api
+  summary: "\nFactory method that creates and returns a new empty instance of the pass process model class\n"
+  example: []
+  syntax:
+    content: PassProcessModell factoryMethod()
+    return:
+      type: alps_.net_api.PassProcessModell
+      description: A new empty instance of the pass process model class
+    content.vb: Function factoryMethod As PassProcessModell
+  overload: alps_.net_api.IPassProcessModell.factoryMethod*
+references:
+- uid: alps_.net_api
+  commentId: N:alps_.net_api
+  name: alps_.net_api
+  nameWithType: alps_.net_api
+  fullName: alps_.net_api
+- uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setAdditionalAttribute(List<String>)
+  nameWithType: IPASSProcessModellElement.setAdditionalAttribute(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setAdditionalAttribute(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List(Of System.String))
+  name.vb: setAdditionalAttribute(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute(System.Collections.Generic.List{System.String})
+    name: setAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.setAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.setAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getAdditionalAttribute()
+  nameWithType: IPASSProcessModellElement.getAdditionalAttribute()
+  fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+    name: getAdditionalAttribute
+    nameWithType: IPASSProcessModellElement.getAdditionalAttribute
+    fullName: alps_.net_api.IPASSProcessModellElement.getAdditionalAttribute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentID(String)
+  nameWithType: IPASSProcessModellElement.setModelComponentID(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentID(System.String)
+    name: setModelComponentID
+    nameWithType: IPASSProcessModellElement.setModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentID()
+  nameWithType: IPASSProcessModellElement.getModelComponentID()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+    name: getModelComponentID
+    nameWithType: IPASSProcessModellElement.getModelComponentID
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setModelComponentLabel(List<String>)
+  nameWithType: IPASSProcessModellElement.setModelComponentLabel(List<String>)
+  fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List<System.String>)
+  nameWithType.vb: IPASSProcessModellElement.setModelComponentLabel(List(Of String))
+  fullName.vb: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List(Of System.String))
+  name.vb: setModelComponentLabel(List(Of String))
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel(System.Collections.Generic.List{System.String})
+    name: setModelComponentLabel
+    nameWithType: IPASSProcessModellElement.setModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.setModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getModelComponentLabel()
+  nameWithType: IPASSProcessModellElement.getModelComponentLabel()
+  fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+    name: getModelComponentLabel
+    nameWithType: IPASSProcessModellElement.getModelComponentLabel
+    fullName: alps_.net_api.IPASSProcessModellElement.getModelComponentLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  commentId: M:alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  parent: alps_.net_api.IPASSProcessModellElement
+  isExternal: true
+  name: setComment(String)
+  nameWithType: IPASSProcessModellElement.setComment(String)
+  fullName: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.setComment(System.String)
+    name: setComment
+    nameWithType: IPASSProcessModellElement.setComment
+    fullName: alps_.net_api.IPASSProcessModellElement.setComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement.getComment
+  commentId: M:alps_.net_api.IPASSProcessModellElement.getComment
+  parent: alps_.net_api.IPASSProcessModellElement
+  name: getComment()
+  nameWithType: IPASSProcessModellElement.getComment()
+  fullName: alps_.net_api.IPASSProcessModellElement.getComment()
+  spec.csharp:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: alps_.net_api.IPASSProcessModellElement.getComment
+    name: getComment
+    nameWithType: IPASSProcessModellElement.getComment
+    fullName: alps_.net_api.IPASSProcessModellElement.getComment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: alps_.net_api.IPASSProcessModellElement
+  commentId: T:alps_.net_api.IPASSProcessModellElement
+  parent: alps_.net_api
+  name: IPASSProcessModellElement
+  nameWithType: IPASSProcessModellElement
+  fullName: alps_.net_api.IPASSProcessModellElement
+- uid: alps_.net_api.IPassProcessModell.setRelationToModelComponent*
+  commentId: Overload:alps_.net_api.IPassProcessModell.setRelationToModelComponent
+  name: setRelationToModelComponent
+  nameWithType: IPassProcessModell.setRelationToModelComponent
+  fullName: alps_.net_api.IPassProcessModell.setRelationToModelComponent
+- uid: alps_.net_api.IMessageExchange
+  commentId: T:alps_.net_api.IMessageExchange
+  parent: alps_.net_api
+  name: IMessageExchange
+  nameWithType: IMessageExchange
+  fullName: alps_.net_api.IMessageExchange
+- uid: alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange*
+  commentId: Overload:alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange
+  name: getRelationToModelComponentMessageExchange
+  nameWithType: IPassProcessModell.getRelationToModelComponentMessageExchange
+  fullName: alps_.net_api.IPassProcessModell.getRelationToModelComponentMessageExchange
+- uid: alps_.net_api.ISubject
+  commentId: T:alps_.net_api.ISubject
+  parent: alps_.net_api
+  name: ISubject
+  nameWithType: ISubject
+  fullName: alps_.net_api.ISubject
+- uid: alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject*
+  commentId: Overload:alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject
+  name: getRelationToModelComponentSubject
+  nameWithType: IPassProcessModell.getRelationToModelComponentSubject
+  fullName: alps_.net_api.IPassProcessModell.getRelationToModelComponentSubject
+- uid: alps_.net_api.IPassProcessModell.setStartSubject*
+  commentId: Overload:alps_.net_api.IPassProcessModell.setStartSubject
+  name: setStartSubject
+  nameWithType: IPassProcessModell.setStartSubject
+  fullName: alps_.net_api.IPassProcessModell.setStartSubject
+- uid: alps_.net_api.IStartSubject
+  commentId: T:alps_.net_api.IStartSubject
+  parent: alps_.net_api
+  name: IStartSubject
+  nameWithType: IStartSubject
+  fullName: alps_.net_api.IStartSubject
+- uid: alps_.net_api.IPassProcessModell.getStartSubject*
+  commentId: Overload:alps_.net_api.IPassProcessModell.getStartSubject
+  name: getStartSubject
+  nameWithType: IPassProcessModell.getStartSubject
+  fullName: alps_.net_api.IPassProcessModell.getStartSubject
+- uid: alps_.net_api.IPassProcessModell.factoryMethod*
+  commentId: Overload:alps_.net_api.IPassProcessModell.factoryMethod
+  name: factoryMethod
+  nameWithType: IPassProcessModell.factoryMethod
+  fullName: alps_.net_api.IPassProcessModell.factoryMethod
+- uid: alps_.net_api.PassProcessModell
+  commentId: T:alps_.net_api.PassProcessModell
+  parent: alps_.net_api
+  name: PassProcessModell
+  nameWithType: PassProcessModell
+  fullName: alps_.net_api.PassProcessModell
