@@ -219,6 +219,7 @@ namespace alps.net_api
         {
             List<MessageExchangeList> messageExchangeLists = new List<MessageExchangeList>();
             List<ModelLayer> modelLayers = new List<ModelLayer>();
+            ExternalAccess externalAccess = new ExternalAccess();
 
             foreach (KeyValuePair<string, PASSProcessModelElement> i in allElements)
             {
@@ -241,7 +242,7 @@ namespace alps.net_api
                     }
                 }
 
-                if (!(new MessageExchangeList().GetType().IsInstanceOfType(allElements[i.Key])))
+                if (!(new MessageExchangeList().GetType().IsInstanceOfType(allElements[i.Key])) && !(allElements[i.Key].external))
                 {
                     allElements[i.Key].completeObject(ref allElements, ref tmp);
                 }
@@ -256,6 +257,7 @@ namespace alps.net_api
                     modelLayers.Add((ModelLayer)allElements[i.Key]);
                 }
 
+                externalAccess.externalCompleteObjects(allElements[i.Key]);
             }
 
             Console.WriteLine("[##########################    ]");
@@ -284,7 +286,6 @@ namespace alps.net_api
                 i.completeObject(ref allElements, ref tmp);
             }
 
-
             foreach (ModelLayer i in modelLayers)
             {
                 foreach (string j in i.getStringElement())
@@ -298,6 +299,8 @@ namespace alps.net_api
                     }
                 }
             }
+
+            externalAccess.externalFinalComplete();
 
             foreach (KeyValuePair<string, PASSProcessModelElement> m in allElements)
             {

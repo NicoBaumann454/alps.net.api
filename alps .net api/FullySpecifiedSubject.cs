@@ -193,7 +193,7 @@ namespace alps.net_api
         /// <param name="attributeType"></param>
         /// <param name="attribute"></param>
         /// <returns></returns>
-        new public bool createInstance(List<string> attribute, List<string> attributeType)
+        public override bool createInstance(List<string> attribute, List<string> attributeType)
         {
             base.createInstance(attribute, attributeType);
 

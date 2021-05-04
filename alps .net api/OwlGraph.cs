@@ -185,6 +185,7 @@ namespace alps.net_api
             createAllElements();
 
             Console.WriteLine("[##############################]");
+            Console.WriteLine("Finished loading the new in memory models");
 
             return passProcessModells;
         }
@@ -5331,41 +5332,52 @@ namespace alps.net_api
 
                     default:
 
-                        PASSProcessModelElement pASSProcessModelElement = new PASSProcessModelElement();
+                        ExternalAccess externalAccess = new ExternalAccess();
 
-                        count = 0;
-                        foreach (Graph j in files)
+                        PASSProcessModelElement externalElement = externalAccess.externalCreateInstance(name, files);
+
+                        if (externalElement != null)
                         {
-                            foreach (Triple l in files[count].Triples)
-                            {
-                                if (l.Subject.ToString().Equals(i.Key))
-                                {
-                                    if (l.Predicate.ToString().Contains("hasModelComponentID"))
-                                    {
-                                        attributeType.Add(l.Predicate.ToString());
-                                        attribute.Add(l.Subject.ToString());
-                                    }
-                                    else
-                                    {
-                                        attributeType.Add(l.Predicate.ToString());
-                                        attribute.Add(l.Object.ToString());
-                                    }
-                                    pASSProcessModelElement.addAttribute(l.Predicate.ToString(), l.Object.ToString());
-                                    //Console.WriteLine(l.Predicate.ToString() + "    " + l.Object.ToString());
-                                }
-                            }
-                            count++;
+                            name = externalElement.getModelComponentID();
+                            passProcessModell.addElements(name, externalElement);
                         }
+                        else
+                        {
+                            PASSProcessModelElement pASSProcessModelElement = new PASSProcessModelElement();
 
-                        pASSProcessModelElement.createInstance(attribute, attributeType);
-                        name = pASSProcessModelElement.getModelComponentID();
-                        splittedURI = name.Split('^');
-                        name = splittedURI[0];
-                        passProcessModell.addElements(name, pASSProcessModelElement);
+                            count = 0;
+                            foreach (Graph j in files)
+                            {
+                                foreach (Triple l in files[count].Triples)
+                                {
+                                    if (l.Subject.ToString().Equals(i.Key))
+                                    {
+                                        if (l.Predicate.ToString().Contains("hasModelComponentID"))
+                                        {
+                                            attributeType.Add(l.Predicate.ToString());
+                                            attribute.Add(l.Subject.ToString());
+                                        }
+                                        else
+                                        {
+                                            attributeType.Add(l.Predicate.ToString());
+                                            attribute.Add(l.Object.ToString());
+                                        }
+                                        pASSProcessModelElement.addAttribute(l.Predicate.ToString(), l.Object.ToString());
+                                        //Console.WriteLine(l.Predicate.ToString() + "    " + l.Object.ToString());
+                                    }
+                                }
+                                count++;
+                            }
 
-                        Console.WriteLine("WARNING: Enountered unkown Object " + pASSProcessModelElement.getModelComponentID() + ", it will be parsed as an PASSProcessModelElement");
+                            pASSProcessModelElement.createInstance(attribute, attributeType);
+                            name = pASSProcessModelElement.getModelComponentID();
+                            splittedURI = name.Split('^');
+                            name = splittedURI[0];
+                            passProcessModell.addElements(name, pASSProcessModelElement);
 
-                        //layer.Add(pASSProcessModelElement.getModelComponentID(), pASSProcessModelElement);
+                            Console.WriteLine("WARNING: Enountered unkown Object " + pASSProcessModelElement.getModelComponentID() + ", it will be parsed as an PASSProcessModelElement");
+
+                        }
                         break;
                 }
 

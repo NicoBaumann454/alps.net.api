@@ -117,6 +117,7 @@
     <Compile Include="EndState.cs" />
     <Compile Include="ExtensionBehavior.cs" />
     <Compile Include="ExtensionLayer.cs" />
+    <Compile Include="ExternalAccess.cs" />
     <Compile Include="FinalizedMessageExchange.cs" />
     <Compile Include="FinalReceiveTransition.cs" />
     <Compile Include="FinalSendTransition.cs" />

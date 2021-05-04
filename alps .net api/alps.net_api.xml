@@ -3367,6 +3367,40 @@
             <param name="last"></param>
             <param name="filename"></param>
         </member>
+        <member name="T:alps.net_api.ExternalAccess">
+            <summary>
+            Class where other programmers can change things within the api
+            </summary>
+        </member>
+        <member name="M:alps.net_api.ExternalAccess.#ctor">
+            <summary>
+            The empty constructor
+            </summary>
+        </member>
+        <member name="M:alps.net_api.ExternalAccess.externalCreateInstance(System.String,System.Collections.Generic.List{VDS.RDF.Graph})">
+            <summary>
+            Here the you can create your own instances of classes which you created yourself
+            </summary>
+            <param name="name"></param>
+            <param name="files"></param>
+            <returns>Your newly created instances</returns>
+        </member>
+        <member name="M:alps.net_api.ExternalAccess.externalCompleteObjects(alps.net_api.PASSProcessModelElement)">
+            <summary>
+            This Method can used when the normal completeObject Method throws an error (for the case that the new Class 
+            contains a dictionary of dbjects which already have to be created before adding them to the attribute). To actually 
+            use it properly, the class should set the public attribute external = true of the PASSProcessModelElement class.
+            (Note: Can usually be ignored)
+            </summary>
+            <param name="pASSProcessModelElement"></param>
+        </member>
+        <member name="M:alps.net_api.ExternalAccess.externalFinalComplete">
+            <summary>
+            This method contemplates the externalCompleteObject class and usually just houses the foreach loop which completes
+            the Objects which could't be completed beforhand 
+            (Note: Can usually be ignored)
+            </summary>
+        </member>
         <member name="F:alps.net_api.FinalizedMessageExchange.className">
             <summary>
             Name of the class
@@ -10128,6 +10162,11 @@
         <member name="T:alps.net_api.PASSProcessModelElement">
             <summary>
             Root class for the inheritans graphs. Represents a PASS process model element
+            </summary>
+        </member>
+        <member name="F:alps.net_api.PASSProcessModelElement.external">
+            <summary>
+            
             </summary>
         </member>
         <member name="F:alps.net_api.PASSProcessModelElement.className">

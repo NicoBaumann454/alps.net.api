@@ -21,6 +21,11 @@ namespace alps.net_api
         Guid guid = new Guid();
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool external = false; 
+
+        /// <summary>
         /// Name of the class
         /// </summary>
         public static string className = "PASSProcessModelElement";

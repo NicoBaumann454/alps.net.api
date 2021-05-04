@@ -476,8 +476,16 @@ namespace alps.net_api
 
                 if (last)
                 {
-                    sw.WriteLine("      <rdf:type rdf:resource=" + "\"&standard-pass-ont;" + this.GetType().ToString().Split('.')[2] + "\" ></rdf:type>");
-                    sw.WriteLine("  </owl:NamedIndividual>");
+                    if (TransitionType == transitionType.Standard)
+                    {
+                        sw.WriteLine("      <rdf:type rdf:resource=" + "\"&standard-pass-ont;" + "StandardTransition" + "\" ></rdf:type>");
+                        sw.WriteLine("  </owl:NamedIndividual>");
+                    }
+                    else
+                    {
+                        sw.WriteLine("      <rdf:type rdf:resource=" + "\"&standard-pass-ont;" + this.GetType().ToString().Split('.')[2] + "\" ></rdf:type>");
+                        sw.WriteLine("  </owl:NamedIndividual>");
+                    }   
                 }
             }
         }

@@ -227,6 +227,8 @@ namespace alps.net_api
                 {
                     tmpInstanceRestriction = attribute[counter];
                     tmpInstanceRestriction = tmpInstanceRestriction.Split('^')[0];
+                    //Console.WriteLine(getModelComponentID());
+                    //Console.WriteLine(tmpInstanceRestriction);
                     instanceRestriction = Int32.Parse(tmpInstanceRestriction);
                     toBeRemoved.Add(counter);
                 }
