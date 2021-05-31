@@ -1070,6 +1070,9 @@ namespace alps.net_api
 
             layerDic.Add(modelLayer.getModelComponentID(), modelLayer);
 
+            modelLayer.setBelongsToPASSProcessModel(this);
+            this.addElements(modelLayer.getModelComponentID(), modelLayer);
+
             return modelLayer;
 
         }

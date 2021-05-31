@@ -5,6 +5,7 @@ using VDS.RDF;
 
 namespace alps.net_api
 {
+     
     /// <summary>
     /// Class that represents a model layer 
     /// </summary>
@@ -12,6 +13,7 @@ namespace alps.net_api
     {
         Guid guid = new Guid();
 
+        private PassProcessModel belongsToModel;
         private List<string> tmpElements = new List<string>();
         private Dictionary<string, IPASSProcessModellElement> elements = new Dictionary<string, IPASSProcessModellElement>();
 
@@ -61,6 +63,23 @@ namespace alps.net_api
             return tmpElements;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="passProcessModel"></param>
+        public void setBelongsToPASSProcessModel(PassProcessModel passProcessModel)
+        {
+            this.belongsToModel = passProcessModel;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public PassProcessModel getBelongsToPASSProcessModel()
+        {
+            return this.belongsToModel;
+        }
 
         /// <summary>
         /// Method that can be used to create a new subject and add it to the model.The parameter label creates the label of the subject and the ID will also be created with the label and an unique string.
@@ -82,6 +101,12 @@ namespace alps.net_api
             elements.Add(fullySpecifiedSubject.getModelComponentID(), fullySpecifiedSubject);
             elements.Add(fullySpecifiedSubject.getSubjectBehavior().getModelComponentID(), fullySpecifiedSubject.getSubjectBehavior());
 
+            belongsToModel.addElements(fullySpecifiedSubject.getModelComponentID(), fullySpecifiedSubject);
+
+            PASSProcessModelElement test = (PASSProcessModelElement)fullySpecifiedSubject.getSubjectBehavior();
+            fullySpecifiedSubject.getSubjectBehavior().setBelongsToPassProcessModel(this.belongsToModel);
+            belongsToModel.addElements(fullySpecifiedSubject.getSubjectBehavior().getModelComponentID(), test);
+
             return fullySpecifiedSubject;
 
         }
@@ -91,7 +116,7 @@ namespace alps.net_api
         /// </summary>
         /// <param name="numberOfElement"></param>
         /// <returns></returns>
-        public FullySpecifiedSubject GetFullySpecifiedSubject(int numberOfElement)
+        public FullySpecifiedSubject getFullySpecifiedSubject(int numberOfElement)
         {
             return elements.Values.OfType<FullySpecifiedSubject>().ElementAt(numberOfElement);
         }
@@ -141,8 +166,8 @@ namespace alps.net_api
 
             InterfaceSubject interfaceSubject = new InterfaceSubject(label, comment, incomingMessageExchange, outgoingMessageExchange, maxSubjectInstanceRestriction, fullySpecifiedSubject, additionalAttribute);
 
-
             elements.Add(interfaceSubject.getModelComponentID(), interfaceSubject);
+            belongsToModel.addElements(interfaceSubject.getModelComponentID(), interfaceSubject);
 
             return interfaceSubject;
 
@@ -183,6 +208,7 @@ namespace alps.net_api
             MultiSubject multiSubject = new MultiSubject(label, comment, incomingMessageExchange, outgoingMessageExchange, maxSubjectInstanceRestriction, additionalAttribute);
 
             elements.Add(multiSubject.getModelComponentID(), multiSubject);
+            belongsToModel.addElements(multiSubject.getModelComponentID(), multiSubject);
 
             return multiSubject;
 
@@ -222,6 +248,7 @@ namespace alps.net_api
             SingleSubject singleSubject = new SingleSubject(label, comment, incomingMessageExchange, outgoingMessageExchange, maxSubjectInstanceRestriction, additionalAttribute);
 
             elements.Add(singleSubject.getModelComponentID(), singleSubject);
+            belongsToModel.addElements(singleSubject.getModelComponentID(), singleSubject);
 
             return singleSubject;
 
@@ -262,6 +289,7 @@ namespace alps.net_api
             MessageExchange messageExchange = new MessageExchange(label, comment, messageSpecification, senderSubject, receiverSubject, additionalAttribute);
 
             elements.Add(messageExchange.getModelComponentID(), messageExchange);
+            belongsToModel.addElements(messageExchange.getModelComponentID(), messageExchange);
 
             return messageExchange;
         }
@@ -320,6 +348,7 @@ namespace alps.net_api
             InputPoolConstraint inputPoolConstraint = new InputPoolConstraint(label, comment, inputPoolConstraintHandlingStrategy, limit, additionalAttribute);
 
             elements.Add(inputPoolConstraint.getModelComponentID(), inputPoolConstraint);
+            belongsToModel.addElements(inputPoolConstraint.getModelComponentID(), inputPoolConstraint);
 
             return inputPoolConstraint;
         }
@@ -359,6 +388,7 @@ namespace alps.net_api
             MessageSenderTypeConstraint messageSenderTypeConstraint = new MessageSenderTypeConstraint(label, comment, inputPoolConstraintHandlingStrategy, limit, messageSpecification, subject, additionalAttribute);
 
             elements.Add(messageSenderTypeConstraint.getModelComponentID(), messageSenderTypeConstraint);
+            belongsToModel.addElements(messageSenderTypeConstraint.getModelComponentID(), messageSenderTypeConstraint);
 
             return messageSenderTypeConstraint;
         }
@@ -397,6 +427,7 @@ namespace alps.net_api
             MessageTypeConstraint messageTypeConstraint = new MessageTypeConstraint(label, comment, inputPoolConstraintHandlingStrategy, limit, messageSpecification, additionalAttribute);
 
             elements.Add(messageTypeConstraint.getModelComponentID(), messageTypeConstraint);
+            belongsToModel.addElements(messageTypeConstraint.getModelComponentID(), messageTypeConstraint);
 
             return messageTypeConstraint;
         }
@@ -416,6 +447,7 @@ namespace alps.net_api
             SenderTypeConstraint senderTypeConstraint = new SenderTypeConstraint(label, comment, inputPoolConstraintHandlingStrategy, limit, subject, additionalAttribute);
 
             elements.Add(senderTypeConstraint.getModelComponentID(), senderTypeConstraint);
+            belongsToModel.addElements(senderTypeConstraint.getModelComponentID(), senderTypeConstraint);
 
             return senderTypeConstraint;
         }
@@ -475,6 +507,7 @@ namespace alps.net_api
             messageSenderTypeConstraint.setComment(comment);
 
             elements.Add(messageSenderTypeConstraint.getModelComponentID(), messageSenderTypeConstraint);
+            belongsToModel.addElements(messageSenderTypeConstraint.getModelComponentID(), messageSenderTypeConstraint);
 
             return messageSenderTypeConstraint;
         }
@@ -511,6 +544,7 @@ namespace alps.net_api
             MessageExchangeList messageExchangeList = new MessageExchangeList(label, comment, messageExchanges, additionalAttribute);
 
             elements.Add(messageExchangeList.getModelComponentID(), messageExchangeList);
+            belongsToModel.addElements(messageExchangeList.getModelComponentID(), messageExchangeList);
 
             return messageExchangeList;
         }
@@ -552,6 +586,7 @@ namespace alps.net_api
             MessageSpecification messageSpecification = new MessageSpecification(label, comment, payloadDescription, additionalAttribute);
 
             elements.Add(messageSpecification.getModelComponentID(), messageSpecification);
+            belongsToModel.addElements(messageSpecification.getModelComponentID(), messageSpecification);
 
             return messageSpecification;
         }

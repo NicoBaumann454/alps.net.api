@@ -7442,6 +7442,12 @@
             </summary>
             <returns>The priotity number attribute of the instance</returns>
         </member>
+        <member name="M:alps.net_api.ISubjectBehavior.setBelongsToPassProcessModel(alps.net_api.PassProcessModel)">
+            <summary>
+            
+            </summary>
+            <param name="passProcessModel"></param>
+        </member>
         <member name="M:alps.net_api.ISubjectBehavior.addAction(System.String,System.String,alps.net_api.IState,System.Collections.Generic.Dictionary{System.String,alps.net_api.ITransition},System.Collections.Generic.List{System.String})">
             <summary>
              Method that can be used to create a new interface subject and add it to the model. The parameter label creates the label of the subject and the ID will also be created with the label and an unique string.
@@ -9359,6 +9365,18 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:alps.net_api.ModelLayer.setBelongsToPASSProcessModel(alps.net_api.PassProcessModel)">
+            <summary>
+            
+            </summary>
+            <param name="passProcessModel"></param>
+        </member>
+        <member name="M:alps.net_api.ModelLayer.getBelongsToPASSProcessModel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:alps.net_api.ModelLayer.addFullySpecifiedSubject(System.String,System.String,alps.net_api.IMessageExchange,alps.net_api.IMessageExchange,System.Int32,alps.net_api.ISubjectDataDefinition,alps.net_api.IInputPoolConstraint,System.Collections.Generic.List{System.String})">
             <summary>
             Method that can be used to create a new subject and add it to the model.The parameter label creates the label of the subject and the ID will also be created with the label and an unique string.
@@ -9374,7 +9392,7 @@
             <param name="additionalAttribute"></param>
             <returns></returns>
         </member>
-        <member name="M:alps.net_api.ModelLayer.GetFullySpecifiedSubject(System.Int32)">
+        <member name="M:alps.net_api.ModelLayer.getFullySpecifiedSubject(System.Int32)">
             <summary>
             
             </summary>
@@ -13372,6 +13390,12 @@
             
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:alps.net_api.SubjectBehavior.setBelongsToPassProcessModel(alps.net_api.PassProcessModel)">
+            <summary>
+            
+            </summary>
+            <param name="passProcessModel"></param>
         </member>
         <member name="M:alps.net_api.SubjectBehavior.factoryMethod">
             <summary>

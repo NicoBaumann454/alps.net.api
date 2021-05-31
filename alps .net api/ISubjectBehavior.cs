@@ -55,6 +55,12 @@ namespace alps.net_api
         int getPriorityNumber();
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="passProcessModel"></param>
+        void setBelongsToPassProcessModel(PassProcessModel passProcessModel);
+
+        /// <summary>
         ///  Method that can be used to create a new interface subject and add it to the model. The parameter label creates the label of the subject and the ID will also be created with the label and an unique string.
         /// Without a given layer the subject will be added to a default layer.
         /// </summary>

@@ -63,10 +63,13 @@ namespace alps.net_api
         public PASSProcessModelElement(string label, string comment = "", List<string> additionalAttribute = null)
         {
             guid = Guid.NewGuid();
-            this.modelComponentID = label + guid.ToString();
+            this.modelComponentID = label + guid.ToString() + "@EN";
             this.modelComponentLabel.Add(modelComponentID);
-            this.comment.Add(comment);
-
+            if (comment != "")
+            {
+                this.comment.Add(comment + "@EN");
+            }
+            
             if (additionalAttribute != null)
             {
                 this.additionalAttribute = additionalAttribute;
@@ -490,7 +493,8 @@ namespace alps.net_api
                     {
                         if (!s.Contains('&'))
                         {
-                            sw.WriteLine("      <standard-pass-ont:hasModelComponentLabel xml:lang=\"" + s.Split('@')[1] + "\" >" + s.Split('@')[0] + "</standard-pass-ont:hasModelComponentLabel>");
+                            Console.WriteLine("In dem label nochmal nachschauen");
+                            //sw.WriteLine("      <standard-pass-ont:hasModelComponentLabel xml:lang=\"" + s.Split('@')[1] + "\" >" + s.Split('@')[0] + "</standard-pass-ont:hasModelComponentLabel>");
                         }
                     }
                     else
@@ -506,7 +510,8 @@ namespace alps.net_api
 
                 foreach (string s in getComment())
                 {
-                    sw.WriteLine("      <rdfs:comment xml:lang=\"" + s.Split('@')[1] + "\" >" + s.Split('@')[0] + "</rdfs:comment>");
+                    Console.WriteLine("In dem Comment nochmal nachschauen");
+                    //sw.WriteLine("      <rdfs:comment xml:lang=\"" + s.Split('@')[1] + "\" >" + s.Split('@')[0] + "</rdfs:comment>");
                 }
 
                 counter = 0;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Web.UI.WebControls;
 using VDS.RDF;
 
 namespace alps.net_api
@@ -12,6 +13,7 @@ namespace alps.net_api
     public class SubjectBehavior : InteractionDescriptionComponent, ISubjectBehavior
     {
         private Dictionary<string, BehaviorDescriptionComponent> behaviorDescriptionComponent = new Dictionary<string, BehaviorDescriptionComponent>();
+        private PassProcessModel belongsToModel;
         private IState endState;
         private IInitialStateOfBehavior initialStateOfBehavior;
         private int priorityNumber;
@@ -191,6 +193,15 @@ namespace alps.net_api
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="passProcessModel"></param>
+        public void setBelongsToPassProcessModel(PassProcessModel passProcessModel)
+        {
+            this.belongsToModel = passProcessModel;
+        }
+
+        /// <summary>
         /// Factory method that creates and returns a new empty instance of the subject behavior class
         /// </summary>
         /// <returns>A new empty instance of the subject behavior class</returns>
@@ -218,6 +229,7 @@ namespace alps.net_api
             action.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(action.getModelComponentID(), action);
+            belongsToModel.addElements(action.getModelComponentID(), action);
 
             return action;
 
@@ -266,6 +278,7 @@ namespace alps.net_api
             functionSpecification.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(functionSpecification.getModelComponentID(), functionSpecification);
+            belongsToModel.addElements(functionSpecification.getModelComponentID(), functionSpecification);
 
             return functionSpecification;
 
@@ -305,6 +318,7 @@ namespace alps.net_api
             communicationAct.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(communicationAct.getModelComponentID(), communicationAct);
+            belongsToModel.addElements(communicationAct.getModelComponentID(), communicationAct);
 
             return communicationAct;
 
@@ -344,6 +358,7 @@ namespace alps.net_api
             receiveFunction.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(receiveFunction.getModelComponentID(), receiveFunction);
+            belongsToModel.addElements(receiveFunction.getModelComponentID(), receiveFunction);
 
             return receiveFunction;
 
@@ -383,6 +398,7 @@ namespace alps.net_api
             sendFunction.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendFunction.getModelComponentID(), sendFunction);
+            belongsToModel.addElements(sendFunction.getModelComponentID(), sendFunction);
 
             return sendFunction;
 
@@ -422,6 +438,7 @@ namespace alps.net_api
             doFunction.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(doFunction.getModelComponentID(), doFunction);
+            belongsToModel.addElements(doFunction.getModelComponentID(), doFunction);
 
             return doFunction;
 
@@ -460,6 +477,7 @@ namespace alps.net_api
             receiveType.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(receiveType.getModelComponentID(), receiveType);
+            belongsToModel.addElements(receiveType.getModelComponentID(), receiveType);
 
             return receiveType;
 
@@ -498,6 +516,7 @@ namespace alps.net_api
             sendType.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendType.getModelComponentID(), sendType);
+            belongsToModel.addElements(sendType.getModelComponentID(), sendType);
 
             return sendType;
 
@@ -541,6 +560,7 @@ namespace alps.net_api
             state.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(state.getModelComponentID(), state);
+            belongsToModel.addElements(state.getModelComponentID(), state);
 
             return state;
 
@@ -593,6 +613,7 @@ namespace alps.net_api
             choiceSegment.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(choiceSegment.getModelComponentID(), choiceSegment);
+            belongsToModel.addElements(choiceSegment.getModelComponentID(), choiceSegment);
 
             return choiceSegment;
 
@@ -644,6 +665,7 @@ namespace alps.net_api
             choiceSegmentPath.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(choiceSegmentPath.getModelComponentID(), choiceSegmentPath);
+            belongsToModel.addElements(choiceSegmentPath.getModelComponentID(), choiceSegmentPath);
 
             return choiceSegmentPath;
 
@@ -690,6 +712,7 @@ namespace alps.net_api
             endState.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(endState.getModelComponentID(), endState);
+            belongsToModel.addElements(endState.getModelComponentID(), endState);
 
             return endState;
 
@@ -739,6 +762,7 @@ namespace alps.net_api
             genericReturnToOriginReference.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(genericReturnToOriginReference.getModelComponentID(), genericReturnToOriginReference);
+            belongsToModel.addElements(genericReturnToOriginReference.getModelComponentID(), genericReturnToOriginReference);
 
             return genericReturnToOriginReference;
 
@@ -788,6 +812,7 @@ namespace alps.net_api
             initialStateOfBehavior.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(initialStateOfBehavior.getModelComponentID(), initialStateOfBehavior);
+            belongsToModel.addElements(initialStateOfBehavior.getModelComponentID(), initialStateOfBehavior);
 
             return initialStateOfBehavior;
 
@@ -838,6 +863,7 @@ namespace alps.net_api
             initialStateOfChoiceSegmentPath.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(initialStateOfChoiceSegmentPath.getModelComponentID(), initialStateOfChoiceSegmentPath);
+            belongsToModel.addElements(initialStateOfChoiceSegmentPath.getModelComponentID(), initialStateOfChoiceSegmentPath);
 
             return initialStateOfChoiceSegmentPath;
 
@@ -889,6 +915,7 @@ namespace alps.net_api
             macroState.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(macroState.getModelComponentID(), macroState);
+            belongsToModel.addElements(macroState.getModelComponentID(), macroState);
 
             return macroState;
 
@@ -939,6 +966,7 @@ namespace alps.net_api
             standartPASSState.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(standartPASSState.getModelComponentID(), standartPASSState);
+            belongsToModel.addElements(standartPASSState.getModelComponentID(), standartPASSState);
 
             return standartPASSState;
 
@@ -990,6 +1018,7 @@ namespace alps.net_api
             doState.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(doState.getModelComponentID(), doState);
+            belongsToModel.addElements(doState.getModelComponentID(), doState);
 
             return doState;
 
@@ -1038,6 +1067,7 @@ namespace alps.net_api
             receiveState.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(receiveState.getModelComponentID(), receiveState);
+            belongsToModel.addElements(receiveState.getModelComponentID(), receiveState);
 
             return receiveState;
 
@@ -1089,6 +1119,7 @@ namespace alps.net_api
             sendState.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendState.getModelComponentID(), sendState);
+            belongsToModel.addElements(sendState.getModelComponentID(), sendState);
 
             return sendState;
 
@@ -1138,6 +1169,7 @@ namespace alps.net_api
             state.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(stateReference.getModelComponentID(), stateReference);
+            belongsToModel.addElements(stateReference.getModelComponentID(), stateReference);
 
             return stateReference;
 
@@ -1188,6 +1220,7 @@ namespace alps.net_api
             transition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(transition.getModelComponentID(), transition);
+            belongsToModel.addElements(transition.getModelComponentID(), transition);
 
             return transition;
 
@@ -1237,6 +1270,7 @@ namespace alps.net_api
             communicationTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(communicationTransition.getModelComponentID(), communicationTransition);
+            belongsToModel.addElements(communicationTransition.getModelComponentID(), communicationTransition);
 
             return communicationTransition;
 
@@ -1290,6 +1324,7 @@ namespace alps.net_api
             receiveTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(receiveTransition.getModelComponentID(), receiveTransition);
+            belongsToModel.addElements(receiveTransition.getModelComponentID(), receiveTransition);
 
             return receiveTransition;
 
@@ -1344,6 +1379,7 @@ namespace alps.net_api
             sendTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendTransition.getModelComponentID(), sendTransition);
+            belongsToModel.addElements(sendTransition.getModelComponentID(), sendTransition);
 
             return sendTransition;
 
@@ -1395,6 +1431,7 @@ namespace alps.net_api
             doTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(doTransition.getModelComponentID(), doTransition);
+            belongsToModel.addElements(doTransition.getModelComponentID(), doTransition);
 
             return doTransition;
 
@@ -1444,6 +1481,7 @@ namespace alps.net_api
             sendingFailedTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendingFailedTransition.getModelComponentID(), sendingFailedTransition);
+            belongsToModel.addElements(sendingFailedTransition.getModelComponentID(), sendingFailedTransition);
 
             return sendingFailedTransition;
 
@@ -1491,6 +1529,7 @@ namespace alps.net_api
             timeTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(timeTransition.getModelComponentID(), timeTransition);
+            belongsToModel.addElements(timeTransition.getModelComponentID(), timeTransition);
 
             return timeTransition;
 
@@ -1538,6 +1577,7 @@ namespace alps.net_api
             reminderTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(reminderTransition.getModelComponentID(), reminderTransition);
+            belongsToModel.addElements(reminderTransition.getModelComponentID(), reminderTransition);
 
             return reminderTransition;
 
@@ -1585,6 +1625,7 @@ namespace alps.net_api
             calenderBasedReminderTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(calenderBasedReminderTransition.getModelComponentID(), calenderBasedReminderTransition);
+            belongsToModel.addElements(calenderBasedReminderTransition.getModelComponentID(), calenderBasedReminderTransition);
 
             return calenderBasedReminderTransition;
 
@@ -1632,6 +1673,7 @@ namespace alps.net_api
             timeBasedReminderTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(timeBasedReminderTransition.getModelComponentID(), timeBasedReminderTransition);
+            belongsToModel.addElements(timeBasedReminderTransition.getModelComponentID(), timeBasedReminderTransition);
 
             return timeBasedReminderTransition;
 
@@ -1679,6 +1721,7 @@ namespace alps.net_api
             timerTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(timerTransition.getModelComponentID(), timerTransition);
+            belongsToModel.addElements(timerTransition.getModelComponentID(), timerTransition);
 
             return timerTransition;
 
@@ -1726,6 +1769,7 @@ namespace alps.net_api
             buisnessDayTimerTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(buisnessDayTimerTransition.getModelComponentID(), buisnessDayTimerTransition);
+            belongsToModel.addElements(buisnessDayTimerTransition.getModelComponentID(), buisnessDayTimerTransition);
 
             return buisnessDayTimerTransition;
 
@@ -1773,6 +1817,7 @@ namespace alps.net_api
             dayTimeTimerTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(dayTimeTimerTransition.getModelComponentID(), dayTimeTimerTransition);
+            belongsToModel.addElements(dayTimeTimerTransition.getModelComponentID(), dayTimeTimerTransition);
 
             return dayTimeTimerTransition;
 
@@ -1820,6 +1865,7 @@ namespace alps.net_api
             yearMonthTimerTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(yearMonthTimerTransition.getModelComponentID(), yearMonthTimerTransition);
+            belongsToModel.addElements(yearMonthTimerTransition.getModelComponentID(), yearMonthTimerTransition);
 
             return yearMonthTimerTransition;
 
@@ -1867,6 +1913,7 @@ namespace alps.net_api
             userCancelTransition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(userCancelTransition.getModelComponentID(), userCancelTransition);
+            belongsToModel.addElements(userCancelTransition.getModelComponentID(), userCancelTransition);
 
             return userCancelTransition;
 
@@ -1911,6 +1958,7 @@ namespace alps.net_api
             transitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(transitionCondition.getModelComponentID(), transitionCondition);
+            belongsToModel.addElements(transitionCondition.getModelComponentID(), transitionCondition);
 
             return transitionCondition;
 
@@ -1952,6 +2000,7 @@ namespace alps.net_api
             messageExchangeCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(messageExchangeCondition.getModelComponentID(), messageExchangeCondition);
+            belongsToModel.addElements(messageExchangeCondition.getModelComponentID(), messageExchangeCondition);
 
             return messageExchangeCondition;
 
@@ -1998,6 +2047,7 @@ namespace alps.net_api
             receiveTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(receiveTransitionCondition.getModelComponentID(), receiveTransitionCondition);
+            belongsToModel.addElements(receiveTransitionCondition.getModelComponentID(), receiveTransitionCondition);
 
             return receiveTransitionCondition;
 
@@ -2045,6 +2095,7 @@ namespace alps.net_api
             sendTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendTransitionCondition.getModelComponentID(), sendTransitionCondition);
+            belongsToModel.addElements(sendTransitionCondition.getModelComponentID(), sendTransitionCondition);
 
             return sendTransitionCondition;
 
@@ -2086,6 +2137,7 @@ namespace alps.net_api
             sendingFailedCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(sendingFailedCondition.getModelComponentID(), sendingFailedCondition);
+            belongsToModel.addElements(sendingFailedCondition.getModelComponentID(), sendingFailedCondition);
 
             return sendingFailedCondition;
 
@@ -2127,6 +2179,7 @@ namespace alps.net_api
             timeTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(timeTransitionCondition.getModelComponentID(), timeTransitionCondition);
+            belongsToModel.addElements(timeTransitionCondition.getModelComponentID(), timeTransitionCondition);
 
             return timeTransitionCondition;
 
@@ -2168,6 +2221,7 @@ namespace alps.net_api
             reminderEventTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(reminderEventTransitionCondition.getModelComponentID(), reminderEventTransitionCondition);
+            belongsToModel.addElements(reminderEventTransitionCondition.getModelComponentID(), reminderEventTransitionCondition);
 
             return reminderEventTransitionCondition;
 
@@ -2209,6 +2263,7 @@ namespace alps.net_api
             calenderBasedReminderTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(calenderBasedReminderTransitionCondition.getModelComponentID(), calenderBasedReminderTransitionCondition);
+            belongsToModel.addElements(calenderBasedReminderTransitionCondition.getModelComponentID(), calenderBasedReminderTransitionCondition);
 
             return calenderBasedReminderTransitionCondition;
 
@@ -2250,6 +2305,7 @@ namespace alps.net_api
             timerTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(timerTransitionCondition.getModelComponentID(), timerTransitionCondition);
+            belongsToModel.addElements(timerTransitionCondition.getModelComponentID(), timerTransitionCondition);
 
             return timerTransitionCondition;
 
@@ -2291,6 +2347,7 @@ namespace alps.net_api
             buisnessDayTimerTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
+            belongsToModel.addElements(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
 
             return buisnessDayTimerTransitionCondition;
 
@@ -2332,6 +2389,7 @@ namespace alps.net_api
             //dayTimeTimerTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(dayTimeTimerTransitionCondition.getModelComponentID(), dayTimeTimerTransitionCondition);
+            belongsToModel.addElements(dayTimeTimerTransitionCondition.getModelComponentID(), dayTimeTimerTransitionCondition);
 
             return dayTimeTimerTransitionCondition;
 
@@ -2373,6 +2431,7 @@ namespace alps.net_api
             yearMonthTimerTransitionCondition.setBelongsToSubjectBehavior(this);
 
             behaviorDescriptionComponent.Add(yearMonthTimerTransitionCondition.getModelComponentID(), yearMonthTimerTransitionCondition);
+            belongsToModel.addElements(yearMonthTimerTransitionCondition.getModelComponentID(), yearMonthTimerTransitionCondition);
 
             return yearMonthTimerTransitionCondition;
 
