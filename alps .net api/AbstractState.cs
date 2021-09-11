@@ -6,7 +6,7 @@ namespace alps.net_api
     /// <summary>
     /// Method that repesents an abstract state
     /// </summary>
-    public class AbstractState : ALPSSBDComponent, IAbstractState
+    public class AbstractState : ALPSSBDComponent
     {
         private ITransition incomingTransition;
         private ITransition outgoingTransition;

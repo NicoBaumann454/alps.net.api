@@ -4,7 +4,7 @@ using VDS.RDF;
 
 namespace alps.net_api
 {
-    class FinalTransition : FinalTransitionType, IFinalTransition
+    class FinalTransition : FinalTransitionType
     {
         private int priorityNumber = 0;
         private string tmpPriorityNumber;
@@ -112,37 +112,5 @@ namespace alps.net_api
             base.completeObject(ref allElements, ref tmp);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (priorityNumber >= 0)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasPriorityNumber");
-                objec = g.CreateUriNode("standard-pass-ont:" + priorityNumber);
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-        }
     }
 }

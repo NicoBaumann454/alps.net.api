@@ -158,41 +158,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            foreach (KeyValuePair<string, IChoiceSegmentPath> s in choiceSegmentPaths)
-            {
-                if (s.Value != null)
-                {
-                    subject = g.CreateUriNode(name);
-                    predicate = g.CreateUriNode("rdf:belongsToAction");
-                    objec = g.CreateUriNode("standard-pass-ont:" + s.Value.getModelComponentID());
-
-                    test = new Triple(subject, predicate, objec);
-                    g.Assert(test);
-                }
-            }
-
-        }
-
-        /// <summary>
-        /// 
+        /// Method that exports a choice segment object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>

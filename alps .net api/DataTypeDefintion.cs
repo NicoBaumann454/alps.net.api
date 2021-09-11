@@ -83,7 +83,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
+        /// Method that creates a new instance of the data type definition class
         /// </summary>
         /// <param name="attribute"></param>
         /// <param name="attributeType"></param>
@@ -137,39 +137,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (dataObjectDefiniton != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasDataObjectDefinition");
-                objec = g.CreateUriNode("standard-pass-ont:" + dataObjectDefiniton.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-        }
-
-        /// <summary>
-        /// 
+        /// Method that exports a data type definiton object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>

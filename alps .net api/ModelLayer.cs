@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using VDS.RDF;
+using System.IO;
 
 namespace alps.net_api
 {
@@ -666,12 +667,22 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
+        /// Method that exports an buisness day timer transition condition to the file given in the filename
         /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
+        /// <param name="last"></param>
+        /// <param name="filename"></param>
+        public override void exporting(bool last, string filename)
         {
-            base.export(ref g);
+            base.exporting(false, filename);
+
+            using (StreamWriter sw = File.AppendText("../../../../" + filename + ".owl"))
+            {
+                if (last)
+                {
+                    sw.WriteLine("      <rdf:type rdf:resource=" + "\"&standard-pass-ont;" + this.GetType().ToString().Split('.')[2] + "\" ></rdf:type>");
+                    sw.WriteLine("  </owl:NamedIndividual>");
+                }
+            }
         }
     }
 }

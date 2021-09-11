@@ -112,15 +112,6 @@ namespace alps.net_api
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>
         public override void exporting(bool last, string filename)

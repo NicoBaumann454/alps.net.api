@@ -34,13 +34,13 @@ namespace alps.net_api
         /// Method that sets the initial state of behaviors attribute of the instance
         /// </summary>
         /// <param name="initialStateOfBehavior"></param>
-        void setInitialState(IInitialStateOfBehavior initialStateOfBehavior);
+        void setInitialState(IState initialStateOfBehavior);
 
         /// <summary>
         /// Method that returns the initial state of behaviors attribute of the instance
         /// </summary>
         /// <returns>The initial state of behaviors attribute of the instance</returns>
-        IInitialStateOfBehavior getInitialStateOfBehavior();
+        IState getInitialStateOfBehavior();
 
         /// <summary>
         /// Method that sets the priotity number attribute of the instance

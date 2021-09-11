@@ -25,6 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\alps.net_api.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="dotNetRDF, Version=2.7.0.0, Culture=neutral, PublicKeyToken=6055ffe4c97cc780, processorArchitecture=MSIL">
@@ -90,7 +92,6 @@
     <Compile Include="BehaviorDescriptionComponent.cs" />
     <Compile Include="BiDirectionalCommunicationChannel.cs" />
     <Compile Include="BuisnessDayTimerTransition.cs" />
-    <Compile Include="BuisnessDayTimerTransitionCondition.cs" />
     <Compile Include="BusinessDayTimerTransitionCondition.cs" />
     <Compile Include="CalenderBasedReminderTransition.cs" />
     <Compile Include="CalenderBasedReminderTransitionCondition.cs" />
@@ -119,7 +120,6 @@
     <Compile Include="ExtensionLayer.cs" />
     <Compile Include="ExternalAccess.cs" />
     <Compile Include="FinalizedMessageExchange.cs" />
-    <Compile Include="FinalReceiveTransition.cs" />
     <Compile Include="FinalSendTransition.cs" />
     <Compile Include="FinalTransition.cs" />
     <Compile Include="FinalTransitionType.cs" />
@@ -178,10 +178,6 @@
     <Compile Include="IExtensionBehavior.cs" />
     <Compile Include="IExtensionLayer.cs" />
     <Compile Include="IFinalizedMessageExchange.cs" />
-    <Compile Include="IFinalReceiveTransition.cs" />
-    <Compile Include="IFinalSendTransition.cs" />
-    <Compile Include="IFinalTransition.cs" />
-    <Compile Include="IFinalTransitionType.cs" />
     <Compile Include="IFullySpecifiedSubject.cs" />
     <Compile Include="IFunctionSpecification.cs" />
     <Compile Include="IGeneralAbstractState.cs" />
@@ -275,8 +271,6 @@
     <Compile Include="MacroBehavior.cs" />
     <Compile Include="MacroLayer.cs" />
     <Compile Include="MacroState.cs" />
-    <Compile Include="MandatoryToEndChoiceSegment.cs" />
-    <Compile Include="MandatoryToStartChoiceSegment.cs" />
     <Compile Include="MessageExchange.cs" />
     <Compile Include="MessageExchangeCondition.cs" />
     <Compile Include="MessageExchangeList.cs" />
@@ -286,8 +280,6 @@
     <Compile Include="ModelBuiltInDataTypes.cs" />
     <Compile Include="ModelLayer.cs" />
     <Compile Include="MultiSubject.cs" />
-    <Compile Include="OptionalToEndChoiceSegmentPath.cs" />
-    <Compile Include="OptionalToStartChoiceSegmentPath.cs" />
     <Compile Include="OWLDataTypeDefintion.cs" />
     <Compile Include="OwlGraph.cs" />
     <Compile Include="OwlThing.cs" />
@@ -295,10 +287,7 @@
     <Compile Include="PassProcessModel.cs" />
     <Compile Include="PayloadDataObjectDefinition.cs" />
     <Compile Include="PayloadDescription.cs" />
-    <Compile Include="PrecedenceReceiveTransition.cs" />
-    <Compile Include="PrecedenceSendTransition.cs" />
-    <Compile Include="PrecedenceTransition.cs" />
-    <Compile Include="PrecedenceTransitionType.cs" />
+    <Compile Include=".cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceiveFunction.cs" />
     <Compile Include="ReceiveState.cs" />
@@ -336,10 +325,6 @@
     <Compile Include="TransitionCondition.cs" />
     <Compile Include="Tree.cs" />
     <Compile Include="TreeNode.cs" />
-    <Compile Include="TriggerReceiveTransition.cs" />
-    <Compile Include="TriggerSendTransition.cs" />
-    <Compile Include="TriggerTransition.cs" />
-    <Compile Include="TriggerTransitionType.cs" />
     <Compile Include="UniDirectionalCommunicationChannel.cs" />
     <Compile Include="UserCancelTransition.cs" />
     <Compile Include="XSDDataTypeDefintion.cs" />

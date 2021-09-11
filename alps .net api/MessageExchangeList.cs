@@ -168,51 +168,23 @@ namespace alps.net_api
                 {
                     if (new MessageExchange().GetType().IsInstanceOfType(allElements[s]))
                     {
-                        this.messageExchange.Add(allElements[s].getModelComponentID(), (MessageExchange)allElements[s]);
-                        int place = getAdditionalAttribute().IndexOf(s);
-                        getAdditionalAttributeType().RemoveAt(place);
-                        getAdditionalAttribute().Remove(s);
-                        //tmp.Remove(s);
+
+                        if (!(this.messageExchange.ContainsKey(allElements[s].getModelComponentID())))
+                        {
+                            Console.WriteLine(allElements[s].getModelComponentID());
+                            this.messageExchange.Add(allElements[s].getModelComponentID(), (MessageExchange)allElements[s]);
+                            int place = getAdditionalAttribute().IndexOf(s);
+                            getAdditionalAttributeType().RemoveAt(place);
+                            getAdditionalAttribute().Remove(s);
+                            //tmp.Remove(s);
+                        }
                     }
                 }
             }
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-
-            foreach (KeyValuePair<string, IMessageExchange> s in messageExchange)
-            {
-                if (s.Value != null)
-                {
-                    subject = g.CreateUriNode(name);
-                    predicate = g.CreateUriNode("rdf:hasIncomingTransition");
-                    objec = g.CreateUriNode("standard-pass-ont:" + s.Value.getModelComponentID());
-
-                    test = new Triple(subject, predicate, objec);
-                    g.Assert(test);
-
-                    //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-                }
-            }
-        }
-
-        /// <summary>
-        /// 
+        /// Method that exports a message exchange list object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>

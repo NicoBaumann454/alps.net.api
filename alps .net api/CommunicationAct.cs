@@ -108,17 +108,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-
-        }
-
-        /// <summary>
-        /// 
+        /// Method that exorts a communication act object in the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>

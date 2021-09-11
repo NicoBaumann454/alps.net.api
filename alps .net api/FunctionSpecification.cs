@@ -126,40 +126,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (toolSpecificDefinition != "")
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasToolSpecificDefinition");
-                objec = g.CreateUriNode("standard-pass-ont:" + toolSpecificDefinition);
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-        }
-
-        /// <summary>
-        /// 
+        /// Message that exports a function specification object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>
@@ -169,13 +136,6 @@ namespace alps.net_api
 
             using (StreamWriter sw = File.AppendText("../../../../" + filename + ".owl"))
             {
-
-                if (toolSpecificDefinition != null)
-                {
-                    //sw.WriteLine("      <standard-pass-ont:hasToolSpecificDefintion" + " rdf:resource=\"" + toolSpecificDefinition + "\" ></standard-pass-ont:hasToolSpecificDefintion>");
-                }
-
-                Console.WriteLine("###############   Muss noch angepasst werden tool specific definition +++++++++++++++++++++");
 
                 if (last)
                 {

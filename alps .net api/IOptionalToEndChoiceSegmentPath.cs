@@ -29,10 +29,5 @@
         /// <returns></returns>
         IChoiceSegmentPath getChoiceSegmentPath();
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        new OptionalToEndChoiceSegmentPath factoryMethod();
     }
 }

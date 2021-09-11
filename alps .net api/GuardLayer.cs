@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 
 namespace alps.net_api
 {
@@ -13,26 +14,48 @@ namespace alps.net_api
             setComment("The standart Element for GuardLayer");
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="aLPSModelElement"></param>
         public void setALPSModelElements(GuardBehavior aLPSModelElement)
         {
             this.aLPSModelElements.Add(aLPSModelElement);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public List<IGuardBehavior> getALPSModelElements()
         {
             return this.aLPSModelElements;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="aLPSModelElement"></param>
         public void setModelLayers(ModelLayer aLPSModelElement)
         {
             this.modelLayers.Add(aLPSModelElement);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public List<IModelLayer> getModelLayers()
         {
             return this.modelLayers;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="attribute"></param>
+        /// <param name="attributeType"></param>
+        /// <returns></returns>
         public override bool createInstance(List<string> attribute, List<string> attributeType)
         {
             base.createInstance(attribute, attributeType);
@@ -88,6 +111,25 @@ namespace alps.net_api
                         getAdditionalAttributeType().RemoveAt(place);
                         getAdditionalAttribute().Remove(s);
                     }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Method that exports an guard layer object to the file given in the filename
+        /// </summary>
+        /// <param name="last"></param>
+        /// <param name="filename"></param>
+        public override void exporting(bool last, string filename)
+        {
+            base.exporting(false, filename);
+
+            using (StreamWriter sw = File.AppendText("../../../../" + filename + ".owl"))
+            {
+                if (last)
+                {
+                    sw.WriteLine("      <rdf:type rdf:resource=" + "\"&standard-pass-ont;" + this.GetType().ToString().Split('.')[2] + "\" ></rdf:type>");
+                    sw.WriteLine("  </owl:NamedIndividual>");
                 }
             }
         }

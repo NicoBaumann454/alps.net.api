@@ -75,7 +75,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
+        /// Method that exportes a extension layer object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>

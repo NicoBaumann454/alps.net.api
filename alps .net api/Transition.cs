@@ -330,8 +330,6 @@ namespace alps.net_api
             {
                 if (allElements.ContainsKey(s))
                 {
-
-
                     if (new Action().GetType().IsInstanceOfType(allElements[s]) && getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(s)].Contains("belongsToAction"))
                     {
                         this.belongsToAction = (Action)allElements[s];
@@ -343,36 +341,41 @@ namespace alps.net_api
                         }
                     }
 
-                    if (new State().GetType().IsInstanceOfType(allElements[s]) || new SendState().GetType().IsInstanceOfType(allElements[s]) || new ReceiveState().GetType().IsInstanceOfType(allElements[s]) && getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(s)].Contains("State"))
+                    if (new State().GetType().IsInstanceOfType(allElements[s]) || new SendState().GetType().IsInstanceOfType(allElements[s]) || new ReceiveState().GetType().IsInstanceOfType(allElements[s]) || new DoState().GetType().IsInstanceOfType(allElements[s]) && getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(s)].Contains("State"))
                     {
-
+                        
                         if (getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID()) >= 0)
                         {
-                            if (getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID())].Contains("Source"))
-                            {
-                                this.sourceState = (State)allElements[s];
-                                int place = getAdditionalAttribute().IndexOf(s);
-                                if (place >= 0)
-                                {
-                                    getAdditionalAttributeType().RemoveAt(place);
-                                    getAdditionalAttribute().Remove(s);
-                                }
-                            }
-                            else
-                            {
+                            int remove = 0;
 
-                                if (getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID())].Contains("Target"))
+                            foreach (string nervNed in getAdditionalAttributeType())
+                            {
+                                if (nervNed.Contains("Source"))
                                 {
-                                    this.targetState = (State)allElements[s];
-                                    int place = getAdditionalAttribute().IndexOf(s);
-                                    if (place >= 0)
+                                    if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()))
                                     {
-                                        getAdditionalAttributeType().RemoveAt(place);
-                                        getAdditionalAttribute().Remove(s);
+                                        this.sourceState = (State)allElements[s];
+                                        //Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Source");
+                                        remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                    }
+                                   
+                                }
+                                else
+                                {
+                                    if (nervNed.Contains("Target"))
+                                    {
+                                        if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()))
+                                        {
+                                            this.targetState = (State)allElements[s];
+                                            //Console.WriteLine(this.getModelComponentID() + "       " + allElements[s].getModelComponentID() +   "     Target");
+                                            remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                        }
                                     }
                                 }
                             }
 
+                            getAdditionalAttribute().RemoveAt(remove);
+                            getAdditionalAttributeType().RemoveAt(remove);
                         }
                     }
 
@@ -390,62 +393,6 @@ namespace alps.net_api
                 }
             }
 
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (this.sourceState != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasSourceState");
-                objec = g.CreateUriNode("standard-pass-ont:" + sourceState.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (this.belongsToAction != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:belongsToAction");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.belongsToAction.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
-
-            }
-
-            if (this.transitionCondition != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasTransitionCondition");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.transitionCondition.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
         }
 
         /// <summary>

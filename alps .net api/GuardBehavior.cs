@@ -159,51 +159,7 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (subjectBehavior != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:belongsToSubjectBahvior");
-                objec = g.CreateUriNode("standard-pass-ont:" + subjectBehavior.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (state != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:guardsState");
-                objec = g.CreateUriNode("standard-pass-ont:" + state.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
-
-            }
-        }
-
-        /// <summary>
-        /// 
+        /// Method that exports a guard behavior object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>

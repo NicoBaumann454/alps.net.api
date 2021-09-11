@@ -1,4 +1,6 @@
-﻿namespace alps.net_api
+﻿using System.Collections.Generic;
+
+namespace alps.net_api
 {
     interface IAbstractState
     {
@@ -12,7 +14,7 @@
         /// Method that returns the incoming transition attribute of the instance
         /// </summary>
         /// <returns>The incoming transition attribute of the instance</returns>
-        ITransition getIncomingTransition();
+        Dictionary<string, ITransition> getIncomingTransition();
 
         /// <summary>
         /// Method that sets the outgoing transition attribute of the instance
@@ -24,7 +26,7 @@
         /// Method that returns the outgoing transition attribute of the instance
         /// </summary>
         /// <returns>The outgoing transition attribute of the instance</returns>
-        ITransition getOutgoingTransition();
+        Dictionary<string, ITransition> getOutgoingTransition();
 
         /// <summary>
         /// Method that sets the function specification attribute of the instance

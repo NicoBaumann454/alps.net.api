@@ -88,16 +88,6 @@ namespace alps.net_api
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-
-        }
-
-        /// <summary>
         /// Method that exports an abstract receive state object to the file given in the filename
         /// </summary>
         /// <param name="last"></param>

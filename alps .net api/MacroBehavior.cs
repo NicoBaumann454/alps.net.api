@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using VDS.RDF;
+using System.IO;
 
 namespace alps.net_api
 {
@@ -145,40 +146,24 @@ namespace alps.net_api
             }
         }
 
+
         /// <summary>
-        /// 
+        /// Method that exports an macro behavior object to the file given in the filename
         /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
+        /// <param name="last"></param>
+        /// <param name="filename"></param>
+        public override void exporting(bool last, string filename)
         {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
+            base.exporting(false, filename);
 
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            foreach (StateReference s in stateReferences)
+            using (StreamWriter sw = File.AppendText("../../../../" + filename + ".owl"))
             {
-                if (s != null)
+                if (last)
                 {
-                    subject = g.CreateUriNode(name);
-                    predicate = g.CreateUriNode("rdf:hasStateReference");
-                    objec = g.CreateUriNode("standard-pass-ont:" + s.getModelComponentID());
-
-                    test = new Triple(subject, predicate, objec);
-                    g.Assert(test);
-
-                    //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
+                    sw.WriteLine("      <rdf:type rdf:resource=" + "\"&standard-pass-ont;" + this.GetType().ToString().Split('.')[2] + "\" ></rdf:type>");
+                    sw.WriteLine("  </owl:NamedIndividual>");
                 }
             }
-
         }
     }
 }

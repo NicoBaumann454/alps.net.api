@@ -200,50 +200,6 @@ namespace alps.net_api
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (messageSpecification != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasMessageSpecification");
-                objec = g.CreateUriNode("standard-pass-ont:" + messageSpecification.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (this.subject != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasSubject");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.subject.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
-
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
         /// <param name="last"></param>
         /// <param name="filename"></param>
         public override void exporting(bool last, string filename)

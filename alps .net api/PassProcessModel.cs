@@ -628,10 +628,10 @@ namespace alps.net_api
                         ((FinalizedMessageExchange)allElements[i.Key]).completeObject(ref allElements, ref tmp);
                         break;
 
-                    case "FinalReceiveTransition":
+                    //case "FinalReceiveTransition":
 
-                        ((FinalReceiveTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((FinalReceiveTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
                     case "FinalSendTransition":
 
@@ -721,15 +721,15 @@ namespace alps.net_api
                         ((MacroState)allElements[i.Key]).completeObject(ref allElements, ref tmp);
                         break;
 
-                    case "MandatoryToEndChoiceSegment":
+                    //case "MandatoryToEndChoiceSegment":
 
-                        ((MandatoryToEndChoiceSegment)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                       // ((MandatoryToEndChoiceSegment)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
-                    case "MandatoryToStartChoiceSegment":
+                    //case "MandatoryToStartChoiceSegment":
 
-                        ((MandatoryToStartChoiceSegment)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                       // ((MandatoryToStartChoiceSegment)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
                     case "MessageExchange":
 
@@ -776,15 +776,15 @@ namespace alps.net_api
                         ((MultiSubject)allElements[i.Key]).completeObject(ref allElements, ref tmp);
                         break;
 
-                    case "OptionalToEndChoiceSegmentPath":
+                    //case "OptionalToEndChoiceSegmentPath":
 
-                        ((OptionalToEndChoiceSegmentPath)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((OptionalToEndChoiceSegmentPath)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
-                    case "OptionalToStartChoiceSegmentPath":
+                    //case "OptionalToStartChoiceSegmentPath":
 
-                        ((OptionalToStartChoiceSegmentPath)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((OptionalToStartChoiceSegmentPath)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
                     case "OWLDataTypeDefintion":
 
@@ -806,25 +806,25 @@ namespace alps.net_api
                         ((PayloadDescription)allElements[i.Key]).completeObject(ref allElements, ref tmp);
                         break;
 
-                    case "PrecedenceReceiveTransition":
+                    //case "PrecedenceReceiveTransition":
 
-                        ((PrecedenceReceiveTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((PrecedenceReceiveTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
                     case "PrecedenceSendTransition":
 
                         ((PrecedenceSendTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
                         break;
 
-                    case "PrecedenceTransition":
+                   // case "PrecedenceTransition":
 
-                        ((PrecedenceTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((PrecedenceTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
-                    case "PrecedenceTransitionType":
+                    //case "PrecedenceTransitionType":
 
-                        ((PrecedenceTransitionType)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                       // ((PrecedenceTransitionType)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
                     case "ReceiveFunction":
 
@@ -986,25 +986,25 @@ namespace alps.net_api
                         ((TransitionCondition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
                         break;
 
-                    case "TriggerReceiveTransition":
+                    //case "TriggerReceiveTransition":
 
-                        ((TriggerReceiveTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((TriggerReceiveTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
-                    case "TriggerSendTransition":
+                    //case "TriggerSendTransition":
 
-                        ((TriggerSendTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((TriggerSendTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
-                    case "TriggerTransition":
+                    //case "TriggerTransition":
 
-                        ((TriggerTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((TriggerTransition)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
-                    case "TriggerTransitionType":
+                    //case "TriggerTransitionType":
 
-                        ((TriggerTransitionType)allElements[i.Key]).completeObject(ref allElements, ref tmp);
-                        break;
+                        //((TriggerTransitionType)allElements[i.Key]).completeObject(ref allElements, ref tmp);
+                        //break;
 
                     case "UniDirectionalCommunicationChannel":
 
@@ -1141,15 +1141,6 @@ namespace alps.net_api
             }
 
 
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
         }
 
         /// <summary>

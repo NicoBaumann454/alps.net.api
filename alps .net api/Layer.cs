@@ -36,7 +36,7 @@ namespace alps.net_api
         private Dictionary<string, Action> actions1 = new Dictionary<string, Action>();
         private Dictionary<string, BehaviorDescriptionComponent> behaviorDescriptionComponents1 = new Dictionary<string, BehaviorDescriptionComponent>();
         private Dictionary<string, BuisnessDayTimerTransition> buisnessDayTimerTransitions = new Dictionary<string, BuisnessDayTimerTransition>();
-        private Dictionary<string, BuisnessDayTimerTransitionCondition> buisnessDayTimerTransitionConditions = new Dictionary<string, BuisnessDayTimerTransitionCondition>();
+        private Dictionary<string, BusinessDayTimerTransitionCondition> buisnessDayTimerTransitionConditions = new Dictionary<string, BusinessDayTimerTransitionCondition>();
         private Dictionary<string, CalenderBasedReminderTransition> calenderBasedReminderTransitions = new Dictionary<string, CalenderBasedReminderTransition>();
         private Dictionary<string, CalenderBasedReminderTransitionCondition> calenderBasedReminderTransitionConditions = new Dictionary<string, CalenderBasedReminderTransitionCondition>();
         private Dictionary<string, ChoiceSegment> choiceSements = new Dictionary<string, ChoiceSegment>();
@@ -72,8 +72,8 @@ namespace alps.net_api
         private Dictionary<string, JSONDataTypeDefinition> jSONDataTypeDefintions = new Dictionary<string, JSONDataTypeDefinition>();
         private Dictionary<string, MacroBehavior> macroBehaviors = new Dictionary<string, MacroBehavior>();
         private Dictionary<string, MacroState> macrostates = new Dictionary<string, MacroState>();
-        private Dictionary<string, MandatoryToEndChoiceSegment> mandatoryToEndChoiceSegments = new Dictionary<string, MandatoryToEndChoiceSegment>();
-        private Dictionary<string, MandatoryToStartChoiceSegment> mandatoryToStartChoiceSegments = new Dictionary<string, MandatoryToStartChoiceSegment>();
+        //private Dictionary<string, MandatoryToEndChoiceSegment> mandatoryToEndChoiceSegments = new Dictionary<string, MandatoryToEndChoiceSegment>();
+        //private Dictionary<string, MandatoryToStartChoiceSegment> mandatoryToStartChoiceSegments = new Dictionary<string, MandatoryToStartChoiceSegment>();
         private Dictionary<string, MessageExchange> messageExchanges1 = new Dictionary<string, MessageExchange>();
         private Dictionary<string, MessageExchangeCondition> messageExchangeConditions1 = new Dictionary<string, MessageExchangeCondition>();
         private Dictionary<string, MessageExchangeList> messageExchangeLists = new Dictionary<string, MessageExchangeList>();
@@ -82,8 +82,8 @@ namespace alps.net_api
         private Dictionary<string, MessageTypeConstraint> messageTypeConstraints = new Dictionary<string, MessageTypeConstraint>();
         private Dictionary<string, ModelBuiltInDataTypes> modelBuiltInDataTypess = new Dictionary<string, ModelBuiltInDataTypes>();
         private Dictionary<string, MultiSubject> multiSubjects1 = new Dictionary<string, MultiSubject>();
-        private Dictionary<string, OptionalToEndChoiceSegmentPath> optionalToEndChoiceSegmentPaths = new Dictionary<string, OptionalToEndChoiceSegmentPath>();
-        private Dictionary<string, OptionalToStartChoiceSegmentPath> optionalToStartChoiceSegmentPaths = new Dictionary<string, OptionalToStartChoiceSegmentPath>();
+        //private Dictionary<string, OptionalToEndChoiceSegmentPath> optionalToEndChoiceSegmentPaths = new Dictionary<string, OptionalToEndChoiceSegmentPath>();
+        //private Dictionary<string, OptionalToStartChoiceSegmentPath> optionalToStartChoiceSegmentPaths = new Dictionary<string, OptionalToStartChoiceSegmentPath>();
         private Dictionary<string, OWLDataTypeDefintion> oWLDataTypeDefintions = new Dictionary<string, OWLDataTypeDefintion>();
         private Dictionary<string, PayloadDataObjectDefinition> payloadDataObjectDefinitions = new Dictionary<string, PayloadDataObjectDefinition>();
         private Dictionary<string, PayloadDescription> payloadDescriptions = new Dictionary<string, PayloadDescription>();
@@ -478,7 +478,7 @@ namespace alps.net_api
             }
         }
 
-        public void Add(string key, BuisnessDayTimerTransitionCondition buisnessDayTimerTransitionCondition)
+        public void Add(string key, BusinessDayTimerTransitionCondition buisnessDayTimerTransitionCondition)
         {
             if (!buisnessDayTimerTransitionConditions.ContainsKey(key))
             {
@@ -661,7 +661,7 @@ namespace alps.net_api
                 macrostates.Add(key, macroState);
             }
         }
-
+        /*
         public void Add(string key, MandatoryToEndChoiceSegment mandatoryToEndChoiceSegment)
         {
             if (!mandatoryToEndChoiceSegments.ContainsKey(key))
@@ -677,7 +677,7 @@ namespace alps.net_api
                 mandatoryToStartChoiceSegments.Add(key, mandatoryToStartChoiceSegment);
             }
         }
-
+        */
         public void Add(string key, MessageSenderTypeConstraint messageSenderTypeConstraint)
         {
             if (!messageSenderTypeConstraints.ContainsKey(key))
@@ -702,6 +702,7 @@ namespace alps.net_api
             }
         }
 
+        /*
         public void Add(string key, OptionalToEndChoiceSegmentPath optionalToEndChoiceSegmentPath)
         {
             if (!optionalToEndChoiceSegmentPaths.ContainsKey(key))
@@ -717,6 +718,7 @@ namespace alps.net_api
                 optionalToStartChoiceSegmentPaths.Add(key, optionalToStartChoiceSegmentPath);
             }
         }
+        */
 
         public void Add(string key, OWLDataTypeDefintion oWLDataTypeDefintion)
         {

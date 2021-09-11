@@ -38,10 +38,5 @@
         /// <returns>The receive transition condition attribute of the instance</returns>
         IReceiveTransitionCondition getReceiveTransitionCondition();
 
-        /// <summary>
-        /// Factory method that creates and returns a new empty instance of the receive transition class
-        /// </summary>
-        /// <returns>A new empty instance of the receive transition class</returns>
-        PrecedenceReceiveTransition factoryMethod();
     }
 }

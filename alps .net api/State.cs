@@ -10,8 +10,8 @@ namespace alps.net_api
     /// </summary>
     public class State : BehaviorDescriptionComponent, IState
     {
-        private ITransition incomingTransition;
-        private ITransition outgoingTransition;
+        private Dictionary<string, ITransition> incomingTransition = new Dictionary<string, ITransition>();
+        private Dictionary<string, ITransition> outgoingTransition = new Dictionary<string, ITransition>();
         private IFunctionSpecification functionSpecification;
         private IGuardBehavior guardBehavior;
         private IAction action;
@@ -101,14 +101,14 @@ namespace alps.net_api
         /// <param name="transition"></param>
         public void setIncomingTransition(ITransition transition)
         {
-            this.incomingTransition = transition;
+            this.incomingTransition.Add(transition.getModelComponentID(), transition);
         }
 
         /// <summary>
         /// Method that returns the incoming transition attribute of the instance
         /// </summary>
         /// <returns>The incoming transition attribute of the instance</returns>
-        public ITransition getIncomingTransition()
+        public Dictionary<string, ITransition> getIncomingTransition()
         {
             return incomingTransition;
         }
@@ -119,14 +119,14 @@ namespace alps.net_api
         /// <param name="transition"></param>
         public void setOutgoingTransition(ITransition transition)
         {
-            this.outgoingTransition = transition;
+            this.outgoingTransition.Add(transition.getModelComponentID(), transition);
         }
 
         /// <summary>
         /// Method that returns the outgoing transition attribute of the instance
         /// </summary>
         /// <returns>The outgoing transition attribute of the instance</returns>
-        public ITransition getOutgoingTransition()
+        public Dictionary<string, ITransition> getOutgoingTransition()
         {
             return outgoingTransition;
         }
@@ -327,30 +327,83 @@ namespace alps.net_api
                 {
                     if (new Transition().GetType().IsInstanceOfType(allElements[s]))
                     {
+
                         if (getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID()) >= 0)
                         {
-                            if (getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID())].Contains("Incoming"))
+                            int remove = 0;
+
+                            foreach (string nervNed in getAdditionalAttributeType())
                             {
-                                this.incomingTransition = (Transition)allElements[s];
-                                int place = getAdditionalAttribute().IndexOf(s);
-                                if (place >= 0)
+                                if (nervNed.Contains("Incoming"))
                                 {
-                                    getAdditionalAttributeType().RemoveAt(place);
-                                    getAdditionalAttribute().Remove(s);
+                                    if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()) && !incomingTransition.ContainsKey(allElements[s].getModelComponentID()))
+                                    {
+                                        this.incomingTransition.Add(allElements[s].getModelComponentID(), (Transition)allElements[s]);
+                                        //Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Receiver");
+                                        remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                    }
+
+                                }
+                                else
+                                {
+                                    if (nervNed.Contains("Outgoing"))
+                                    {
+                                        if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()) && !outgoingTransition.ContainsKey(allElements[s].getModelComponentID()))
+                                        {
+                                            this.outgoingTransition.Add(allElements[s].getModelComponentID(), (Transition)allElements[s]);
+                                            //Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Sender");
+                                            remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                        }
+                                    }
                                 }
                             }
-                            else
-                            {
-                                this.outgoingTransition = (Transition)allElements[s];
-                                int place = getAdditionalAttribute().IndexOf(s);
-                                if (place >= 0)
-                                {
-                                    getAdditionalAttributeType().RemoveAt(place);
-                                    getAdditionalAttribute().Remove(s);
-                                }
-                            }
+
+                            getAdditionalAttribute().RemoveAt(remove);
+                            getAdditionalAttributeType().RemoveAt(remove);
                         }
                     }
+
+
+
+                    /*
+                     if (new Transition().GetType().IsInstanceOfType(allElements[s]) && getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(s)].Contains("Transition"))
+                        {
+
+                            if (getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID()) >= 0)
+                            {
+                                int remove = 0;
+
+                                foreach (string nervNed in getAdditionalAttributeType())
+                                {
+                                    if (nervNed.Contains("Incoming"))
+                                    {
+                                        if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()))
+                                        {
+                                            this.incomingTransition = (Transition)allElements[s];
+                                            Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Incoming");
+                                            remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                        if (nervNed.Contains("Outgoing"))
+                                        {
+                                            if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()))
+                                            {
+                                                this.outgoingTransition = (Transition)allElements[s];
+                                                Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Outgoing");
+                                                remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                getAdditionalAttribute().RemoveAt(remove);
+                                getAdditionalAttributeType().RemoveAt(remove);
+                            }
+                        }
+                     */
 
                     if (new GuardBehavior().GetType().IsInstanceOfType(allElements[s]))
                     {
@@ -384,87 +437,8 @@ namespace alps.net_api
                             getAdditionalAttribute().Remove(s);
                         }
                     }
+
                 }
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            if (this.incomingTransition != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasIncomingTransition");
-                objec = g.CreateUriNode("standard-pass-ont:" + incomingTransition.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (this.outgoingTransition != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasOutgoingTransition");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.outgoingTransition.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
-
-            }
-
-            if (guardBehavior != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasGuardBehavior");
-                objec = g.CreateUriNode("standard-pass-ont:" + guardBehavior.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (this.functionSpecification != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasFunctionSpecification");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.functionSpecification.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (this.action != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasAction");
-                objec = g.CreateUriNode("standard-pass-ont:" + action.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
             }
         }
 
@@ -497,12 +471,12 @@ namespace alps.net_api
 
                 if (incomingTransition != null)
                 {
-                    sw.WriteLine("      <standard-pass-ont:hasIncomingTransition" + " rdf:resource=\"" + incomingTransition.getModelComponentID() + "\" ></standard-pass-ont:hasIncomingTransition>");
+                    //sw.WriteLine("      <standard-pass-ont:hasIncomingTransition" + " rdf:resource=\"" + incomingTransition.getModelComponentID() + "\" ></standard-pass-ont:hasIncomingTransition>");
                 }
 
                 if (outgoingTransition != null)
                 {
-                    sw.WriteLine("      <standard-pass-ont:hasOutgoingTransition" + " rdf:resource=\"" + outgoingTransition.getModelComponentID() + "\" ></standard-pass-ont:hasOutgoingTransition>");
+                    //sw.WriteLine("      <standard-pass-ont:hasOutgoingTransition" + " rdf:resource=\"" + outgoingTransition.getModelComponentID() + "\" ></standard-pass-ont:hasOutgoingTransition>");
                 }
 
                 if (last)

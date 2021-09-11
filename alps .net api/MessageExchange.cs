@@ -274,88 +274,43 @@ namespace alps.net_api
 
                     if (new Subject().GetType().IsInstanceOfType(allElements[s]))
                     {
+
                         if (getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID()) >= 0)
                         {
-                            if (getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID())].Contains("Receiver"))
+                            int remove = 0;
+
+                            foreach (string nervNed in getAdditionalAttributeType())
                             {
-                                this.receiver = (Subject)allElements[s];
-                                int place = getAdditionalAttribute().IndexOf(s);
-                                if (place >= 0)
+                                if (nervNed.Contains("Receiver"))
                                 {
-                                    getAdditionalAttributeType().RemoveAt(place);
-                                    getAdditionalAttribute().Remove(s);
+                                    if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()))
+                                    {
+                                        this.receiver = (Subject)allElements[s];
+                                        //Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Receiver");
+                                        remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                    }
+
+                                }
+                                else
+                                {
+                                    if (nervNed.Contains("Sender"))
+                                    {
+                                        if (getAdditionalAttribute()[getAdditionalAttributeType().IndexOf(nervNed)].Equals(allElements[s].getModelComponentID()))
+                                        {
+                                            this.sender = (Subject)allElements[s];
+                                            //Console.WriteLine(allElements[s].getModelComponentID() + "       " + this.getModelComponentID() + "     Sender");
+                                            remove = getAdditionalAttributeType().IndexOf(nervNed);
+                                        }
+                                    }
                                 }
                             }
-                            if (getAdditionalAttributeType()[getAdditionalAttribute().IndexOf(allElements[s].getModelComponentID())].Contains("Sender"))
-                            {
-                                this.sender = (Subject)allElements[s];
-                                int place = getAdditionalAttribute().IndexOf(s);
-                                if (place >= 0)
-                                {
-                                    getAdditionalAttributeType().RemoveAt(place);
-                                    getAdditionalAttribute().Remove(s);
-                                }
-                            }
+
+                            getAdditionalAttribute().RemoveAt(remove);
+                            getAdditionalAttributeType().RemoveAt(remove);
                         }
                     }
-                    //tmp.Remove(s);
                 }
-            }
-
-
-        }
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-
-            if (messageSpecification != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("standard-pass-ont:hasMessageSpecification");
-                objec = g.CreateUriNode("standard-pass-ont:" + messageSpecification.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (sender != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("standard-pass-ont:hasSender");
-                objec = g.CreateUriNode("standard-pass-ont:" + sender.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
-
-            }
-
-            if (receiver != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("standard-pass-ont:hasReceiver");
-                objec = g.CreateUriNode("standard-pass-ont:" + receiver.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
+                //tmp.Remove(s);
             }
         }
 

@@ -3,7 +3,7 @@ using VDS.RDF;
 
 namespace alps.net_api
 {
-    class FinalTransitionType : AbstractPASSTransition, IFinalTransitionType
+    class FinalTransitionType : AbstractPASSTransition
     {
         /// <summary>
         /// Name of the class
@@ -86,14 +86,5 @@ namespace alps.net_api
             base.completeObject(ref allElements, ref tmp);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-
-        }
     }
 }

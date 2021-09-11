@@ -68,10 +68,5 @@ namespace alps.net_api
         /// <returns></returns>
         PASSProcessModelElement factoryMethod();
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        void export(ref Graph g);
     }
 }

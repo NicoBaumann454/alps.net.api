@@ -1954,7 +1954,7 @@ namespace alps.net_api
                         layer.Add(buisnessDayTimerTransition.getModelComponentID(), buisnessDayTimerTransition);
 
                         break;
-
+                    /*
                     //Hier muss die Klasse noch implementiert werden (Warum hab ich das nicht schon gemacht ?)
                     case "BusinessDayTimerTransitionCondition":
                         //Schreibfehler !!!!!!!!!!!!!!!!!!!!!!!
@@ -1993,9 +1993,8 @@ namespace alps.net_api
                         //layer.Add(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
 
                         break;
-
+                    */
                     case "CalendarBasedReminderTransition":
-                        //Schreibfehler !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                         CalenderBasedReminderTransition calenderBasedReminderTransition = new CalenderBasedReminderTransition();
 
                         count = 0;
@@ -2783,7 +2782,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, finalizedMessageExchange);
 
                         break;
-
+                    /*
                     case "FinalReceiveTransition":
 
                         FinalReceiveTransition finalReceiveTransition = new FinalReceiveTransition();
@@ -2819,7 +2818,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, finalReceiveTransition);
 
                         break;
-
+                    */
                     case "FinalSendTransition":
 
                         FinalSendTransition finalSendTransition = new FinalSendTransition();
@@ -3223,7 +3222,7 @@ namespace alps.net_api
 
                         break;
 
-                    case "InitialStateOfBehavior":
+                    case "InitialState":
 
                         InitialStateOfBehavior initialStateOfBehavior = new InitialStateOfBehavior();
 
@@ -3338,8 +3337,8 @@ namespace alps.net_api
 
                         break;
 
-                    case "InputPoolConstraintHandlingStrategy":
-
+                    case "InputPoolContstraintHandlingStrategy":
+                        
                         InputPoolConstraintHandlingStrategy inputPoolConstraintHandlingStrategy = new InputPoolConstraintHandlingStrategy();
 
                         count = 0;
@@ -3563,7 +3562,7 @@ namespace alps.net_api
                         layer.Add(macroState.getModelComponentID(), macroState);
 
                         break;
-
+                    /*
                     case "MandatoryToEndChoiceSegmentPath":
 
                         MandatoryToEndChoiceSegment mandatoryToEndChoiceSegment = new MandatoryToEndChoiceSegment();
@@ -3601,7 +3600,7 @@ namespace alps.net_api
                         layer.Add(mandatoryToEndChoiceSegment.getModelComponentID(), mandatoryToEndChoiceSegment);
 
                         break;
-
+                    /*
                     case "MandatoryToStartChoiceSegmentPath":
 
                         MandatoryToStartChoiceSegment mandatoryToStartChoiceSegment = new MandatoryToStartChoiceSegment();
@@ -3639,7 +3638,7 @@ namespace alps.net_api
                         layer.Add(mandatoryToStartChoiceSegment.getModelComponentID(), mandatoryToStartChoiceSegment);
 
                         break;
-
+                    */
                     case "MessageExchangeCondition":
 
                         MessageExchangeCondition messageExchangeCondition = new MessageExchangeCondition();
@@ -3791,7 +3790,7 @@ namespace alps.net_api
                         layer.Add(modelBuiltInDataTypes.getModelComponentID(), modelBuiltInDataTypes);
 
                         break;
-
+                    /*
                     case "OptionalToEndChoiceSegmentPath":
 
                         OptionalToEndChoiceSegmentPath optionalToEndChoiceSegmentPath = new OptionalToEndChoiceSegmentPath();
@@ -3829,7 +3828,7 @@ namespace alps.net_api
                         layer.Add(optionalToEndChoiceSegmentPath.getModelComponentID(), optionalToEndChoiceSegmentPath);
 
                         break;
-
+                    /*
                     case "OptionalToStartChoiceSegmentPath":
 
                         OptionalToStartChoiceSegmentPath optionalToStartChoiceSegmentPath = new OptionalToStartChoiceSegmentPath();
@@ -3867,7 +3866,7 @@ namespace alps.net_api
                         layer.Add(optionalToStartChoiceSegmentPath.getModelComponentID(), optionalToStartChoiceSegmentPath);
 
                         break;
-
+                    */
                     case "OWLDataTypeDefinition":
 
                         OWLDataTypeDefintion oWLDataTypeDefintion = new OWLDataTypeDefintion();
@@ -3943,7 +3942,7 @@ namespace alps.net_api
                         layer.Add(payloadDataObjectDefinition.getModelComponentID(), payloadDataObjectDefinition);
 
                         break;
-
+                    /*
                     case "PrecedenceReceiveTransition":
 
                         PrecedenceReceiveTransition precedenceReceiveTransition = new PrecedenceReceiveTransition();
@@ -4015,7 +4014,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, precedenceSendTransition);
 
                         break;
-
+                    
                     case "PrecedenceTransition":
 
                         PrecedenceTransition precedenceTransition = new PrecedenceTransition();
@@ -4051,7 +4050,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, precedenceTransition);
 
                         break;
-
+                    
                     case "PrecedenceTransitionType":
 
                         PrecedenceTransitionType precedenceTransitionType = new PrecedenceTransitionType();
@@ -4087,7 +4086,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, precedenceTransitionType);
 
                         break;
-
+                    */
                     case "UniDirectionalCommunicationChannel":
 
                         UniDirectionalCommunicationChannel uniDirectionalCommunicationChannel = new UniDirectionalCommunicationChannel();
@@ -4995,7 +4994,7 @@ namespace alps.net_api
                         layer.Add(timeTransitionCondition.getModelComponentID(), timeTransitionCondition);
 
                         break;
-
+                    /*
                     case "TriggerReceiveTransition":
 
                         TriggerReceiveTransition triggerReceiveTransition = new TriggerReceiveTransition();
@@ -5031,7 +5030,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, triggerReceiveTransition);
 
                         break;
-
+                    
                     case "TriggerSendTransition":
 
                         TriggerSendTransition triggerSendTransition = new TriggerSendTransition();
@@ -5068,42 +5067,8 @@ namespace alps.net_api
 
                         break;
 
-                    case "TriggerTransition":
-
-                        TriggerTransition triggerTransition = new TriggerTransition();
-
-                        count = 0;
-                        foreach (Graph j in files)
-                        {
-                            foreach (Triple l in files[count].Triples)
-                            {
-                                if (l.Subject.ToString().Equals(i.Key))
-                                {
-                                    if (l.Predicate.ToString().Contains("hasModelComponentID"))
-                                    {
-                                        attributeType.Add(l.Predicate.ToString());
-                                        attribute.Add(l.Subject.ToString());
-                                    }
-                                    else
-                                    {
-                                        attributeType.Add(l.Predicate.ToString());
-                                        attribute.Add(l.Object.ToString());
-                                    }
-                                    triggerTransition.addAttribute(l.Predicate.ToString(), l.Object.ToString());
-                                    //Console.WriteLine(l.Predicate.ToString() + "    " + l.Object.ToString());
-                                }
-                            }
-                            count++;
-                        }
-
-                        triggerTransition.createInstance(attribute, attributeType);
-                        name = triggerTransition.getModelComponentID();
-                        splittedURI = name.Split('^');
-                        name = splittedURI[0];
-                        passProcessModell.addElements(name, triggerTransition);
-
-                        break;
-
+                    
+                    
                     case "TriggerTransitionType":
 
                         TriggerTransitionType triggerTransitionType = new TriggerTransitionType();
@@ -5139,7 +5104,7 @@ namespace alps.net_api
                         passProcessModell.addElements(name, triggerTransitionType);
 
                         break;
-
+                    */
                     case "UserCancelTransition":
 
                         UserCancelTransition userCancelTransition = new UserCancelTransition();
@@ -5512,26 +5477,6 @@ namespace alps.net_api
             TreeNode treeNodeChoiceSegmentPath = new TreeNode(choiceSegmentPath.getModelComponentID());
             treeNodeState.addChild(treeNodeChoiceSegmentPath);
             standartPassObjects.Add(choiceSegmentPath);
-
-            MandatoryToEndChoiceSegment mandatoryToEndChoiceSegment = new MandatoryToEndChoiceSegment();
-            TreeNode treeNodeMandatoryToEndChoiceSegment = new TreeNode(mandatoryToEndChoiceSegment.getModelComponentID());
-            treeNodeChoiceSegmentPath.addChild(treeNodeMandatoryToEndChoiceSegment);
-            standartPassObjects.Add(mandatoryToEndChoiceSegment);
-
-            MandatoryToStartChoiceSegment mandatoryToStartChoiceSegment = new MandatoryToStartChoiceSegment();
-            TreeNode treeNodeMandatoryToStartChoiceSegment = new TreeNode(mandatoryToStartChoiceSegment.getModelComponentID());
-            treeNodeChoiceSegmentPath.addChild(treeNodeMandatoryToStartChoiceSegment);
-            standartPassObjects.Add(mandatoryToStartChoiceSegment);
-
-            OptionalToEndChoiceSegmentPath optionalToEndChoiceSegmentPath = new OptionalToEndChoiceSegmentPath();
-            TreeNode treeNodeOptionalToEndChoiceSegmentPath = new TreeNode(optionalToEndChoiceSegmentPath.getModelComponentID());
-            treeNodeChoiceSegmentPath.addChild(treeNodeOptionalToEndChoiceSegmentPath);
-            standartPassObjects.Add(optionalToEndChoiceSegmentPath);
-
-            OptionalToStartChoiceSegmentPath optionalToStartChoiceSegmentPath = new OptionalToStartChoiceSegmentPath();
-            TreeNode treeNodeOptionalToStartChoiceSegmentPath = new TreeNode(optionalToStartChoiceSegmentPath.getModelComponentID());
-            treeNodeChoiceSegmentPath.addChild(treeNodeOptionalToStartChoiceSegmentPath);
-            standartPassObjects.Add(optionalToStartChoiceSegmentPath);
 
             EndState endState = new EndState();
             TreeNode treeNodeEndState = new TreeNode(endState.getModelComponentID());

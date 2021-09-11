@@ -15,7 +15,7 @@ namespace alps.net_api
         private Dictionary<string, BehaviorDescriptionComponent> behaviorDescriptionComponent = new Dictionary<string, BehaviorDescriptionComponent>();
         private PassProcessModel belongsToModel;
         private IState endState;
-        private IInitialStateOfBehavior initialStateOfBehavior;
+        private IState initialStateOfBehavior;
         private int priorityNumber;
         private Guid guid;
         private string tmpBehaviorDescriptionComponent;
@@ -106,7 +106,7 @@ namespace alps.net_api
         /// Method that sets the initial state of behaviors attribute of the instance
         /// </summary>
         /// <param name="initialStateOfBehavior"></param>
-        public void setInitialState(IInitialStateOfBehavior initialStateOfBehavior)
+        public void setInitialState(IState initialStateOfBehavior)
         {
             this.initialStateOfBehavior = initialStateOfBehavior;
         }
@@ -142,7 +142,7 @@ namespace alps.net_api
         /// Method that returns the initial state of behaviors attribute of the instance
         /// </summary>
         /// <returns>The initial state of behaviors attribute of the instance</returns>
-        public IInitialStateOfBehavior getInitialStateOfBehavior()
+        public IState getInitialStateOfBehavior()
         {
             return initialStateOfBehavior;
         }
@@ -585,8 +585,8 @@ namespace alps.net_api
             deleteAction(state.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(state.getFunctionSpecification());
-            deleteTransition(state.getIncomingTransition());
-            deleteTransition(state.getOutgoingTransition());
+            //deleteTransition(state.getIncomingTransition());
+            //deleteTransition(state.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(state.getModelComponentID());
         }
 
@@ -737,8 +737,8 @@ namespace alps.net_api
             deleteAction(endState.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(endState.getFunctionSpecification());
-            deleteTransition(endState.getIncomingTransition());
-            deleteTransition(endState.getOutgoingTransition());
+            //deleteTransition(endState.getIncomingTransition());
+            //deleteTransition(endState.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(endState.getModelComponentID());
         }
 
@@ -787,8 +787,8 @@ namespace alps.net_api
             deleteAction(genericReturnToOriginReference.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(genericReturnToOriginReference.getFunctionSpecification());
-            deleteTransition(genericReturnToOriginReference.getIncomingTransition());
-            deleteTransition(genericReturnToOriginReference.getOutgoingTransition());
+            //deleteTransition(genericReturnToOriginReference.getIncomingTransition());
+            //deleteTransition(genericReturnToOriginReference.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(genericReturnToOriginReference.getModelComponentID());
         }
 
@@ -837,8 +837,8 @@ namespace alps.net_api
             deleteAction(initialStateOfBehavior.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(initialStateOfBehavior.getFunctionSpecification());
-            deleteTransition(initialStateOfBehavior.getIncomingTransition());
-            deleteTransition(initialStateOfBehavior.getOutgoingTransition());
+            //deleteTransition(initialStateOfBehavior.getIncomingTransition());
+            //deleteTransition(initialStateOfBehavior.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(initialStateOfBehavior.getModelComponentID());
         }
 
@@ -888,8 +888,8 @@ namespace alps.net_api
             deleteAction(initialStateOfChoiceSegmentPath.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(initialStateOfBehavior.getFunctionSpecification());
-            deleteTransition(initialStateOfBehavior.getIncomingTransition());
-            deleteTransition(initialStateOfBehavior.getOutgoingTransition());
+            //deleteTransition(initialStateOfBehavior.getIncomingTransition());
+            //deleteTransition(initialStateOfBehavior.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(initialStateOfChoiceSegmentPath.getModelComponentID());
         }
 
@@ -940,8 +940,8 @@ namespace alps.net_api
             deleteAction(macroState.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(macroState.getFunctionSpecification());
-            deleteTransition(macroState.getIncomingTransition());
-            deleteTransition(macroState.getOutgoingTransition());
+            //deleteTransition(macroState.getIncomingTransition());
+            //deleteTransition(macroState.getOutgoingTransition());
             //deleteMacroBehavior(macroState.getReferenceMacroBehavior());
             behaviorDescriptionComponent.Remove(macroState.getModelComponentID());
         }
@@ -991,8 +991,8 @@ namespace alps.net_api
             deleteAction(standartPASSState.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(standartPASSState.getFunctionSpecification());
-            deleteTransition(standartPASSState.getIncomingTransition());
-            deleteTransition(standartPASSState.getOutgoingTransition());
+            //deleteTransition(standartPASSState.getIncomingTransition());
+            //deleteTransition(standartPASSState.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(standartPASSState.getModelComponentID());
         }
 
@@ -1043,8 +1043,8 @@ namespace alps.net_api
             deleteAction(doState.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(doState.getFunctionSpecification());
-            deleteTransition(doState.getIncomingTransition());
-            deleteTransition(doState.getOutgoingTransition());
+            //deleteTransition(doState.getIncomingTransition());
+            //deleteTransition(doState.getOutgoingTransition());
             behaviorDescriptionComponent.Remove(doState.getModelComponentID());
         }
 
@@ -1194,8 +1194,8 @@ namespace alps.net_api
             deleteAction(stateReference.getAction());
             //deleteGuardBehavior(state.getModelComponentID());
             deleteFunctionSpecification(stateReference.getFunctionSpecification());
-            deleteTransition(stateReference.getIncomingTransition());
-            deleteTransition(stateReference.getOutgoingTransition());
+            //deleteTransition(stateReference.getIncomingTransition());
+            //deleteTransition(stateReference.getOutgoingTransition());
             deleteState(stateReference.getReferencesState());
             behaviorDescriptionComponent.Remove(stateReference.getModelComponentID());
         }
@@ -2339,20 +2339,21 @@ namespace alps.net_api
         /// <param name="timeValue"></param>
         /// <param name="additionalAttribute"></param>
         /// <returns></returns>
-        public BuisnessDayTimerTransitionCondition addBusinessDayTimerTransitionCondition(string label, string comment = "", string toolSpecificDefintion = "", string timeValue = "", List<string> additionalAttribute = null)
-        {
+        //public BusinessDayTimerTransitionCondition addBusinessDayTimerTransitionCondition(string label, string comment = "", string toolSpecificDefintion = "", string timeValue = "", List<string> additionalAttribute = null)
+        //{
 
-            BuisnessDayTimerTransitionCondition buisnessDayTimerTransitionCondition = new BuisnessDayTimerTransitionCondition(label, comment, toolSpecificDefintion, timeValue, additionalAttribute);
+            //BusinessDayTimerTransitionCondition buisnessDayTimerTransitionCondition = new BusinessDayTimerTransitionCondition(label, comment, toolSpecificDefintion, timeValue, additionalAttribute);
 
-            buisnessDayTimerTransitionCondition.setBelongsToSubjectBehavior(this);
+            //buisnessDayTimerTransitionCondition.setBelongsToSubjectBehavior(this);
 
-            behaviorDescriptionComponent.Add(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
-            belongsToModel.addElements(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
+            //behaviorDescriptionComponent.Add(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
+            //belongsToModel.addElements(buisnessDayTimerTransitionCondition.getModelComponentID(), buisnessDayTimerTransitionCondition);
 
-            return buisnessDayTimerTransitionCondition;
+            //return buisnessDayTimerTransitionCondition;
 
-        }
+        //}
 
+        /*
         /// <summary>
         /// 
         /// </summary>
@@ -2371,6 +2372,7 @@ namespace alps.net_api
         {
             behaviorDescriptionComponent.Remove(buisnessDayTimerTransitionCondition.getModelComponentID());
         }
+        */
 
         /// <summary>
         /// 
@@ -2486,7 +2488,7 @@ namespace alps.net_api
                     toBeRemoved.Add(counter);
                 }
 
-                if (s.Contains("hasInitialStateOfBehavior"))
+                if (s.Contains("hasInitialState"))
                 {
                     tmpInitialStateOfBehavior = attribute[counter];
                     toBeRemoved.Add(counter);
@@ -2566,9 +2568,9 @@ namespace alps.net_api
                         //tmp.Remove(s);
                     }
 
-                    if (new InitialStateOfBehavior().GetType().IsInstanceOfType(allElements[s]))
+                    if (new State().GetType().IsInstanceOfType(allElements[s]) && allElements[s].getModelComponentID().Equals(tmpInitialStateOfBehavior))
                     {
-                        this.initialStateOfBehavior = (InitialStateOfBehavior)allElements[s];
+                        this.initialStateOfBehavior = (State)allElements[s];
                         int place = getAdditionalAttribute().IndexOf(s);
                         if (place >= 0)
                         {
@@ -2593,77 +2595,6 @@ namespace alps.net_api
             stringAttributes.Add(tmpInitialStateOfBehavior);
 
             return stringAttributes;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-            //Graph g = new Graph();
-            INode subject;
-            INode predicate;
-            INode objec;
-            Triple test;
-
-            string nameString = getModelComponentID();
-
-            Uri name = new Uri(nameString);
-            //Console.WriteLine(name);
-            //Console.WriteLine();
-
-            foreach (KeyValuePair<string, BehaviorDescriptionComponent> s in this.behaviorDescriptionComponent)
-            {
-                if (s.Value != null)
-                {
-                    subject = g.CreateUriNode(name);
-                    predicate = g.CreateUriNode("standard-pass-ont:contains");
-                    objec = g.CreateUriNode("standard-pass-ont:" + s.Value.getModelComponentID());
-
-                    test = new Triple(subject, predicate, objec);
-                    g.Assert(test);
-
-                    //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-                }
-            }
-
-            if (this.endState != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasEndState");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.endState.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                //Console.WriteLine(test.Subject.ToString() + " " + test.Predicate.ToString() + " " + test.Object.ToString());
-                g.Assert(test);
-
-            }
-
-            if (this.initialStateOfBehavior != null)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasInitialStateOfBehavior");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.initialStateOfBehavior.getModelComponentID());
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
-
-            if (this.priorityNumber >= 0)
-            {
-                subject = g.CreateUriNode(name);
-                predicate = g.CreateUriNode("rdf:hasPriorityNumber");
-                objec = g.CreateUriNode("standard-pass-ont:" + this.priorityNumber);
-
-                test = new Triple(subject, predicate, objec);
-                g.Assert(test);
-
-                //Console.WriteLine(name + "  " + "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" + "  " + "http://www.w3.org/2002/07/owl#NamedIndividual");
-            }
         }
 
         /// <summary>

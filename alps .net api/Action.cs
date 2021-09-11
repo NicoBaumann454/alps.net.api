@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace alps.net_api
@@ -184,10 +185,13 @@ namespace alps.net_api
 
                     if (new Transition().GetType().IsInstanceOfType(allElements[s]))
                     {
-                        this.transition.Add(allElements[s].getModelComponentID(), (Transition)allElements[s]);
-                        int place = getAdditionalAttribute().IndexOf(s);
-                        getAdditionalAttributeType().RemoveAt(place);
-                        getAdditionalAttribute().Remove(s);
+                        if (!(this.transition.ContainsKey(allElements[s].getModelComponentID())))
+                        {
+                            this.transition.Add(allElements[s].getModelComponentID(), (Transition)allElements[s]);
+                            int place = getAdditionalAttribute().IndexOf(s);
+                            getAdditionalAttributeType().RemoveAt(place);
+                            getAdditionalAttribute().Remove(s);
+                        }
                         //tmp.Remove(s);
                     }
                 }

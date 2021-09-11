@@ -505,12 +505,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.AbstractReceiveState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.AbstractReceiveState.exporting(System.Boolean,System.String)">
             <summary>
             Method that exports an abstract receive state object to the file given in the filename
@@ -1166,11 +1160,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.BaseLayer.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.BaseLayer.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an buisness day timer transition to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="T:alps.net_api.BehaviorDescriptionComponent">
             <summary>
@@ -1288,6 +1283,13 @@
             <param name="tmp"></param>
             
         </member>
+        <member name="M:alps.net_api.BiDirectionalCommunicationChannel.exporting(System.Boolean,System.String)">
+            <summary>
+            Method that exports an buisness day timer transition to the file given in the filename
+            </summary>
+            <param name="last"></param>
+            <param name="filename"></param>
+        </member>
         <member name="T:alps.net_api.BuisnessDayTimerTransition">
             <summary>
             Class that represents a BuisnessDayTimerTransition
@@ -1350,34 +1352,6 @@
         <member name="M:alps.net_api.BuisnessDayTimerTransition.exporting(System.Boolean,System.String)">
             <summary>
             Method that exports an buisness day timer transition to the file given in the filename
-            </summary>
-            <param name="last"></param>
-            <param name="filename"></param>
-        </member>
-        <member name="T:alps.net_api.BuisnessDayTimerTransitionCondition">
-            <summary>
-            Class that represents an buisness day timer transition condition
-            </summary>
-        </member>
-        <member name="M:alps.net_api.BuisnessDayTimerTransitionCondition.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="label"></param>
-            <param name="comment"></param>
-            <param name="toolSpecificDefintion"></param>
-            <param name="timeValue"></param>
-            <param name="additionalAttribute"></param>
-        </member>
-        <member name="M:alps.net_api.BuisnessDayTimerTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
-        <member name="M:alps.net_api.BuisnessDayTimerTransitionCondition.exporting(System.Boolean,System.String)">
-            <summary>
-            
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -1486,12 +1460,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.CalenderBasedReminderTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.CalenderBasedReminderTransition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -1553,15 +1521,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.CalenderBasedReminderTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.CalenderBasedReminderTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a calender based reminder transition condition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -1640,15 +1602,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.ChoiceSegment.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.ChoiceSegment.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a choice segment object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -1790,15 +1746,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.ChoiceSegmentPath.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.ChoiceSegmentPath.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a choice segment path object in the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -1860,15 +1810,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.CommunicationAct.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.CommunicationAct.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exorts a communication act object in the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -1914,15 +1858,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.CommunicationRestriction.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.CommunicationRestriction.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a communication restriction object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -1997,7 +1935,7 @@
         </member>
         <member name="M:alps.net_api.CommunicationTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
             <summary>
-            
+            Method that creates a new instance of the communication transition class
             </summary>
             <param name="attribute"></param>
             <param name="attributeType"></param>
@@ -2011,15 +1949,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.CommunicationTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.CommunicationTransition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a communication transition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2071,15 +2003,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.CustomOrExternalDataTypeDefinition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.CustomOrExternalDataTypeDefinition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a custom or external data type defintion object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2130,15 +2056,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DataDescribingComponent.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DataDescribingComponent.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a data describing component object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2228,15 +2148,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DataMappingFunction.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DataMappingFunction.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a data mapping function object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2284,12 +2198,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.DataMappingIncomingToLocal.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.DataMappingIncomingToLocal.exporting(System.Boolean,System.String)">
             <summary>
@@ -2347,15 +2255,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DataMappingLocalToOutgoing.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DataMappingLocalToOutgoing.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a data mapping local to outgoing object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2405,7 +2307,7 @@
         </member>
         <member name="M:alps.net_api.DataObjectDefinition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
             <summary>
-            
+            Method that creates a new instance of the data object definition class
             </summary>
             <param name="attribute"></param>
             <param name="attributeType"></param>
@@ -2425,15 +2327,9 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:alps.net_api.DataObjectDefinition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DataObjectDefinition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a data object defintion object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2485,15 +2381,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DataObjectListDefiniton.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DataObjectListDefiniton.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a data object list definition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2549,7 +2439,7 @@
         </member>
         <member name="M:alps.net_api.DataTypeDefinition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
             <summary>
-            
+            Method that creates a new instance of the data type definition class
             </summary>
             <param name="attribute"></param>
             <param name="attributeType"></param>
@@ -2563,15 +2453,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DataTypeDefinition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DataTypeDefinition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a data type definiton object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2648,15 +2532,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DayTimerTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DayTimerTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a day timer transition condition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2725,15 +2603,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DayTimeTimerTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DayTimeTimerTransition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a day time timer transition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2753,15 +2625,9 @@
             <param name="timeValue"></param>
             <param name="additionalAttribute"></param>
         </member>
-        <member name="M:alps.net_api.DayTimeTimerTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            Method that exports the object to the owl file
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DayTimeTimerTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a day time timer transition condition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2823,15 +2689,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DoFunction.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DoFunction.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a do function to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -2960,15 +2820,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DoState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DoState.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a do state object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3037,7 +2891,7 @@
         </member>
         <member name="M:alps.net_api.DoTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
             <summary>
-            
+            Method that creates a new instance of the do transition class
             </summary>
             <param name="attribute"></param>
             <param name="attributeType"></param>
@@ -3051,15 +2905,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DoTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DoTransition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a do transition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3112,15 +2960,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.DoTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.DoTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a do transition condition object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3209,15 +3051,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.EndState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.EndState.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an end state object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3339,15 +3175,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.ExtensionBehavior.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.ExtensionBehavior.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a extension behavior object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3362,7 +3192,7 @@
         </member>
         <member name="M:alps.net_api.ExtensionLayer.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exportes a extension layer object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3499,67 +3329,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.FinalizedMessageExchange.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.FinalizedMessageExchange.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an finalized message exchange object to the file given in the filename
             </summary>
-            <param name="g"></param>
-        </member>
-        <member name="F:alps.net_api.FinalReceiveTransition.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.FinalReceiveTransition.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the receive transition class 
-            </summary>
-        </member>
-        <member name="M:alps.net_api.FinalReceiveTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition,alps.net_api.MessageExchangeCondition,alps.net_api.DataMappingIncomingToLocal,System.Int32,alps.net_api.ReceiveTransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the receive transition class
-            </summary>D:\Studium KIT\Hiwi IMI KIT\Code\alps .net api\alps .net api\FinalReceiveTransition.cs
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-            <param name="messageExchangeCondition"></param>
-            <param name="dataMappingIncomingToLocal"></param>
-            <param name="priorityNumber"></param>
-            <param name="receiveTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.FinalReceiveTransition.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the receive transition class
-            </summary>
-            <returns>A new empty instance of the receive transition class</returns>
-        </member>
-        <member name="M:alps.net_api.FinalReceiveTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            Method that creates a new Instance of the final receive transition class
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.FinalReceiveTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.FinalReceiveTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="F:alps.net_api.FinalSendTransition.className">
             <summary>
@@ -3640,12 +3415,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.FinalSendTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="F:alps.net_api.FinalTransition.className">
             <summary>
             Name of the class
@@ -3686,12 +3455,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.FinalTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="F:alps.net_api.FinalTransitionType.className">
             <summary>
             Name of the class
@@ -3731,12 +3494,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.FinalTransitionType.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="T:alps.net_api.FullySpecifiedSubject">
             <summary>
@@ -3928,15 +3685,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.FunctionSpecification.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.FunctionSpecification.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Message that exports a function specification object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -3977,11 +3728,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.GeneralAbstractState.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.GeneralAbstractState.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an general abstract state object to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="T:alps.net_api.GenericReturnToOriginReference">
             <summary>
@@ -4067,15 +3819,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.GenericReturnToOriginReference.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.GenericReturnToOriginReference.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a generic return to origin reference object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -4212,15 +3958,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.GroupState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.GroupState.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a group state object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -4305,18 +4045,44 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.GuardBehavior.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.GuardBehavior.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a guard behavior object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
+        </member>
+        <member name="M:alps.net_api.GuardLayer.setALPSModelElements(alps.net_api.GuardBehavior)">
+            <summary>
+            
+            </summary>
+            <param name="aLPSModelElement"></param>
+        </member>
+        <member name="M:alps.net_api.GuardLayer.getALPSModelElements">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:alps.net_api.GuardLayer.setModelLayers(alps.net_api.ModelLayer)">
+            <summary>
+            
+            </summary>
+            <param name="aLPSModelElement"></param>
+        </member>
+        <member name="M:alps.net_api.GuardLayer.getModelLayers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:alps.net_api.GuardLayer.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="attribute"></param>
+            <param name="attributeType"></param>
+            <returns></returns>
         </member>
         <member name="M:alps.net_api.GuardLayer.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
             <summary>
@@ -4325,6 +4091,13 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
+        </member>
+        <member name="M:alps.net_api.GuardLayer.exporting(System.Boolean,System.String)">
+            <summary>
+            Method that exports an guard layer object to the file given in the filename
+            </summary>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="F:alps.net_api.GuardReceiveState.className">
             <summary>
@@ -4368,11 +4141,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.GuardReceiveState.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.GuardReceiveState.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an guard receiver state object to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="M:alps.net_api.IAbstractLayer.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
             <summary>
@@ -5189,144 +4963,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.setDataMappingFunctionIncomingToLocal(alps.net_api.IDataMappingIncomingToLocal)">
-            <summary>
-            Method that sets the data mapping incoming to local attribute of the instance
-            </summary>
-            <param name="dataMappingIncomingToLocal"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.getDataMappingIncomingToLocal">
-            <summary>
-            Method that returns the data mapping incoming to local attribute of the instance
-            </summary>
-            <returns>The data mapping incoming to local attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.setPriorityNumber(System.Int32)">
-            <summary>
-            Method that sets the priority number attribute of the instance
-            </summary>
-            <param name="nonNegativInteger"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.getPriorityNumber">
-            <summary>
-            Method that returns the priority number attribute of the instance
-            </summary>
-            <returns>The priority number attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.setReceiveTransitionCondition(alps.net_api.IReceiveTransitionCondition)">
-            <summary>
-            Method that sets the receiver transition condition attribute of the instance
-            </summary>
-            <param name="receiveTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.getReceiveTransitionCondition">
-            <summary>
-            Method that returns the receive transition condition attribute of the instance
-            </summary>
-            <returns>The receive transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the receive transition class
-            </summary>
-            <returns>A new empty instance of the receive transition class</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalReceiveTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.IFinalSendTransition.setDataMappingFunctionLocalToOutgoing(alps.net_api.IDataMappingLocalToOutgoing)">
-            <summary>
-            Method that sets the data mapping local to outgoing attribute of the instance
-            </summary>
-            <param name="dataMappingLocalToOutgoing"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalSendTransition.getDataMappingLocalToOutgoing">
-            <summary>
-            Method that returns the data mapping local to outgoing attribute of the instance
-            </summary>
-            <returns>The data mapping local to outgoing attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalSendTransition.setSendTransitionCondition(alps.net_api.ISendTransitionCondition)">
-            <summary>
-            Method that sets the send transition condition attribute of the instance
-            </summary>
-            <param name="sendTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalSendTransition.getSendTransitionCondition">
-            <summary>
-            Method that returns the send transition condition attribute of the instance
-            </summary>
-            <returns>The send transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalSendTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.setBelongsToAction(alps.net_api.IAction)">
-            <summary>
-            Method that sets the action attribute of the instance
-            </summary>
-            <param name="action"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.getBelongsToAction">
-            <summary>
-            Method that returns the action attribute of the instance
-            </summary>
-            <returns>The action attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.setSourceState(alps.net_api.IState)">
-            <summary>
-            Method that sets the source state attribute of the instance
-            </summary>
-            <param name="sourceState"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.getSourceState">
-            <summary>
-            Method that returns the source state attribute of the instance
-            </summary>
-            <returns>The source state attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.setTargetState(alps.net_api.IState)">
-            <summary>
-            Method that sets the target state attribute of the instance
-            </summary>
-            <param name="targetState"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.getTargetState">
-            <summary>
-            Method that returns the target action attribute of the instance
-            </summary>
-            <returns>The target action attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.setTransitionCondition(alps.net_api.ITransitionCondition)">
-            <summary>
-            Method that sets the transition condition attribute of the instance
-            </summary>
-            <param name="transitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.IFinalTransition.getTransitionCondition">
-            <summary>
-            Method that returns the transition condition attribute of the instance
-            </summary>
-            <returns>The transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IFinalTransitionType.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
         <member name="T:alps.net_api.IFullySpecifiedSubject">
             <summary>
             Interface to the FullySpecifiedSubject class
@@ -5797,12 +5433,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:alps.net_api.IMandatoryToEndChoiceSegmentPath.factoryMethod">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:alps.net_api.IMandatoryToStartChoiceSegmentPath">
             <summary>
             Interface to the mandatory to start choice segment path class
@@ -5827,12 +5457,6 @@
             <param name="choiceSegmentPath"></param>
         </member>
         <member name="M:alps.net_api.IMandatoryToStartChoiceSegmentPath.getChoiceSegmentPath">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.IMandatoryToStartChoiceSegmentPath.factoryMethod">
             <summary>
             
             </summary>
@@ -6144,15 +5768,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.InitialStateOfBehavior.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.InitialStateOfBehavior.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a initial state of behavior object to a file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -6242,15 +5860,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.InitialStateOfChoiceSegmentPath.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.InitialStateOfChoiceSegmentPath.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a initial state of choice segment path object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -6343,15 +5955,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.InputPoolConstraint.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.InputPoolConstraint.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a input pool contraint object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -6402,15 +6008,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.InputPoolConstraintHandlingStrategy.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.InputPoolConstraintHandlingStrategy.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a input pool constraint handling strategy object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -6469,15 +6069,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.InteractionDescriptionComponent.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.InteractionDescriptionComponent.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a interaction description component object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -6562,15 +6156,9 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.InterfaceSubject.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.InterfaceSubject.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a interface subject object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -6599,12 +6187,6 @@
             <param name="choiceSegmentPath"></param>
         </member>
         <member name="M:alps.net_api.IOptionalToEndChoiceSegmentPath.getChoiceSegmentPath">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.IOptionalToEndChoiceSegmentPath.factoryMethod">
             <summary>
             
             </summary>
@@ -6762,12 +6344,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:alps.net_api.IPASSProcessModellElement.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="T:alps.net_api.IPayloadDescription">
             <summary>
             Interface of the payload description class
@@ -6808,12 +6384,6 @@
             Method that returns the receive transition condition attribute of the instance
             </summary>
             <returns>The receive transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.IPrecedenceReceiveTransition.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the receive transition class
-            </summary>
-            <returns>A new empty instance of the receive transition class</returns>
         </member>
         <member name="M:alps.net_api.IPrecedenceTransitionType.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
             <summary>
@@ -7418,7 +6988,7 @@
             </summary>
             <returns>The end state attribute of the instance</returns>
         </member>
-        <member name="M:alps.net_api.ISubjectBehavior.setInitialState(alps.net_api.IInitialStateOfBehavior)">
+        <member name="M:alps.net_api.ISubjectBehavior.setInitialState(alps.net_api.IState)">
             <summary>
             Method that sets the initial state of behaviors attribute of the instance
             </summary>
@@ -8240,11 +7810,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.JSONDataTypeDefinition.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.JSONDataTypeDefinition.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an JSON data type definition object to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="F:alps.net_api.LayeredPASSProcessModel.className">
             <summary>
@@ -8273,11 +7844,12 @@
             
             </summary>
         </member>
-        <member name="M:alps.net_api.LayeredPASSProcessModel.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.LayeredPASSProcessModel.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an layered pass process model object to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="M:alps.net_api.LayeredPASSProcessModel.factoryMethod">
             <summary>
@@ -8354,11 +7926,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MacroBehavior.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.MacroBehavior.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an macro behavior object to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="M:alps.net_api.MacroLayer.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
             <summary>
@@ -8367,6 +7940,13 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
+        </member>
+        <member name="M:alps.net_api.MacroLayer.exporting(System.Boolean,System.String)">
+            <summary>
+            Method that exports an buisness day timer transition condition to the file given in the filename
+            </summary>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="T:alps.net_api.MacroState">
             <summary>
@@ -8466,199 +8046,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MacroState.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.MacroState.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an macro state object to the file given in the filename
             </summary>
-            <param name="g"></param>
-        </member>
-        <member name="T:alps.net_api.MandatoryToEndChoiceSegment">
-            <summary>
-            Class that represents an mandatory to end choice segment path 
-            </summary>
-        </member>
-        <member name="F:alps.net_api.MandatoryToEndChoiceSegment.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the mandatory to end choice segment class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Transition,alps.net_api.Transition,alps.net_api.FunctionSpecification,alps.net_api.GuardBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,System.Boolean,System.Boolean,alps.net_api.Action,alps.net_api.ChoiceSegmentPath)">
-            <summary>
-            Constructor that creates a new fully specified instance of the mandatory to end choice segment class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="incomingTransition"></param>
-            <param name="outgoingTransition"></param>
-            <param name="functionSpecification"></param>
-            <param name="guardBehavior"></param>
-            <param name="action"></param>
-            <param name="endState"></param>
-            <param name="initialState"></param>
-            <param name="optionalToEndChoiceSegmentPath"></param>
-            <param name="optionalToStartChoiceSegmentPath"></param>
-            <param name="belongsToaction"></param>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.setBelongsToAction(alps.net_api.IAction)">
-            <summary>
-            Method that sets the action attribute of the instance
-            </summary>
-            <param name="action"></param>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.getBelongsToAction">
-            <summary>
-            Method that returns the action attribute of the instance
-            </summary>
-            <returns>The action attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.setChoiceSegmentPath(alps.net_api.IChoiceSegmentPath)">
-            <summary>
-            Method that sets the choice segment path attribute of the instance
-            </summary>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.getChoiceSegmentPath">
-            <summary>
-            Method that returns the choice segment path attribute of the instance
-            </summary>
-            <returns>The choice segment path attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.getTmpBelongsToAction">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.getTmpChoiceSegmentPath">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the mandatory to end choice segment class
-            </summary>
-            <returns>A new empty instance of the mandatory to end choice segment class</returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            Method that creates a new instance of the mandatory to end choice segment class
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToEndChoiceSegment.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="T:alps.net_api.MandatoryToStartChoiceSegment">
-            <summary>
-            Class that represents an mandatory to start choice segment path
-            </summary>
-        </member>
-        <member name="F:alps.net_api.MandatoryToStartChoiceSegment.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the mandatory to start choice segment class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Transition,alps.net_api.Transition,alps.net_api.FunctionSpecification,alps.net_api.GuardBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,System.Boolean,System.Boolean,alps.net_api.Action,alps.net_api.ChoiceSegmentPath)">
-            <summary>
-            Constructor that creates a new fully specified instance of the mandatory to start choice segment class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="incomingTransition"></param>
-            <param name="outgoingTransition"></param>
-            <param name="functionSpecification"></param>
-            <param name="guardBehavior"></param>
-            <param name="action"></param>
-            <param name="endState"></param>
-            <param name="initialState"></param>
-            <param name="optionalToEndChoiceSegmentPath"></param>
-            <param name="optionalToStartChoiceSegmentPath"></param>
-            <param name="belongsToaction"></param>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.setBelongsToAction(alps.net_api.IAction)">
-            <summary>
-            Method that sets the action attribute of the instance
-            </summary>
-            <param name="action"></param>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.getBelongsToAction">
-            <summary>
-            Method that returns the action attribute of the instance
-            </summary>
-            <returns>The action attribute of the class</returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.setChoiceSegmentPath(alps.net_api.IChoiceSegmentPath)">
-            <summary>
-            Method that sets the choice segment path attribute of the instance
-            </summary>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.getChoiceSegmentPath">
-            <summary>
-            Method that returns the choice segment path attribute of the instance
-            </summary>
-            <returns>The choice segment path attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.getTmpBelonsToAction">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.getTmpChoiceSegmentPath">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the mandatory to start choice segment class
-            </summary>
-            <returns>A new empty instance of the mandatory to start choice segment class</returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.MandatoryToStartChoiceSegment.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="T:alps.net_api.MessageExchange">
             <summary>
@@ -8786,12 +8179,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MessageExchange.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.MessageExchange.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -8882,12 +8269,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MessageExchangeCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.MessageExchangeCondition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -8976,15 +8357,9 @@
              
             Das ganze bricht hier, warum das ? 
         </member>
-        <member name="M:alps.net_api.MessageExchangeList.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.MessageExchangeList.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports a message exchange list object to the file given in the filename
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
@@ -9079,12 +8454,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MessageSenderTypeConstraint.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.MessageSenderTypeConstraint.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -9165,12 +8534,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.MessageSpecification.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.MessageSpecification.exporting(System.Boolean,System.String)">
             <summary>
@@ -9257,12 +8620,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MessageTypeConstraint.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.MessageTypeConstraint.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -9316,12 +8673,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ModelBuiltInDataTypes.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ModelBuiltInDataTypes.exporting(System.Boolean,System.String)">
             <summary>
@@ -9690,11 +9041,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.ModelLayer.export(VDS.RDF.Graph@)">
+        <member name="M:alps.net_api.ModelLayer.exporting(System.Boolean,System.String)">
             <summary>
-            
+            Method that exports an buisness day timer transition condition to the file given in the filename
             </summary>
-            <param name="g"></param>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="T:alps.net_api.MultiSubject">
             <summary>
@@ -9774,206 +9126,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.MultiSubject.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.MultiSubject.exporting(System.Boolean,System.String)">
             <summary>
             
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
-        </member>
-        <member name="T:alps.net_api.OptionalToEndChoiceSegmentPath">
-            <summary>
-            Class that represents a optional to end choice segment path 
-            </summary>
-        </member>
-        <member name="F:alps.net_api.OptionalToEndChoiceSegmentPath.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the optional to end choice segment path class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Transition,alps.net_api.Transition,alps.net_api.FunctionSpecification,alps.net_api.GuardBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,System.Boolean,System.Boolean,alps.net_api.Action,alps.net_api.ChoiceSegmentPath)">
-            <summary>
-            Constructor that creates a new fully specified instance of the optional to end choice segment path class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="incomingTransition"></param>
-            <param name="outgoingTransition"></param>
-            <param name="functionSpecification"></param>
-            <param name="guardBehavior"></param>
-            <param name="action"></param>
-            <param name="endState"></param>
-            <param name="initialState"></param>
-            <param name="optionalToEndChoiceSegmentPath"></param>
-            <param name="optionalToStartChoiceSegmentPath"></param>
-            <param name="belongsToaction"></param>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.setBelongsToAction(alps.net_api.IAction)">
-            <summary>
-            Method that sets the action attribute of the instance
-            </summary>
-            <param name="action"></param>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.getBelongsToAction">
-            <summary>
-            Method that returns the action attribute of the instance
-            </summary>
-            <returns>The action attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.setChoiceSegmentPath(alps.net_api.IChoiceSegmentPath)">
-            <summary>
-            Method that sets the choice segment path attribute of the instance
-            </summary>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.getChoiceSegmentPath">
-            <summary>
-            Method that returns the choice segment path attribute of the instance
-            </summary>
-            <returns>The choice segment path attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.getTmpBelongsToAction">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.getTmpChoiceSegmentPath">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the optional to end choice segment path class
-            </summary>
-            <returns>A new empty instance of the optional to end choice segment path class</returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            Method that creates a new instance of the optional to End choice segment path class
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToEndChoiceSegmentPath.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="T:alps.net_api.OptionalToStartChoiceSegmentPath">
-            <summary>
-            Class that represents a optional to start choice segment path
-            </summary>
-        </member>
-        <member name="F:alps.net_api.OptionalToStartChoiceSegmentPath.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the optional to start choice segment path
-            </summary>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Transition,alps.net_api.Transition,alps.net_api.FunctionSpecification,alps.net_api.GuardBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,System.Boolean,System.Boolean,alps.net_api.Action,alps.net_api.ChoiceSegmentPath)">
-            <summary>
-            Constructor that creates a new fully specified instance of the optional to start choice segment path
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="incomingTransition"></param>
-            <param name="outgoingTransition"></param>
-            <param name="functionSpecification"></param>
-            <param name="guardBehavior"></param>
-            <param name="action"></param>
-            <param name="endState"></param>
-            <param name="initialState"></param>
-            <param name="optionalToEndChoiceSegmentPath"></param>
-            <param name="optionalToStartChoiceSegmentPath"></param>
-            <param name="belongsToaction"></param>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.setBelongsToAction(alps.net_api.IAction)">
-            <summary>
-            Method that sets the action attribute of the instance
-            </summary>
-            <param name="action"></param>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.getBelongsToAction">
-            <summary>
-            Method that returns the action attribute of the instance
-            </summary>
-            <returns>The action attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.setChoiceSegmentPath(alps.net_api.IChoiceSegmentPath)">
-            <summary>
-            Method that sets the choice segment path attribute of the instance
-            </summary>
-            <param name="choiceSegmentPath"></param>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.getChoiceSegmentPath">
-            <summary>
-            Method that returns the choice segment path attribute of the instance
-            </summary>
-            <returns>The choice segment path attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.getTmpBelongsToAction">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.getTmpChoiceSegmentPath">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the optional to start choice segment path class
-            </summary>
-            <returns>A new empty instance of the optional to start choice segment path class</returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            Method that creates a new instance of the optiona to start choice segment path class
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.OptionalToStartChoiceSegmentPath.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
         </member>
         <member name="T:alps.net_api.OWLDataTypeDefintion">
             <summary>
@@ -10021,12 +9179,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.OWLDataTypeDefintion.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.OWLDataTypeDefintion.exporting(System.Boolean,System.String)">
             <summary>
@@ -10337,13 +9489,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
         </member>
-        <member name="M:alps.net_api.PASSProcessModelElement.export(VDS.RDF.Graph@)">
-            <summary>
-            Method that exports the classes to a file
-            </summary>
-            <param name="g"></param>
-            <returns></returns>
-        </member>
         <member name="M:alps.net_api.PASSProcessModelElement.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -10521,12 +9666,6 @@
             </summary>
             <param name="objects"></param>
         </member>
-        <member name="M:alps.net_api.PassProcessModel.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.PassProcessModel.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -10587,12 +9726,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.PayloadDataObjectDefinition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.PayloadDataObjectDefinition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -10646,110 +9779,12 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.PayloadDescription.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.PayloadDescription.exporting(System.Boolean,System.String)">
             <summary>
             
             </summary>
             <param name="last"></param>
             <param name="filename"></param>
-        </member>
-        <member name="F:alps.net_api.PrecedenceReceiveTransition.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the receive transition class 
-            </summary>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition,alps.net_api.MessageExchangeCondition,alps.net_api.DataMappingIncomingToLocal,System.Int32,alps.net_api.ReceiveTransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the receive transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-            <param name="messageExchangeCondition"></param>
-            <param name="dataMappingIncomingToLocal"></param>
-            <param name="priorityNumber"></param>
-            <param name="receiveTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.setDataMappingFunctionIncomingToLocal(alps.net_api.IDataMappingIncomingToLocal)">
-            <summary>
-            Method that sets the data mapping incoming to local attribute of the instance
-            </summary>
-            <param name="dataMappingIncomingToLocal"></param>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.setPriorityNumber(System.Int32)">
-            <summary>
-            Method that sets the priority number attribute of the instance
-            </summary>
-            <param name="nonNegativInteger"></param>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.setReceiveTransitionCondition(alps.net_api.IReceiveTransitionCondition)">
-            <summary>
-            Method that sets the receiver transition condition attribute of the instance
-            </summary>
-            <param name="receiveTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.getDataMappingIncomingToLocal">
-            <summary>
-            Method that returns the data mapping incoming to local attribute of the instance
-            </summary>
-            <returns>The data mapping incoming to local attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.getPriorityNumber">
-            <summary>
-            Method that returns the priority number attribute of the instance
-            </summary>
-            <returns>The priority number attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.getReceiveTransitionCondition">
-            <summary>
-            Method that returns the receive transition condition attribute of the instance
-            </summary>
-            <returns>The receive transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the receive transition class
-            </summary>
-            <returns>A new empty instance of the receive transition class</returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.PrecedenceReceiveTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="F:alps.net_api.PrecedenceSendTransition.className">
             <summary>
@@ -10830,104 +9865,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.PrecedenceSendTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
-        <member name="F:alps.net_api.PrecedenceTransition.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransition.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the Trigger transition class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the Trigger transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
-        <member name="T:alps.net_api.PrecedenceTransitionType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransitionType.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransitionType.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransitionType.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransitionType.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.PrecedenceTransitionType.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="T:alps.net_api.ReceiveFunction">
             <summary>
             Class that represents a receive function class
@@ -10984,12 +9921,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ReceiveFunction.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ReceiveFunction.exporting(System.Boolean,System.String)">
             <summary>
@@ -11075,12 +10006,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ReceiveState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ReceiveState.exporting(System.Boolean,System.String)">
             <summary>
@@ -11201,12 +10126,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ReceiveTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ReceiveTransition.exporting(System.Boolean,System.String)">
             <summary>
@@ -11380,12 +10299,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.ReceiveTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.ReceiveTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -11447,12 +10360,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ReceiveType.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ReceiveType.exporting(System.Boolean,System.String)">
             <summary>
@@ -11519,12 +10426,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ReminderEventTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ReminderEventTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
@@ -11596,12 +10497,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.ReminderTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.ReminderTransition.exporting(System.Boolean,System.String)">
             <summary>
@@ -11688,12 +10583,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.SenderTypeConstraint.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.SenderTypeConstraint.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -11758,12 +10647,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.SendFunction.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.SendFunction.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -11827,12 +10710,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.SendingFailedCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.SendingFailedCondition.exporting(System.Boolean,System.String)">
             <summary>
@@ -11943,12 +10820,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.SendingFailedTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.SendingFailedTransition.exporting(System.Boolean,System.String)">
             <summary>
@@ -12082,12 +10953,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.SendState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.SendState.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -12194,12 +11059,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.SendTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.SendTransition.exporting(System.Boolean,System.String)">
             <summary>
@@ -12367,12 +11226,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.SendTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.SendTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -12434,12 +11287,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.SendType.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.SendType.exporting(System.Boolean,System.String)">
             <summary>
@@ -12513,12 +11360,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.SingleSubject.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.SingleSubject.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -12591,12 +11432,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.StandartPASSState.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.StandartPASSState.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -12652,12 +11487,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.StartSubject.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.StartSubject.exporting(System.Boolean,System.String)">
             <summary>
@@ -12816,12 +11645,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.State.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.State.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -12961,12 +11784,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.StatePlaceholder.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.StatePlaceholder.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -13058,12 +11875,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.StateReference.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.StateReference.exporting(System.Boolean,System.String)">
             <summary>
@@ -13204,12 +12015,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.Subject.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.Subject.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -13266,12 +12071,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.SubjectBaseBehavior.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.SubjectBaseBehavior.exporting(System.Boolean,System.String)">
             <summary>
@@ -13331,7 +12130,7 @@
             </summary>
             <param name="endState"></param>
         </member>
-        <member name="M:alps.net_api.SubjectBehavior.setInitialState(alps.net_api.IInitialStateOfBehavior)">
+        <member name="M:alps.net_api.SubjectBehavior.setInitialState(alps.net_api.IState)">
             <summary>
             Method that sets the initial state of behaviors attribute of the instance
             </summary>
@@ -14596,30 +13395,6 @@
             </summary>
             <param name="timerTransitionCondition"></param>
         </member>
-        <member name="M:alps.net_api.SubjectBehavior.addBusinessDayTimerTransitionCondition(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="label"></param>
-            <param name="comment"></param>
-            <param name="toolSpecificDefintion"></param>
-            <param name="timeValue"></param>
-            <param name="additionalAttribute"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.SubjectBehavior.getBusinessDayTimerTransitionCondition(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="numberOfElement"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.SubjectBehavior.deleteBuisnessDayTimerTransitionCondition(alps.net_api.BuisnessDayTimerTransitionCondition)">
-            <summary>
-            
-            </summary>
-            <param name="buisnessDayTimerTransitionCondition"></param>
-        </member>
         <member name="M:alps.net_api.SubjectBehavior.addDayTimeTimerTransitionCondition(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
             <summary>
             
@@ -14690,12 +13465,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:alps.net_api.SubjectBehavior.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.SubjectBehavior.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -14749,12 +13518,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.SubjectDataDefinition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.SubjectDataDefinition.exporting(System.Boolean,System.String)">
             <summary>
@@ -14962,12 +13725,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.TimeBasedReminderTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.TimeBasedReminderTransition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -15016,12 +13773,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.TimeBasedReminderTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.TimeBasedReminderTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
@@ -15089,12 +13840,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.TimerTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.TimerTransition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -15160,12 +13905,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.TimerTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.TimerTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
@@ -15237,12 +13976,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.TimeTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.TimeTransition.exporting(System.Boolean,System.String)">
             <summary>
@@ -15321,12 +14054,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.TimeTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.TimeTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
@@ -15507,12 +14234,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.Transition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.Transition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -15588,12 +14309,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.TransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.TransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
@@ -15723,241 +14438,6 @@
             <param name="compare"></param>
             <returns></returns>
         </member>
-        <member name="F:alps.net_api.TriggerReceiveTransition.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the Trigger receive transition class 
-            </summary>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition,alps.net_api.MessageExchangeCondition,alps.net_api.DataMappingIncomingToLocal,System.Int32,alps.net_api.ReceiveTransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the Trigger receive transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-            <param name="messageExchangeCondition"></param>
-            <param name="dataMappingIncomingToLocal"></param>
-            <param name="priorityNumber"></param>
-            <param name="receiveTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.setDataMappingFunctionIncomingToLocal(alps.net_api.IDataMappingIncomingToLocal)">
-            <summary>
-            Method that sets the data mapping incoming to local attribute of the instance
-            </summary>
-            <param name="dataMappingIncomingToLocal"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.setPriorityNumber(System.Int32)">
-            <summary>
-            Method that sets the priority number attribute of the instance
-            </summary>
-            <param name="nonNegativInteger"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.setReceiveTransitionCondition(alps.net_api.IReceiveTransitionCondition)">
-            <summary>
-            Method that sets the receiver transition condition attribute of the instance
-            </summary>
-            <param name="receiveTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.getDataMappingIncomingToLocal">
-            <summary>
-            Method that returns the data mapping incoming to local attribute of the instance
-            </summary>
-            <returns>The data mapping incoming to local attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.getPriorityNumber">
-            <summary>
-            Method that returns the priority number attribute of the instance
-            </summary>
-            <returns>The priority number attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.getReceiveTransitionCondition">
-            <summary>
-            Method that returns the receive transition condition attribute of the instance
-            </summary>
-            <returns>The receive transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.factoryMethod">
-            <summary>
-            Factory method that creates and returns a new empty instance of the receive transition class
-            </summary>
-            <returns>A new empty instance of the receive transition class</returns>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.TriggerReceiveTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="F:alps.net_api.TriggerSendTransition.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the Trigger send transition class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition,alps.net_api.MessageExchangeCondition,alps.net_api.DataMappingLocalToOutgoing,alps.net_api.SendTransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the Trigger send transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-            <param name="messageExchangeCondition"></param>
-            <param name="dataMappingLocalToOutgoing"></param>
-            <param name="sendTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.setDataMappingFunctionLocalToOutgoing(alps.net_api.IDataMappingLocalToOutgoing)">
-            <summary>
-            Method that sets the data mapping local to outgoing attribute of the instance
-            </summary>
-            <param name="dataMappingLocalToOutgoing"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.setSendTransitionCondition(alps.net_api.ISendTransitionCondition)">
-            <summary>
-            Method that sets the send transition condition attribute of the instance
-            </summary>
-            <param name="sendTransitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.getTmpDataMappingLocalToOutgoing">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.getTmpSendTransitionCondition">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.getDataMappingLocalToOutgoing">
-            <summary>
-            Method that returns the data mapping local to outgoing attribute of the instance
-            </summary>
-            <returns>The data mapping local to outgoing attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.getSendTransitionCondition">
-            <summary>
-            Method that returns the send transition condition attribute of the instance
-            </summary>
-            <returns>The send transition condition attribute of the instance</returns>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.TriggerSendTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="F:alps.net_api.TriggerTransition.className">
-            <summary>
-            Name of the class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.TriggerTransition.#ctor">
-            <summary>
-            Constructor that creates a new empty instance of the Trigger transition class
-            </summary>
-        </member>
-        <member name="M:alps.net_api.TriggerTransition.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the Trigger transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerTransition.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.TriggerTransition.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
-        <member name="M:alps.net_api.TriggerTransitionType.#ctor(System.Collections.Generic.List{System.String},System.String,System.Collections.Generic.List{System.String},System.String,alps.net_api.SubjectBehavior,alps.net_api.Action,alps.net_api.State,alps.net_api.State,alps.net_api.TransitionCondition)">
-            <summary>
-            Constructor that creates a new fully specified instance of the transition class
-            </summary>
-            <param name="additionalAttribute"></param>
-            <param name="modelComponentID"></param>
-            <param name="modelComponentLabel"></param>
-            <param name="comment"></param>
-            <param name="subjectBehavior"></param>
-            <param name="belongsToaction"></param>
-            <param name="sourceState"></param>
-            <param name="targetState"></param>
-            <param name="transitionCondition"></param>
-        </member>
-        <member name="M:alps.net_api.TriggerTransitionType.createInstance(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
-            <summary>
-            
-            </summary>
-            <param name="attribute"></param>
-            <param name="attributeType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:alps.net_api.TriggerTransitionType.completeObject(System.Collections.Generic.Dictionary{System.String,alps.net_api.PASSProcessModelElement}@,System.Collections.Generic.List{System.String}@)">
-            <summary>
-            Method that sets the Object Properties of the created Objects, it first takes the base Class to this and asks if the Object can take 
-            </summary>
-            <param name="allElements"></param>
-            <param name="tmp"></param>
-            
-        </member>
         <member name="F:alps.net_api.UniDirectionalCommunicationChannel.className">
             <summary>
             Name of the class
@@ -15998,6 +14478,13 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
+        </member>
+        <member name="M:alps.net_api.UniDirectionalCommunicationChannel.exporting(System.Boolean,System.String)">
+            <summary>
+            Method that exports an buisness day timer transition condition to the file given in the filename
+            </summary>
+            <param name="last"></param>
+            <param name="filename"></param>
         </member>
         <member name="T:alps.net_api.UserCancelTransition">
             <summary>
@@ -16058,12 +14545,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.UserCancelTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.UserCancelTransition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -16112,12 +14593,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.XSDDataTypeDefintion.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.XSDDataTypeDefintion.exporting(System.Boolean,System.String)">
             <summary>
@@ -16184,12 +14659,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.YearMonthTimerTransition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.YearMonthTimerTransition.exporting(System.Boolean,System.String)">
             <summary>
@@ -16270,12 +14739,6 @@
             <param name="tmp"></param>
             
         </member>
-        <member name="M:alps.net_api.YearMonthTimerTransitionCondition.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
-        </member>
         <member name="M:alps.net_api.YearMonthTimerTransitionCondition.exporting(System.Boolean,System.String)">
             <summary>
             
@@ -16303,12 +14766,6 @@
             <param name="allElements"></param>
             <param name="tmp"></param>
             
-        </member>
-        <member name="M:alps.net_api.YearMonthTimerTransitionConditions.export(VDS.RDF.Graph@)">
-            <summary>
-            
-            </summary>
-            <param name="g"></param>
         </member>
         <member name="M:alps.net_api.YearMonthTimerTransitionConditions.exporting(System.Boolean,System.String)">
             <summary>

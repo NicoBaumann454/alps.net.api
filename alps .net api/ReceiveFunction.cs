@@ -104,14 +104,6 @@ namespace alps.net_api
             base.completeObject(ref allElements, ref tmp);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="g"></param>
-        public override void export(ref Graph g)
-        {
-            base.export(ref g);
-        }
 
         /// <summary>
         /// 
